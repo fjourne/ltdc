@@ -1,3 +1,9 @@
+#!/usr/bin/python
+# coding: utf-8
+import sys
+reload(sys)
+sys.setdefaultencoding('utf-8')
+
 import requests
 import re
 from graphviz import Graph
@@ -33,7 +39,7 @@ page_materiel = requests.get("http://louiki.elyseum.fr/ltdc_pppe/index.php?title
 page_edge = requests.get("http://louiki.elyseum.fr/ltdc_pppe/index.php?title=Liens&action=edit", headers=cookie).text
 
 
-dot = Graph(name='Dragons', filename='derniersDragons.gv', comment='Les Derniers Dragons', strict=True)
+dot = Graph(name='Dragons', filename='./tmp/derniersDragons.gv', comment='Les Derniers Dragons', strict=True)
 
 
 def get_nomgraph(content):
@@ -211,4 +217,6 @@ for e in edges:
         dot.edge(head, tails)
 
 dot.save()
+print("Content-type: text/html\r\n\r\n")
+print("done")
 print(error)

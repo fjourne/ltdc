@@ -1,12 +1,13 @@
-#!"D:\Tools\Strawberry\perl\bin\perl.exe"
-
-#use CGI::Debug;
+#!/usr/bin/perl
 use open ':encoding(UTF-8)';
+use utf8;
+binmode STDOUT, ":utf8";
 
-open DRAGONS, "derniersDragons.gv";
-print "Content-type: text/html\r\n\r\n";
+open DRAGONS, "/tmp/derniersDragons.gv";
+print "Content-type: text/html; charset=UTF-8\r\n\r\n";
 print '<html>';
 print '<head>';
+print '<meta charset="UTF-8">';
 print '<style type="text/css">';
 print '.leftside {';
 print 'position: absolute;';
@@ -73,7 +74,7 @@ while (<DRAGONS>) {
 
 sub PrintSelectBox {
    my ($name,@list,%hashList) = @_;
-    print "<form action=\"/cgi-bin/dragons/image.pl\" method=\"GET\" target=img>";
+    print "<form action=\"image.pl\" method=\"GET\" target=img>";
 	print "<label for=\"im\">$name </label>";
 	print "<select name=\"im\">";
 	print "<option value=\"\">All</option>\n";
@@ -86,7 +87,7 @@ sub PrintSelectBox {
 }
 
 print '<div class=leftside>';
-print "<form action=\"/cgi-bin/dragons/image.pl\" method=\"GET\" target=img>";
+print "<form action=\"image.pl\" method=\"GET\" target=img>";
 print "<label for=\"im\">Objets </label>";
 print "<select name=\"im\">";
 print "<option value=\"\">All</option>\n";
@@ -98,7 +99,7 @@ print "<input type=\"submit\" value=\"Show !\">";
 print "</form>";
 
 # PrintSelectBox('Events', @eventslist, %events);
-print "<form action=\"/cgi-bin/dragons/image.pl\" method=\"GET\" target=img>";
+print "<form action=\"image.pl\" method=\"GET\" target=img>";
 print "<label for=\"im\">Events </label>";
 print "<select name=\"im\">";
 print "<option value=\"\">All</option>\n";
@@ -112,7 +113,7 @@ print '</div>';
 
 
 print '<div class=centerside>';
-print "<form action=\"/cgi-bin/dragons/image.pl\" method=\"GET\" target=img>";
+print "<form action=\"image.pl\" method=\"GET\" target=img>";
 print "<label for=\"im\">PNJs </label>";
 print "<select name=\"im\">";
 print "<option value=\"\">All</option>\n";
@@ -123,7 +124,7 @@ print "</select>";
 print "<input type=\"submit\" value=\"Show !\">";
 print "</form>";
 
-print "<form action=\"/cgi-bin/dragons/image.pl\" method=\"GET\" target=img>";
+print "<form action=\"image.pl\" method=\"GET\" target=img>";
 print "<label for=\"im\">Trames </label>";
 print "<select name=\"im\">";
 print "<option value=\"\">All</option>\n";
@@ -134,7 +135,7 @@ print "</select>";
 print "<input type=\"submit\" value=\"Show !\">";
 print "</form>";
 
-print "<form action=\"/cgi-bin/dragons/image.pl\" method=\"GET\" target=img>";
+print "<form action=\"image.pl\" method=\"GET\" target=img>";
 print "<label for=\"im\">Groupes </label>";
 print "<select name=\"im\">";
 print "<option value=\"\">All</option>\n";
@@ -148,7 +149,7 @@ print '</div>';
 
 
 print '<div class=rightside>';
-print "<form action=\"/cgi-bin/dragons/image.pl\" method=\"GET\" target=img>";
+print "<form action=\"image.pl\" method=\"GET\" target=img>";
 print "<label for=\"im\">Roles </label>";
 print "<select name=\"im\">";
 print "<option value=\"\">All</option>\n";
@@ -160,7 +161,7 @@ print "<input type=\"submit\" value=\"Show !\">";
 print "</form>";
 
 # PrintSelectBox('Lieux', @placeslist, %places);
-print "<form action=\"/cgi-bin/dragons/image.pl\" method=\"GET\" target=img>";
+print "<form action=\"image.pl\" method=\"GET\" target=img>";
 print "<label for=\"im\">Lieux </label>";
 print "<select name=\"im\">";
 print "<option value=\"\">All</option>\n";

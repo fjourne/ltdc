@@ -1,16 +1,16 @@
-#!"D:\Tools\Strawberry\perl\bin\perl.exe"
+#!/usr/bin/perl
 
-#use CGI::Debug;
 use utf8;
 use warnings;
 use warnings  qw(FATAL utf8);    # Fatalize encoding glitches.
 use open ':encoding(UTF-8)';
+binmode STDOUT, ":utf8";
 use File::Spec;
 use File::Copy;
 use GraphViz2;
-open DRAGONS, "derniersDragons.gv";
+open DRAGONS, "/var/tmp/derniersDragons.gv";
 # print "Content-type: image/png\r\n\r\n"; # Affichage png
-print "Content-type: text/html\r\n\r\n";
+print "Content-type: text/html; charset=UTF-8\r\n\r\n";
 
 $ENV{'REQUEST_METHOD'} =~ tr/a-z/A-Z/;
 if ($ENV{'REQUEST_METHOD'} eq "GET")
@@ -29,7 +29,7 @@ while (<DRAGONS>) {
 	}
 }
 close DRAGONS;
-open DRAGONS, "derniersDragons.gv";
+open DRAGONS, "./tmp/derniersDragons.gv" or die;
 
 #Lorsque lié à un lieu, ne pas aller chercher les noeuds derrière celui-ci sauf lieu sélectionné dans le menu déroulant
 if ($buffer =~ /im=(\w+)/) {
@@ -80,7 +80,7 @@ if ($buffer =~ /im=(\w+)/) {
 	}
 	@names = (@names, @selectedplaces);
 	close DRAGONS;
-	open DRAGONS, "derniersDragons.gv";
+	open DRAGONS, "./tmp/derniersDragons.gv";
 }
 
 while (<DRAGONS>) {
@@ -164,11 +164,11 @@ while (<DRAGONS>) {
 
 # Génération du fichier SVG
 my($format)      = shift || 'svg';
-my($output_file) = shift || File::Spec -> catfile('.', "dragonstmp.$format");
+my($output_file) = shift || File::Spec -> catfile('./tmp/', "dragonstmp.$format");
 $graph -> run(format => $format, output_file => $output_file);
 
 # Affichage du SVG
-open SVG, "dragonstmp.$format";
+open SVG, "./tmp/dragonstmp.$format";
 # $dragonstmp, $buff;
 while(read SVG, $buff, 1024) {
     $dragonstmp .= $buff;

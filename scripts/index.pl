@@ -1,7 +1,4 @@
-#!"D:\Tools\Strawberry\perl\bin\perl.exe"
-#
-#use CGI::Debug;
-
+#!/usr/bin/perl
 
 print "Content-type: text/html\r\n\r\n";
 
