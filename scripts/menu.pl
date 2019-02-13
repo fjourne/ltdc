@@ -3,7 +3,7 @@ use open ':encoding(UTF-8)';
 use utf8;
 binmode STDOUT, ":utf8";
 
-open DRAGONS, "/tmp/derniersDragons.gv";
+open DRAGONS, "./tmp/derniersDragons.gv";
 print "Content-type: text/html; charset=UTF-8\r\n\r\n";
 print '<html>';
 print '<head>';
