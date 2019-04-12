@@ -1,9 +1,9 @@
 #!/usr/bin/python
 # coding: utf-8
-import sys
+# import sys
 
-reload(sys)
-sys.setdefaultencoding('utf-8')
+# reload(sys)
+# sys.setdefaultencoding('utf-8')
 
 import requests
 import re
@@ -93,6 +93,15 @@ def get_link_list(content, attribut, link):
     :return: la liste des liens trouvers.
     """
     return line_to_list(get_line(content, attribut), link)
+
+
+def get_link_list_persos(content, attribut):
+    """
+    :param content: le texte dans lequel rechecher
+    :param attribut: l'attibut du "personnage/groupe/..." dans lequel rechercher "(groupe, trame, localisation)...
+    :return: la liste des liens trouvés sur des pages directes
+    """
+    return re.findall("[^\[]*(\[\[+[^\]]+\]\])", get_line(content, attribut))
 
 
 def add_nodes_types_shape(types, shape, linkname, peripheries='1', linkpers='', link=''):
@@ -222,6 +231,37 @@ for ci in range(len(categories)-1):
                 else:
                     error += "Lien non trouvé : {} dans {}\n".format(link, nomgraph)
 
+# Contruction des liens perso vers perso
+for p in personnages:
+    nomgraph = get_nomgraph(p)
+    entente_color = '#006400'
+    opposition_color = '#800080'
+    famille_perso = get_link_list(p, "famille", "p")
+    famille_perso = famille_perso + get_link_list_persos(p, "famille")
+    for f in famille_perso:
+        dot.edge(nomgraph, p_link_to_nomgraphe[f], fillcolor='#ffd700')
+    allies_perso = get_link_list(p, "entente", "p")
+    allies_perso = allies_perso + get_link_list_persos(p, "entente")
+    for a in allies_perso:
+        dot.edge(nomgraph, p_link_to_nomgraphe[a], fillcolor=entente_color)
+    neutres_perso = get_link_list(p, "neutre", "p")
+    neutres_perso = neutres_perso + get_link_list_persos(p, "neutre")
+    for n in neutres_perso:
+        dot.edge(nomgraph, p_link_to_nomgraphe[n])
+    ennemis_perso = get_link_list(p, "opposition", "p")
+    ennemis_perso = ennemis_perso + get_link_list_persos(p, "opposition")
+    for e in ennemis_perso:
+        dot.edge(nomgraph, p_link_to_nomgraphe[e], fillcolor=opposition_color)
+
+    allies_perso = get_link_list(p, "entente", "gr")
+    for a in allies_perso:
+        dot.edge(nomgraph, gr_link_to_nomgraphe[a], fillcolor=entente_color)
+    neutres_perso = get_link_list(p, "neutre", "gr")
+    for n in neutres_perso:
+        dot.edge(nomgraph, gr_link_to_nomgraphe[n])
+    ennemis_perso = get_link_list(p, "opposition", "gr")
+    for e in ennemis_perso:
+        dot.edge(nomgraph, gr_link_to_nomgraphe[e], fillcolor=opposition_color)
 
 # Contruction des liens lieu vers lieu
 for l in lieux:
