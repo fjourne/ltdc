@@ -1,13 +1,10 @@
-#!/usr/bin/python
+#!/usr/bin/python3
 # coding: utf-8
-import sys
+import unidecode
 import requests
 import re
+
 from graphviz import Graph
-
-reload(sys)
-sys.setdefaultencoding('utf-8')
-
 
 cookie = {
     'Cookie': 'wiki_wikiUserID=4; wiki_wikiUserName=Piell;'
@@ -18,276 +15,360 @@ cookie = {
               + ' wiki_wiki_session=ilmc6k7e2vefmor20lmlg9k7lpjbpg6;'
               + ' ltdc_pppe_wiki_session=h0jvm1nh9cq1dp8gjhdl8uh2c23mvknp;'}
 
-page_tableau_perso = requests.get("https://louiki.elyseum.fr/ltdc_pppe/index.php/Tableau_des_Personnages",
-                                  headers=cookie).text
-
-page_groupe = requests.get("https://louiki.elyseum.fr/ltdc_pppe/index.php?title=Groupes_et_organisations&action=edit",
-                           headers=cookie).text
-
-page_trame = requests.get("https://louiki.elyseum.fr/ltdc_pppe/index.php?title=Trames&action=edit", headers=cookie).text
-
-page_event = requests.get("https://louiki.elyseum.fr/ltdc_pppe/index.php?title=Trames_locales&action=edit",
-                          headers=cookie).text
-
-page_lieu = requests.get("https://louiki.elyseum.fr/ltdc_pppe/index.php?title=G%C3%A9ographie&action=edit",
-                         headers=cookie).text
-
-page_role = requests.get("https://louiki.elyseum.fr/ltdc_pppe/index.php?title=Connaissances_diverses&action=edit",
-                         headers=cookie).text
-
-page_materiel = requests.get("https://louiki.elyseum.fr/ltdc_pppe/index.php?title=Mat%C3%A9riel&action=edit",
-                             headers=cookie).text
-
-page_edge = requests.get("https://louiki.elyseum.fr/ltdc_pppe/index.php?title=Liens&action=edit", headers=cookie).text
+entente_color = '#006400'
+opposition_color = '#800080'
+famille_color = '#FFD700'
 
 
-dot = Graph(name='Dragons', filename='./tmp/derniersDragons.gv', comment='Les Derniers Dragons', strict=True)
+class Entry:
+    lien = ''
+    nom = ''
+    nom_graph = ''
+    a_suivre = ''
+    localisation = []
 
 
-def get_nomgraph(content):
+class Trame(Entry):
+    trame = []
+
+
+class Groupe(Trame):
+    groupe = []
+    entente = []
+    neutre = []
+    opposition = []
+    materiel = []
+
+
+class Personnage(Groupe):
+    joueur = False
+
+
+class Materiel(Trame):
+    pass
+
+
+class Geographie(Entry):
+    categorie = ''
+
+
+node_periferies = {
+    Personnage: '1',
+    Groupe: '2',
+    Trame: '1',
+    Geographie: '1',
+    Materiel: '1'
+}
+node_shapes = {
+    Personnage: 'ellipse',
+    Groupe: 'ellipse',
+    Trame: 'octagon',
+    Geographie: 'pentagon',
+    Materiel: 'box'
+}
+
+
+def to_nom_graph(nom):
     """
-    :param content: le texte dans lequel on recherche
-    :return: le nomgraph associé
+    Converti un nom au format nom graph.
+    :param nom: le nom a convertir
+    :return:  le nom graph
     """
-    return re.findall(r"nomgraphe=(.*)\n", content)[0]
+    nom_graph_tmp = unidecode.unidecode(nom)
+    nom_graph = ''
+    for a in nom_graph_tmp:
+        if a.isalpha():
+            nom_graph += a
+    return nom_graph
 
 
-def get_link(content):
-
-    return re.findall(r"lien=(.*)\n", content)[0]
-
-
-def map_link_nomgraph(templates):
+def get_link_list(string):
     """
-    :param templates: une liste de template (Personnage, Organisation, ...)
-    :return: le dictionnaire des liens -> nom graph.
+    :param string: la string a parser
+    :return: la liste des liens "<a>" contenue dans la string
     """
-    dico = {}
-    for template in templates:
-        dico[get_link(template)] = get_nomgraph(template)
-    return dico
+    links_tmp = re.findall(r'<a href="([^"]*)"[^<]*</a>', string)
+    links = []
+    for link in links_tmp:
+        links.append("https://louiki.elyseum.fr" + link)
+    return links
 
 
-def get_line(content, search):
+def retreive_main_table(url):
     """
-    :param content: le text dans lequel on recherche la ligne.
-    :param search: le type de la ligne rechercher (groupe, trame, localisation,...)
-    :return: le reste de la ligne "" si non trouvée.
+    Récupère le tableau principale d'une page
+    :param url: l'url de la page
+    :return: la liste double des lignes et cellule du tableau
     """
-    line = re.findall(r"{}=(.*)\n".format(search), content)
-    line = line[0] if len(line) > 0 else ""
-    return line
+    page = requests.get(url, headers=cookie).text
+    table = page.split("<table class=\"wikitable sortable\">")
+    table.pop(0)
+    table = table[0].split("</table>")
+    # On nétoie les fins de cellule et fin de ligne.
+    table = table[0].split("<tr>")
+    table.pop(0)
+    # La 1ère ligne est le ligne de titre du tableau
+    table.pop(0)
+
+    tmp_table = []
+    for row in table:
+        row = row.replace("\n</td>\n", "").replace("\n</td></tr>\n", "")
+        row = row.split("<td>")
+        row.pop(0)
+        tmp_table.append(row)
+    return tmp_table
 
 
-def line_to_list(line, search):
+def retreive_personnnages():
     """
-    :param line: le texte de la ligne
-    :param search: le type de lien rechercher dans la ligne (g, gr, t, tl, ...)
-    :return: la liste des liens trouvés dans la ligne
+    :return: le tableau des personnages
     """
-    return re.findall(r"[^{]*({{" + search + r"\|[^}]+}})", line)
+    tableau_personnages = retreive_main_table("https://louiki.elyseum.fr/ltdc_pppe/index.php/Graphe_Personnages")
+    personnages = []
+    for p in tableau_personnages:
+        perso = Personnage()
+        perso.lien = get_link_list(p[0])[0]
+        perso.nom = p[1]
+        perso.nom_graph = to_nom_graph(p[1])
+        perso.localisation = get_link_list(p[2])
+        perso.groupe = get_link_list(p[3])
+        perso.famille = get_link_list(p[4])
+        perso.entente = get_link_list(p[5])
+        perso.neutre = get_link_list(p[6])
+        perso.opposition = get_link_list(p[7])
+        perso.materiel = get_link_list(p[8])
+        perso.trame = get_link_list(p[9])
+        perso.joueur = p[10] != ''
+        personnages.append(perso)
+    return personnages
 
 
-def get_link_list(content, attribut, link):
+def retreive_groupes():
     """
-    :param content: le texte dans lequel rechecher
-    :param attribut: l'attibut du "personnage/groupe/..." dans lequel rechercher "(groupe, trame, localisation)...
-    :param link: les liens recherchers g, gr, t, tl, ...
-    :return: la liste des liens trouvers.
+    :return: le tableau des groupes
     """
-    return line_to_list(get_line(content, attribut), link)
+    tableau_groupes = retreive_main_table("https://louiki.elyseum.fr/ltdc_pppe/index.php/Graphe_Groupes")
+    groupes = []
+    for g in tableau_groupes:
+        groupe = Groupe()
+        groupe.lien = get_link_list(g[0])[0]
+        groupe.nom = g[1]
+        groupe.nom_graph = to_nom_graph(g[1])
+        groupe.localisation = get_link_list(g[2])
+        groupe.groupe = get_link_list(g[3])
+        groupe.entente = get_link_list(g[4])
+        groupe.neutre = get_link_list(g[5])
+        groupe.opposition = get_link_list(g[6])
+        groupe.materiel = get_link_list(g[7])
+        groupe.trame = get_link_list(g[8])
+        groupes.append(groupe)
+    return groupes
 
 
-def get_link_list_persos(content, attribut):
+def retreive_trames():
     """
-    :param content: le texte dans lequel rechecher
-    :param attribut: l'attibut du "personnage/groupe/..." dans lequel rechercher "(groupe, trame, localisation)...
-    :return: la liste des liens trouvés sur des pages directes
+    :return: le tableau des trames
     """
-    return re.findall(r"[^\[]*(\[\[+[^\]]+\]\])", get_line(content, attribut))
+    tableau_trames = retreive_main_table("https://louiki.elyseum.fr/ltdc_pppe/index.php/Graphe_Trames")
+    trames = []
+    for t in tableau_trames:
+        trame = Trame()
+        trame.lien = get_link_list(t[0])[0]
+        trame.nom = t[1]
+        trame.nom_graph = to_nom_graph(t[1])
+        trame.localisation = get_link_list(t[2])
+        trame.trame = get_link_list(t[3])
+        trame.a_suivre = t[4]
+        trames.append(trame)
+    return trames
 
 
-def add_nodes_types_shape(types, shape, linkname, peripheries='1', linkpers='', link=''):
+def retreive_geographie():
     """
-    :param types: modèle concerné
-    :param shape: shape du node pour ce modèle
-    :param linkname: lien vers le wiki dans le cas où c'est lien + nom
-    :param peripheries: nombre de délimitations autour d'un noeud
-    :param linkpers: lien dans le cas ou c'est lien + link
-    :param link: lien dans le cas ou c'est juste lien
-    :return:
+    :return: le tableau de la géographie
     """
-    for t in types:
-        nomgraphe = re.findall(r"nomgraphe=(.*)\n", t)[0]
-        nom = re.findall(r"nom=(.*)\n", t)[0]
+    tableau_geographie = retreive_main_table("https://louiki.elyseum.fr/ltdc_pppe/index.php/Graphe_G%C3%A9ographie")
+    geographie = []
+    for g in tableau_geographie:
+        lieu = Geographie()
+        lieu.lien = get_link_list(g[0])[0]
+        lieu.nom = g[1]
+        lieu.nom_graph = to_nom_graph(g[1])
+        lieu.localisation = get_link_list(g[2])
+        lieu.categorie = g[3]
+        geographie.append(lieu)
+    return geographie
+
+
+def retreive_materiels():
+    """
+    :return: le tableau des mateliers.
+    """
+    tableau_materiels = retreive_main_table("https://louiki.elyseum.fr/ltdc_pppe/index.php/Graphe_Mat%C3%A9riels")
+    materiels = []
+    for m in tableau_materiels:
+        materiel = Materiel()
+        materiel.lien = get_link_list(m[0])[0]
+        materiel.nom = m[1]
+        materiel.nom_graph = to_nom_graph(m[1])
+        materiel.localisation = get_link_list(m[2])
+        materiel.trame = get_link_list(m[3])
+        materiel.a_suivre = m[4]
+        materiels.append(materiel)
+    return materiels
+
+
+def add_nodes_types_shape(dot, entries):
+    """
+    Ajoute les entrées au graph
+    :param dot: le graph
+    :param entries: une liste d'entrée a ajouter dans le graph
+    """
+    for e in entries:
         color = 'white'
-        if get_line(t, 'ferme'):
-            # grey
-            color = '#999999'
-        elif get_line(t, 'asuivre'):
-            # red
-            color = '#e41a1c'
-        elif get_line(t, 'joueur'):
+        if e.a_suivre != '':
+            if e.a_suivre != 'Non':
+                # red
+                color = '#e41a1c'
+            else:
+                color = '#999999'
+
+        elif isinstance(e, Personnage) and e.joueur:
             # vert
             color = '#4daf4a'
-        if linkname != '':
-            dot.node(nomgraphe, nom, shape=shape, link=linkname + nom, peripheries=peripheries, fillcolor=color)
-        elif linkpers != '':
-            liens = re.findall(r"lien={{.*\|(.*)}}\n", t)
-            if not liens:
-                lien = "https://louiki.elyseum.fr/ltdc_pppe/index.php/" + re.findall(r"lien=\[\[(.*)\]\]\n", t)[0]
-            else:
-                lien = linkpers + liens[0]
-            dot.node(nomgraphe, nom, shape=shape, link=lien, peripheries=peripheries, fillcolor=color)
+        dot.node(e.nom_graph, e.nom, link=e.lien,
+                 shape=node_shapes.get(e.__class__),peripheries=node_periferies.get(e.__class__), fillcolor=color)
+
+
+def create_link(dot, link_to_nomgraph, entry, link, fillcolor="#000000"):
+    """
+    Créé un lien dans le graph
+    :param dot: le graph
+    :param link_to_nomgraph: le dictionnaire de lien nom graph
+    :param entry: l'objet du quel le lien est crée
+    :param link: le lien de l'objet destination
+    :param fillcolor: (optionel) la couleur.
+    """
+    if link in link_to_nomgraph:
+        if isinstance(entry, Geographie):
+            dot.edge(entry.nom_graph, link_to_nomgraph.get(link), entry.categorie, fillcolor=fillcolor)
         else:
-            dot.node(nomgraphe, nom, shape=shape, link=link, peripheries=peripheries, fillcolor=color)
-    return
-
-
-tableau_personnages = page_tableau_perso.split("<table class=\"wikitable sortable\">")
-tableau_personnages.pop(0)
-tableau_personnages = tableau_personnages[0].split("</table>")
-tableau_personnages = tableau_personnages[0].split("<tr>")
-tableau_personnages.pop(0)
-
-page_p = requests.get("https://louiki.elyseum.fr/ltdc_pppe/index.php?title=Personnages&action=edit",
-                      headers=cookie).text
-personnages = page_p.split("{{Personnage")
-personnages.pop(0)
-
-for p in tableau_personnages:
-    links = re.findall(r"<a.*>(.*)</a>", p)
-    if links:
-        # Le premier lien est celui du nom du personnage
-        perso = links[0]
-        link_perso = re.findall(r"<a href=\"/ltdc_pppe/index.php/(.*)\" .*>.*</a>", p)[0]
-        if "Personnages" not in link_perso:
-            page_p = requests.get("https://louiki.elyseum.fr/ltdc_pppe/index.php?title="+link_perso+"&action=edit",
-                                  headers=cookie).text
-            template1 = page_p.split("{{Personnage")
-            template1.pop(0)
-            personnages = personnages + template1
-
-p_link_to_nomgraphe = map_link_nomgraph(personnages)
-
-groupes = page_groupe.split("{{Groupe")
-groupes.pop(0)
-gr_link_to_nomgraphe = map_link_nomgraph(groupes)
-
-trames = page_trame.split("{{Trame")
-trames.pop(0)
-tr_link_to_nomgraphe = map_link_nomgraph(trames)
-
-events = page_event.split("{{Trame")
-events.pop(0)
-ev_link_to_nomgraphe = map_link_nomgraph(events)
-
-lieux = page_lieu.split("{{Géographie")
-lieux.pop(0)
-l_link_to_nomgraphe = map_link_nomgraph(lieux)
-
-roles = page_role.split("{{Role")
-roles.pop(0)
-r_link_to_nomgraphe = map_link_nomgraph(roles)
-
-materiels = page_materiel.split("{{Objet")
-materiels.pop(0)
-m_link_to_nomgraphe = map_link_nomgraph(materiels)
-
-edges = page_edge.split("{{Edge")
-edges.pop(0)
-
-categories = [
-    (personnages, p_link_to_nomgraphe, "personnages", "p"),
-    (groupes, gr_link_to_nomgraphe, "groupe", "gr"),
-    (trames, tr_link_to_nomgraphe, "trame", "t"),
-    (events, ev_link_to_nomgraphe, "trame", "tl"),
-    (roles, r_link_to_nomgraphe, "role", "r"),
-    (materiels, m_link_to_nomgraphe, "materiel", "o"),
-    (lieux, l_link_to_nomgraphe, "localisation", "g")
-]
-
-# Ajouts des nodes persos
-add_nodes_types_shape(personnages, 'ellipse', '', '1', 'https://louiki.elyseum.fr/ltdc_pppe/index.php/Personnages#')
-
-# Ajouts des nodes groupes
-add_nodes_types_shape(groupes, 'ellipse', 'https://louiki.elyseum.fr/ltdc_pppe/index.php/Groupes_et_organisations#',
-                      '2')
-
-# Ajouts des nodes trames, events, lieux, objets, roles
-add_nodes_types_shape(trames, 'octagon', 'https://louiki.elyseum.fr/ltdc_pppe/index.php/Trames#', '2')
-add_nodes_types_shape(events, 'octagon', 'https://louiki.elyseum.fr/ltdc_pppe/index.php/Trames_locales#')
-add_nodes_types_shape(lieux, 'box', 'https://louiki.elyseum.fr/ltdc_pppe/index.php/G%C3%A9ographie#')
-add_nodes_types_shape(materiels, 'invhouse', 'https://louiki.elyseum.fr/ltdc_pppe/index.php/Mat%C3%A9riel#')
-add_nodes_types_shape(roles, 'pentagon', '', '1', '',
-                      'https://louiki.elyseum.fr/ltdc_pppe/index.php/Connaissances_diverses#Tarot_de_Targ.C3.A8ne')
-
-error = ""
-
-for ci in range(len(categories)-1):
-    for element in categories[ci][0]:
-        nomgraph = get_nomgraph(element)
-        for sci in range(ci, len(categories)):
-            graph_links = get_link_list(element, categories[sci][2], categories[sci][3])
-            for graph_link in graph_links:
-                if graph_link in categories[sci][1]:
-                    dot.edge(nomgraph, categories[sci][1][graph_link])
-                else:
-                    error += "Lien non trouvé : {} dans {}\n".format(graph_link, nomgraph)
-
-# Contruction des liens perso vers perso
-for p in personnages:
-    nomgraph = get_nomgraph(p)
-    entente_color = '#006400'
-    opposition_color = '#800080'
-    famille_perso = get_link_list(p, "famille", "p")
-    famille_perso = famille_perso + get_link_list_persos(p, "famille")
-    for f in famille_perso:
-        dot.edge(nomgraph, p_link_to_nomgraphe[f], fillcolor='#ffd700')
-    allies_perso = get_link_list(p, "entente", "p")
-    allies_perso = allies_perso + get_link_list_persos(p, "entente")
-    for a in allies_perso:
-        dot.edge(nomgraph, p_link_to_nomgraphe[a], fillcolor=entente_color)
-    neutres_perso = get_link_list(p, "neutre", "p")
-    neutres_perso = neutres_perso + get_link_list_persos(p, "neutre")
-    for n in neutres_perso:
-        dot.edge(nomgraph, p_link_to_nomgraphe[n])
-    ennemis_perso = get_link_list(p, "opposition", "p")
-    ennemis_perso = ennemis_perso + get_link_list_persos(p, "opposition")
-    for e in ennemis_perso:
-        dot.edge(nomgraph, p_link_to_nomgraphe[e], fillcolor=opposition_color)
-
-    allies_perso = get_link_list(p, "entente", "gr")
-    for a in allies_perso:
-        dot.edge(nomgraph, gr_link_to_nomgraphe[a], fillcolor=entente_color)
-    neutres_perso = get_link_list(p, "neutre", "gr")
-    for n in neutres_perso:
-        dot.edge(nomgraph, gr_link_to_nomgraphe[n])
-    ennemis_perso = get_link_list(p, "opposition", "gr")
-    for e in ennemis_perso:
-        dot.edge(nomgraph, gr_link_to_nomgraphe[e], fillcolor=opposition_color)
-
-# Contruction des liens lieu vers lieu
-for l in lieux:
-    nomgraph = get_nomgraph(l)
-    colonies_lieu = get_link_list(l, "coloniede", "g")
-    for c in colonies_lieu:
-        dot.edge(nomgraph, l_link_to_nomgraphe[c], 'Colonie')
-    villes_lieu = get_link_list(l, "villede", "g")
-    for v in villes_lieu:
-        dot.edge(nomgraph, l_link_to_nomgraphe[v], 'Ville')
-
-# Ajouts des liens manuels
-for e in edges:
-    head = re.findall(r"head=(.*)\n", e)[0]
-    tails = re.findall(r"tails=(.*)\n", e)[0]
-    label = re.findall(r"label=(.*)\n", e)[0]
-    if label:
-        dot.edge(head, tails, label)
+            dot.edge(entry.nom_graph, link_to_nomgraph.get(link), fillcolor=fillcolor)
     else:
-        dot.edge(head, tails)
+        print("Erreur : aucune page pour le lien '" + link + "' pour l'entitée '" + entry.nom + "'")
 
-dot.save()
-print("Content-type: text/html\r\n\r\n")
-print("done")
-print(error)
+
+def build_link_to_nom_graph_dict(*entries_list):
+    """
+    Contruit le dictionnaire des liens -> nom_graph
+    :param entries_list: un tableau de liste d'entrée
+    :return: le dictionnaire contruit
+    """
+    link_to_nom_graph = {}
+    for el in entries_list:
+        for e in el:
+            link_to_nom_graph[e.lien] = e.nom_graph
+    return link_to_nom_graph
+
+
+def add_link_trames(dot, link_to_nomgraph, trames):
+    """
+    Ajoute le lien des trames.
+    :param dot: le graph
+    :param link_to_nomgraph: le dictionnaire des liens nom graph
+    :param trames: un liste de trames
+    """
+    for e in trames:
+        for link in e.localisation:
+            create_link(dot, link_to_nomgraph, e, link)
+        for link in e.trame:
+            create_link(dot, link_to_nomgraph, e, link)
+
+
+def add_link_geographie(dot, link_to_nomgraph, geographie):
+    """
+    Ajoute le lien des geographie.
+    :param dot: le graph
+    :param link_to_nomgraph: le dictionnaire des liens nom graph
+    :param trames: un liste de geographie
+    """
+    for e in geographie:
+        for link in e.localisation:
+            create_link(dot, link_to_nomgraph, e, link)
+
+
+def add_link_materiels(dot, link_to_nomgraph, materiels):
+    """
+    Ajoute le lien des trames.
+    :param dot: le graph
+    :param link_to_nomgraph: le dictionnaire des liens nom graph
+    :param trames: un liste de trames
+    """
+    add_link_trames(dot, link_to_nomgraph, materiels)
+
+
+def add_link_groupes(dot, link_to_nomgraph, groupes):
+    """
+    Ajoute le lien des groupes.
+    :param dot: le graph
+    :param link_to_nomgraph: le dictionnaire des liens nom graph
+    :param trames: un liste de groupes
+    """
+    add_link_trames(dot, link_to_nomgraph, groupes)
+    for e in groupes:
+        for link in e.groupe:
+            create_link(dot, link_to_nomgraph, e, link)
+        for link in e.entente:
+            create_link(dot, link_to_nomgraph, e, link, entente_color)
+        for link in e.neutre:
+            create_link(dot, link_to_nomgraph, e, link)
+        for link in e.opposition:
+            create_link(dot, link_to_nomgraph, e, link, opposition_color)
+        for link in e.materiel:
+            create_link(dot, link_to_nomgraph, e, link)
+
+
+def add_link_personnages(dot, link_to_nomgraph, personnages):
+    """
+    Ajoute le lien des personnages.
+    :param dot: le graph
+    :param link_to_nomgraph: le dictionnaire des liens nom graph
+    :param trames: un liste de personnages
+    """
+    add_link_groupes(dot, link_to_nomgraph, personnages)
+    for e in personnages:
+        for link in e.famille:
+            create_link(dot, link_to_nomgraph, e, link, famille_color)
+
+
+def main():
+    """
+    Main
+    """
+    print("Content-type: text/html\r\n\r\n")
+
+    personnages = retreive_personnnages()
+    groupes = retreive_groupes()
+    trames = retreive_trames()
+    geographies = retreive_geographie()
+    materiels = retreive_materiels()
+
+    link_to_nomgraph = build_link_to_nom_graph_dict(personnages, groupes, trames, geographies, materiels)
+
+    dot = Graph(name='Dragons', filename='./tmp/derniersDragons.gv', comment='Les Derniers Dragons', strict=True)
+    add_nodes_types_shape(dot, personnages)
+    add_nodes_types_shape(dot, groupes)
+    add_nodes_types_shape(dot, trames)
+    add_nodes_types_shape(dot, geographies)
+    add_nodes_types_shape(dot, materiels)
+    add_link_personnages(dot, link_to_nomgraph, personnages)
+    add_link_groupes(dot, link_to_nomgraph, groupes)
+    add_link_trames(dot, link_to_nomgraph, trames)
+    add_link_geographie(dot, link_to_nomgraph, geographies)
+    add_link_materiels(dot, link_to_nomgraph, materiels)
+
+    dot.save()
+    print("done")
+
+
+main()

@@ -22,17 +22,17 @@ my $graph = GraphViz2->new(strict => 1);
 
 $SEP = '\b|\b';
 
-#Récupérer la liste des lieux existants
-while (<DRAGONS>) {
-	if (/(\w+)( \[[^\]]* shape=box\])/) {
-		push @places, $1;
-	}
-}
-close DRAGONS;
-open DRAGONS, "./tmp/derniersDragons.gv" or die;
-
-#Lorsque lié à un lieu, ne pas aller chercher les nodes derrière celui-ci sauf lieu sélectionné dans le menu déroulant
 if ($buffer =~ /im=(\w+)/) {
+	#Récupérer la liste des lieux existants et des noeuds importants
+	while (<DRAGONS>) {
+		if (/(\w+) \[[^\]]*(shape=pentagon|fillcolor="#4daf4a"|label=Disciples|label=Dragons)[^\]]*\]/) {
+			push @big_nodes, $1;
+		}
+	}
+	close DRAGONS;
+	open DRAGONS, "./tmp/derniersDragons.gv" or die;
+
+	#Lorsque lié à un lieu, ne pas aller chercher les nodes derrière celui-ci sauf lieu sélectionné dans le menu déroulant
 	(@src) = <DRAGONS>;
 	$name = $1;
 	push @names, $name;
@@ -45,12 +45,12 @@ if ($buffer =~ /im=(\w+)/) {
 			$reg = '(\b'.join ($SEP, @names);
 			$reg .='\b) ?-- ?(\w+)';
 			foreach $tmp (@src) {
-				if ($tmp !~ /color/ and $tmp =~ /$reg/i and (';'.(join ";", @dnames).';') !~ /;$2;/) {
+				if ($tmp =~ /$reg/i and (';'.(join ";", @dnames).';') !~ /;$2;/) {
 					$foundname = grep { $_ eq $2 } @names;
-					if( grep { $_ eq $2 } @places){
-						$found = grep { $_ eq $2 } @selected_places;
+					if( grep { $_ eq $2 } @big_nodes){
+						$found = grep { $_ eq $2 } @selected_big_nodes;
 						if($found == 0){
-							push @selected_places, $2;
+							push @selected_big_nodes, $2;
 						}
 					} elsif($foundname == 0) {
 						push @dnames, $2;
@@ -64,12 +64,12 @@ if ($buffer =~ /im=(\w+)/) {
 			$reg = '(\w+) ?-- ?(\b'.join ($SEP, @names);
 			$reg .='\b)';
 			foreach $tmp (@src) {
-				if ($tmp !~ /color/ and $tmp =~ /$reg/i and (';'.(join ";", @anames).';') !~ /;$1;/) {
+				if ($tmp =~ /$reg/i and (';'.(join ";", @anames).';') !~ /;$1;/) {
 					$foundname = grep { $_ eq $1 } @names;
-					if( grep { $_ eq $1 } @places){
-						$found = grep { $_ eq $1 } @selected_places;
+					if( grep { $_ eq $1 } @big_nodes){
+						$found = grep { $_ eq $1 } @selected_big_nodes;
 						if($found == 0){
-							push @selected_places, $1;
+							push @selected_big_nodes, $1;
 						}
 					} elsif($foundname == 0) {
 						push @anames, $1;
@@ -79,14 +79,14 @@ if ($buffer =~ /im=(\w+)/) {
 		}
 		@names = (@anames, @dnames);
 	}
-	$is_name_a_place = grep { $_ eq $name } @places;
+	$is_name_a_place = grep { $_ eq $name } @big_nodes;
 	if($is_name_a_place != 0) {
-		 @names = (@names, @selected_places);
+		 @names = (@names, @selected_big_nodes);
 	}
 	close DRAGONS;
 	open DRAGONS, "./tmp/derniersDragons.gv";
 
-	my @nodes_linked;
+	my @nodes_linked_together;
 	$num_links=0;
 	while (<DRAGONS>) {
 		# Ajout des nodes
@@ -133,6 +133,7 @@ if ($buffer =~ /im=(\w+)/) {
 		$color = "black";
 
 		# Ajout des edges avec label ou couleur
+		# TODO A vérifier TODO
 		if (/(\w+) -- (\w+) \[(?:(label)=("[^\"]*"|[^ \]]*))? ?(?:(fillcolor)=("[^\"\[]*"|[^ \[]*))?/) {
 			$tmp = $_;
 			$node1 = $1;
@@ -142,15 +143,15 @@ if ($buffer =~ /im=(\w+)/) {
 			$fillcolor=$6;
 			if ($#names == -1 or ((';'.(join ";", @names).';') =~ /;$node1;/i and (';'.(join ";", @names).';') =~ /;$node2;/i)
 			or ($node1 =~/\d+/ and $node2 =~/\d+/)) {
-				$found_edge = grep { (@{ $_ }[0] eq $node1 and @{ $_ }[1] eq $node2) or (@{ $_ }[0] eq $node2 and @{ $_ }[1] eq $node1) } @nodes_linked;
+				$found_edge = grep { (@{ $_ }[0] eq $node1 and @{ $_ }[1] eq $node2) or (@{ $_ }[0] eq $node2 and @{ $_ }[1] eq $node1) } @nodes_linked_together;
 				if($found_edge==0){
-					$nodes_linked[$num_links]=[ ($node1, $node2) ];
+					$nodes_linked_together[$num_links]=[ ($node1, $node2) ];
 					$num_links++;
 					$fillcolor =~ s/"//g;
 					$labelname =~ s/"//g;
 					if($labelname==''){
 						$graph->add_edge(from => $node1, to => $node2, color => $fillcolor);
-					}
+					} 
 					elsif($fillcolor=='') {
 						$graph->add_edge(from => $node1, to => $node2, color => $color, $label => $labelname);
 					}
@@ -167,19 +168,85 @@ if ($buffer =~ /im=(\w+)/) {
 			$node2 = $2;
 			if ($#names == -1 or ((';'.(join ";", @names).';') =~ /;$node1;/i and (';'.(join ";", @names).';') =~ /;$node2;/i)
 			or ($node1 =~/\d+/ and $node2 =~/\d+/)) {
-				$found_edge = grep { (@{ $_ }[0] eq $node1 and @{ $_ }[1] eq $node2) or (@{ $_ }[0] eq $node2 and @{ $_ }[1] eq $node1) } @nodes_linked;
+				$found_edge = grep { (@{ $_ }[0] eq $node1 and @{ $_ }[1] eq $node2) or (@{ $_ }[0] eq $node2 and @{ $_ }[1] eq $node1) } @nodes_linked_together;
 				if($found_edge==0){
-					$nodes_linked[$num_links]=[ ($node1, $node2) ];
+					$nodes_linked_together[$num_links]=[ ($node1, $node2) ];
 					$num_links++;
 					$graph->add_edge(from => $node1, to => $node2, color => $color);
 				}
 			}
 		}
 	}
+	close DRAGONS;
 }
 else {
 	print("Interdiction d'afficher le graphe complet : c'est juste illisible :-)");
+
+	my @all_nodes_linked;
+	while (<DRAGONS>) {
+		# if (/(\w+)( \[[^\]]* peripheries=[1-2] shape=[^\]*\])/) {
+		# 	push @all_nodes, $1;
+		# }
+		if (/(\w+) -- (\w+) \[(?:(label)=("[^\"]*"|[^ \]]*))? ?(?:(fillcolor)=("[^\"\[]*"|[^ \[]*))?/){
+			$found = grep { $_ eq $1 } @all_nodes_linked;
+			if($found == 0){
+				push @all_nodes_linked, $1;
+			}
+			$found = grep { $_ eq $2 } @all_nodes_linked;
+			if($found == 0){
+				push @all_nodes_linked, $2;
+			}
+		}
+	}
+	close DRAGONS;
+
+	open DRAGONS, "./tmp/derniersDragons.gv";
+	while (<DRAGONS>) {
+		# Ajout des nodes
+		if(/(\w+) \[label=("[^\"]*"|[^ ]*) fillcolor=("[^\"]*"|[^ ]*) link="([^\"]*)" peripheries=([1-2]) shape=([^ ]*)\]/) {
+			$node = $1;
+			$label = $2;
+			$color=$3;
+			$url=$4;
+			$periph=$5;
+			$shape=$6;
+			$found = grep { $_ eq $node } @all_nodes_linked;
+			if($found == 0){
+				$url =~ s/ /_/g;
+				$url =~ s/'/.27/g;
+				$url =~ s/,/.2C/g;
+				$url =~ s/à/.C3.A0/g;
+				$url =~ s/â/.C3.A2/g;
+				$url =~ s/ä/.C3.A4/g;
+				$url =~ s/å/.C3.A5/g;
+				$url =~ s/ç/.C3.A7/g;
+				$url =~ s/è/.C3.A8/g;
+				$url =~ s/é/.C3.A9/g;
+				$url =~ s/ê/.C3.AA/g;
+				$url =~ s/ë/.C3.AB/g;
+				$url =~ s/î/.C3.AE/g;
+				$url =~ s/ï/.C3.AF/g;
+				$url =~ s/ô/.C3.B4/g;
+				$url =~ s/ù/.C3.B9/g;
+				$url =~ s/û/.C3.BB/g;
+				$url =~ s/ü/.C3.BC/g;
+				$url =~ s/Â/.C3.82/g;
+				$url =~ s/Ä/.C3.84/g;
+				$url =~ s/É/.C3.89/g;
+				$url =~ s/Î/.C3.8E/g;
+				$url =~ s/Ï/.C3.8F/g;
+				$url =~ s/Ô/.C3.94/g;
+				$url =~ s/Û/.C3.9B/g;
+				$url =~ s/Ü/.C3.9C/g;
+				$color =~ s/"//g;
+				$label =~ s/"//g;
+				$graph->add_node(name => $node, label => $label, shape => $shape, URL => $url, peripheries => $periph, fillcolor => $color, style => 'filled');
+			}
+		}
+	}
+	close DRAGONS;
 }
+
 # Génération du fichier SVG
 my($format)      = shift || 'svg';
 my($output_file) = shift || File::Spec -> catfile('./tmp/', "dragonstmp.$format");
