@@ -112,7 +112,11 @@ def retreive_main_table(url):
 
     tmp_table = []
     for row in table:
-        row = row.replace("\n</td>\n", "").replace("\n</td></tr>\n", "")
+        row = row\
+            .replace("</tbody>", "")\
+            .replace("</tr>", "")\
+            .replace("</td>", "") \
+            .replace("\n", "")
         row = row.split("<td>")
         row.pop(0)
         tmp_table.append(row)
