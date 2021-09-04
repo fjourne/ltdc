@@ -3,383 +3,6 @@
 <Document>
 	<name>Temps des cerises</name>
 	<open>1</open>
-	<Style id="sh_man">
-		<IconStyle>
-			<scale>1.4</scale>
-			<Icon>
-				<href>http://maps.google.com/mapfiles/kml/shapes/man.png</href>
-			</Icon>
-		</IconStyle>
-	</Style>
-	<Style id="s_ylw-pushpin_hl">
-		<IconStyle>
-			<scale>1.3</scale>
-			<Icon>
-				<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
-			</Icon>
-			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
-		</IconStyle>
-	</Style>
-	<Style id="sh_dragon_terre">
-		<IconStyle>
-			<scale>2.12727</scale>
-			<Icon>
-				<href>ressources/dragon_terre.png</href>
-			</Icon>
-		</IconStyle>
-	</Style>
-	<Style id="sn_man">
-		<IconStyle>
-			<scale>1.2</scale>
-			<Icon>
-				<href>http://maps.google.com/mapfiles/kml/shapes/man.png</href>
-			</Icon>
-		</IconStyle>
-	</Style>
-	<StyleMap id="msn_city">
-		<Pair>
-			<key>normal</key>
-			<styleUrl>#sn_city3</styleUrl>
-		</Pair>
-		<Pair>
-			<key>highlight</key>
-			<styleUrl>#sh_city2</styleUrl>
-		</Pair>
-	</StyleMap>
-	<Style id="sn_dragon_terre">
-		<IconStyle>
-			<scale>1.8</scale>
-			<Icon>
-				<href>ressources/dragon_terre.png</href>
-			</Icon>
-		</IconStyle>
-	</Style>
-	<StyleMap id="msn_man">
-		<Pair>
-			<key>normal</key>
-			<styleUrl>#sn_man1</styleUrl>
-		</Pair>
-		<Pair>
-			<key>highlight</key>
-			<styleUrl>#sh_man</styleUrl>
-		</Pair>
-	</StyleMap>
-	<StyleMap id="msn_city00">
-		<Pair>
-			<key>normal</key>
-			<styleUrl>#sn_city1</styleUrl>
-		</Pair>
-		<Pair>
-			<key>highlight</key>
-			<styleUrl>#sh_city0</styleUrl>
-		</Pair>
-	</StyleMap>
-	<Style id="sn_ylw-pushpin0">
-		<IconStyle>
-			<scale>1.1</scale>
-			<Icon>
-				<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
-			</Icon>
-			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
-		</IconStyle>
-		<LineStyle>
-			<width>2</width>
-		</LineStyle>
-	</Style>
-	<StyleMap id="msn_ylw-pushpin2">
-		<Pair>
-			<key>normal</key>
-			<styleUrl>#sn_ylw-pushpin3</styleUrl>
-		</Pair>
-		<Pair>
-			<key>highlight</key>
-			<styleUrl>#sh_ylw-pushpin20</styleUrl>
-		</Pair>
-	</StyleMap>
-	<Style id="sh_ylw-pushpin3">
-		<IconStyle>
-			<scale>1.3</scale>
-			<Icon>
-				<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
-			</Icon>
-			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
-		</IconStyle>
-		<PolyStyle>
-			<color>b3828282</color>
-			<outline>0</outline>
-		</PolyStyle>
-	</Style>
-	<StyleMap id="msn_ylw-pushpin">
-		<Pair>
-			<key>normal</key>
-			<styleUrl>#sn_ylw-pushpin4</styleUrl>
-		</Pair>
-		<Pair>
-			<key>highlight</key>
-			<styleUrl>#sh_ylw-pushpin4</styleUrl>
-		</Pair>
-	</StyleMap>
-	<Style id="sn_ylw-pushpin1">
-		<IconStyle>
-			<scale>1.1</scale>
-			<Icon>
-				<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
-			</Icon>
-			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
-		</IconStyle>
-		<LineStyle>
-			<color>ffff5500</color>
-			<width>2</width>
-		</LineStyle>
-	</Style>
-	<Style id="s_ylw-pushpin">
-		<IconStyle>
-			<scale>1.1</scale>
-			<Icon>
-				<href>ressources/city.png</href>
-			</Icon>
-			<hotSpot x="0.5" y="0.5" xunits="fraction" yunits="fraction"/>
-		</IconStyle>
-	</Style>
-	<Style id="sh_pjs">
-		<IconStyle>
-			<scale>2.12727</scale>
-			<Icon>
-				<href>ressources/pjs.png</href>
-			</Icon>
-		</IconStyle>
-	</Style>
-	<Style id="sn_city0">
-		<IconStyle>
-			<scale>2</scale>
-			<Icon>
-				<href>ressources/city.png</href>
-			</Icon>
-		</IconStyle>
-	</Style>
-	<Style id="sh_dragon_air">
-		<IconStyle>
-			<scale>2.12727</scale>
-			<Icon>
-				<href>ressources/dragon_air.png</href>
-			</Icon>
-		</IconStyle>
-	</Style>
-	<StyleMap id="msn_city0">
-		<Pair>
-			<key>normal</key>
-			<styleUrl>#sn_city2</styleUrl>
-		</Pair>
-		<Pair>
-			<key>highlight</key>
-			<styleUrl>#sh_city10</styleUrl>
-		</Pair>
-	</StyleMap>
-	<Style id="sh_volcan">
-		<IconStyle>
-			<scale>2.56667</scale>
-			<Icon>
-				<href>ressources/volcan.png</href>
-			</Icon>
-		</IconStyle>
-	</Style>
-	<Style id="sh_ylw-pushpin2">
-		<IconStyle>
-			<scale>1.3</scale>
-			<Icon>
-				<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
-			</Icon>
-			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
-		</IconStyle>
-		<LineStyle>
-			<width>2</width>
-		</LineStyle>
-	</Style>
-	<Style id="sh_coliseum">
-		<IconStyle>
-			<scale>1.75</scale>
-			<Icon>
-				<href>ressources/coliseum.png</href>
-			</Icon>
-			<hotSpot x="0.5" y="0.5" xunits="fraction" yunits="fraction"/>
-		</IconStyle>
-	</Style>
-	<Style id="sh_dragon_feu">
-		<IconStyle>
-			<scale>2.12727</scale>
-			<Icon>
-				<href>ressources/dragon_feu.png</href>
-			</Icon>
-		</IconStyle>
-	</Style>
-	<Style id="sn_pickaxe">
-		<IconStyle>
-			<scale>1.8</scale>
-			<Icon>
-				<href>D:/Documents/jdr/le_temps_des_cerises/ltdc/maps/earth/ressources/pickaxe.png</href>
-			</Icon>
-		</IconStyle>
-	</Style>
-	<Style id="sn_tipi">
-		<IconStyle>
-			<scale>1.2</scale>
-			<Icon>
-				<href>ressources/tipi.png</href>
-			</Icon>
-		</IconStyle>
-	</Style>
-	<StyleMap id="msn_ylw-pushpin0">
-		<Pair>
-			<key>normal</key>
-			<styleUrl>#sn_ylw-pushpin0</styleUrl>
-		</Pair>
-		<Pair>
-			<key>highlight</key>
-			<styleUrl>#sh_ylw-pushpin2</styleUrl>
-		</Pair>
-	</StyleMap>
-	<Style id="sn_city2">
-		<IconStyle>
-			<scale>2</scale>
-			<Icon>
-				<href>ressources/city.png</href>
-			</Icon>
-		</IconStyle>
-	</Style>
-	<Style id="sn_man0">
-		<IconStyle>
-			<scale>1.2</scale>
-			<Icon>
-				<href>http://maps.google.com/mapfiles/kml/shapes/man.png</href>
-			</Icon>
-		</IconStyle>
-	</Style>
-	<Style id="sn_Wolf">
-		<IconStyle>
-			<scale>1.2</scale>
-			<Icon>
-				<href>ressources/Wolf.png</href>
-			</Icon>
-		</IconStyle>
-	</Style>
-	<Style id="sn_dragon_eau">
-		<IconStyle>
-			<scale>1.8</scale>
-			<Icon>
-				<href>ressources/dragon_eau.png</href>
-			</Icon>
-		</IconStyle>
-	</Style>
-	<Style id="sn_man1">
-		<IconStyle>
-			<scale>1.2</scale>
-			<Icon>
-				<href>http://maps.google.com/mapfiles/kml/shapes/man.png</href>
-			</Icon>
-		</IconStyle>
-	</Style>
-	<Style id="s_ylw-pushpin_hl0">
-		<IconStyle>
-			<scale>1.3</scale>
-			<Icon>
-				<href>ressources/city.png</href>
-			</Icon>
-			<hotSpot x="0.5" y="0.5" xunits="fraction" yunits="fraction"/>
-		</IconStyle>
-	</Style>
-	<Style id="sh_lake">
-		<IconStyle>
-			<scale>1.3</scale>
-			<Icon>
-				<href>D:/Documents/jdr/le_temps_des_cerises/ltdc/maps/earth/ressources/lake.png</href>
-			</Icon>
-		</IconStyle>
-	</Style>
-	<StyleMap id="msn_city2">
-		<Pair>
-			<key>normal</key>
-			<styleUrl>#sn_city</styleUrl>
-		</Pair>
-		<Pair>
-			<key>highlight</key>
-			<styleUrl>#sh_city1</styleUrl>
-		</Pair>
-	</StyleMap>
-	<Style id="sn_ylw-pushpin00">
-		<IconStyle>
-			<scale>1.1</scale>
-			<Icon>
-				<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
-			</Icon>
-			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
-		</IconStyle>
-		<PolyStyle>
-			<color>b3828282</color>
-			<outline>0</outline>
-		</PolyStyle>
-	</Style>
-	<Style id="sh_city1">
-		<IconStyle>
-			<scale>2.12727</scale>
-			<Icon>
-				<href>ressources/city.png</href>
-			</Icon>
-		</IconStyle>
-	</Style>
-	<StyleMap id="msn_dragon_air">
-		<Pair>
-			<key>normal</key>
-			<styleUrl>#sn_dragon_air</styleUrl>
-		</Pair>
-		<Pair>
-			<key>highlight</key>
-			<styleUrl>#sh_dragon_air</styleUrl>
-		</Pair>
-	</StyleMap>
-	<StyleMap id="msn_ylw-pushpin1">
-		<Pair>
-			<key>normal</key>
-			<styleUrl>#sn_ylw-pushpin2</styleUrl>
-		</Pair>
-		<Pair>
-			<key>highlight</key>
-			<styleUrl>#sh_ylw-pushpin0</styleUrl>
-		</Pair>
-	</StyleMap>
-	<StyleMap id="msn_tipi0">
-		<Pair>
-			<key>normal</key>
-			<styleUrl>#sn_tipi</styleUrl>
-		</Pair>
-		<Pair>
-			<key>highlight</key>
-			<styleUrl>#sh_tipi0</styleUrl>
-		</Pair>
-	</StyleMap>
-	<Style id="sh_forest">
-		<IconStyle>
-			<scale>1.3</scale>
-			<Icon>
-				<href>D:/Documents/jdr/le_temps_des_cerises/ltdc/maps/earth/ressources/forest.png</href>
-			</Icon>
-		</IconStyle>
-	</Style>
-	<Style id="sn_pjs">
-		<IconStyle>
-			<scale>1.8</scale>
-			<Icon>
-				<href>ressources/pjs.png</href>
-			</Icon>
-		</IconStyle>
-	</Style>
-	<Style id="sh_city10">
-		<IconStyle>
-			<scale>2.33333</scale>
-			<Icon>
-				<href>ressources/city.png</href>
-			</Icon>
-		</IconStyle>
-	</Style>
 	<Style id="sh_tipi0">
 		<IconStyle>
 			<scale>1.4</scale>
@@ -388,141 +11,16 @@
 			</Icon>
 		</IconStyle>
 	</Style>
-	<Style id="sh_city2">
-		<IconStyle>
-			<scale>2.12727</scale>
-			<Icon>
-				<href>ressources/city.png</href>
-			</Icon>
-		</IconStyle>
-	</Style>
-	<Style id="sn_city1">
-		<IconStyle>
-			<scale>1.2</scale>
-			<Icon>
-				<href>ressources/city.png</href>
-			</Icon>
-		</IconStyle>
-	</Style>
-	<StyleMap id="msn_ylw-pushpin00">
+	<StyleMap id="m_ylw-pushpin0">
 		<Pair>
 			<key>normal</key>
-			<styleUrl>#sn_ylw-pushpin1</styleUrl>
-		</Pair>
-		<Pair>
-			<key>highlight</key>
-			<styleUrl>#sh_ylw-pushpin1</styleUrl>
-		</Pair>
-	</StyleMap>
-	<Style id="sh_Wolf">
-		<IconStyle>
-			<scale>1.4</scale>
-			<Icon>
-				<href>ressources/Wolf.png</href>
-			</Icon>
-		</IconStyle>
-	</Style>
-	<Style id="sh_city">
-		<IconStyle>
-			<scale>2.33333</scale>
-			<Icon>
-				<href>ressources/city.png</href>
-			</Icon>
-		</IconStyle>
-	</Style>
-	<StyleMap id="msn_dragon_eau">
-		<Pair>
-			<key>normal</key>
-			<styleUrl>#sn_dragon_eau</styleUrl>
-		</Pair>
-		<Pair>
-			<key>highlight</key>
-			<styleUrl>#sh_dragon_eau</styleUrl>
-		</Pair>
-	</StyleMap>
-	<StyleMap id="m_ylw-pushpin">
-		<Pair>
-			<key>normal</key>
-			<styleUrl>#s_ylw-pushpin0</styleUrl>
+			<styleUrl>#s_ylw-pushpin3</styleUrl>
 		</Pair>
 		<Pair>
 			<key>highlight</key>
 			<styleUrl>#s_ylw-pushpin_hl</styleUrl>
 		</Pair>
 	</StyleMap>
-	<Style id="sn_ylw-pushpin">
-		<IconStyle>
-			<scale>1.1</scale>
-			<Icon>
-				<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
-			</Icon>
-			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
-		</IconStyle>
-		<LineStyle>
-			<width>2</width>
-		</LineStyle>
-	</Style>
-	<StyleMap id="msn_tipi">
-		<Pair>
-			<key>normal</key>
-			<styleUrl>#sn_tipi0</styleUrl>
-		</Pair>
-		<Pair>
-			<key>highlight</key>
-			<styleUrl>#sh_tipi</styleUrl>
-		</Pair>
-	</StyleMap>
-	<StyleMap id="msn_city1">
-		<Pair>
-			<key>normal</key>
-			<styleUrl>#sn_city4</styleUrl>
-		</Pair>
-		<Pair>
-			<key>highlight</key>
-			<styleUrl>#sh_city3</styleUrl>
-		</Pair>
-	</StyleMap>
-	<Style id="sn_ylw-pushpin01">
-		<IconStyle>
-			<scale>1.1</scale>
-			<Icon>
-				<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
-			</Icon>
-			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
-		</IconStyle>
-		<PolyStyle>
-			<color>b3828282</color>
-			<outline>0</outline>
-		</PolyStyle>
-	</Style>
-	<StyleMap id="msn_pjs">
-		<Pair>
-			<key>normal</key>
-			<styleUrl>#sn_pjs</styleUrl>
-		</Pair>
-		<Pair>
-			<key>highlight</key>
-			<styleUrl>#sh_pjs</styleUrl>
-		</Pair>
-	</StyleMap>
-	<StyleMap id="msn_volcan">
-		<Pair>
-			<key>normal</key>
-			<styleUrl>#sn_volcan</styleUrl>
-		</Pair>
-		<Pair>
-			<key>highlight</key>
-			<styleUrl>#sh_volcan</styleUrl>
-		</Pair>
-	</StyleMap>
-	<Style id="sn_city3">
-		<IconStyle>
-			<scale>1.8</scale>
-			<Icon>
-				<href>ressources/city.png</href>
-			</Icon>
-		</IconStyle>
-	</Style>
 	<Style id="sn_lake">
 		<IconStyle>
 			<scale>1.1</scale>
@@ -541,9 +39,79 @@
 			<styleUrl>#sh_forest</styleUrl>
 		</Pair>
 	</StyleMap>
-	<Style id="sn_ylw-pushpin3">
+	<Style id="s_ylw-pushpin3">
 		<IconStyle>
 			<scale>1.1</scale>
+			<Icon>
+				<href>D:/Documents/jdr/le_temps_des_cerises/ltdc/maps/earth/ressources/city.png</href>
+			</Icon>
+			<hotSpot x="0.5" y="0.5" xunits="fraction" yunits="fraction"/>
+		</IconStyle>
+	</Style>
+	<Style id="sn_ylw-pushpin40">
+		<IconStyle>
+			<scale>1.1</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+			</Icon>
+			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+		<LineStyle>
+			<width>2</width>
+		</LineStyle>
+	</Style>
+	<StyleMap id="msn_dragon_feu">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#sn_dragon_feu</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#sh_dragon_feu</styleUrl>
+		</Pair>
+	</StyleMap>
+	<Style id="sh_ylw-pushpin30">
+		<IconStyle>
+			<scale>1.3</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+			</Icon>
+			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+		<PolyStyle>
+			<color>b3828282</color>
+			<outline>0</outline>
+		</PolyStyle>
+	</Style>
+	<Style id="sh_dragon_feu">
+		<IconStyle>
+			<scale>2.12727</scale>
+			<Icon>
+				<href>ressources/dragon_feu.png</href>
+			</Icon>
+		</IconStyle>
+	</Style>
+	<Style id="sn_city3">
+		<IconStyle>
+			<scale>1.8</scale>
+			<Icon>
+				<href>ressources/city.png</href>
+			</Icon>
+		</IconStyle>
+	</Style>
+	<StyleMap id="msn_ylw-pushpin00">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#sn_ylw-pushpin1</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#sh_ylw-pushpin1</styleUrl>
+		</Pair>
+	</StyleMap>
+	<Style id="sh_ylw-pushpin20">
+		<IconStyle>
+			<scale>1.3</scale>
 			<Icon>
 				<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
 			</Icon>
@@ -554,23 +122,406 @@
 			<width>2</width>
 		</LineStyle>
 	</Style>
-	<StyleMap id="m_ylw-pushpin0">
+	<StyleMap id="msn_ylw-pushpin4">
 		<Pair>
 			<key>normal</key>
-			<styleUrl>#s_ylw-pushpin</styleUrl>
+			<styleUrl>#sn_ylw-pushpin</styleUrl>
 		</Pair>
 		<Pair>
 			<key>highlight</key>
-			<styleUrl>#s_ylw-pushpin_hl0</styleUrl>
+			<styleUrl>#sh_ylw-pushpin</styleUrl>
 		</Pair>
 	</StyleMap>
-	<Style id="sn_coliseum">
+	<Style id="s_ylw-pushpin2">
 		<IconStyle>
-			<scale>1.5</scale>
+			<scale>1.1</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+			</Icon>
+			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+	</Style>
+	<Style id="sn_Wolf">
+		<IconStyle>
+			<scale>1.2</scale>
+			<Icon>
+				<href>ressources/Wolf.png</href>
+			</Icon>
+		</IconStyle>
+	</Style>
+	<Style id="sn_city4">
+		<IconStyle>
+			<scale>1.8</scale>
+			<Icon>
+				<href>D:/Documents/jdr/le_temps_des_cerises/ltdc/maps/earth/ressources/city.png</href>
+			</Icon>
+		</IconStyle>
+	</Style>
+	<Style id="sh_tipi">
+		<IconStyle>
+			<scale>1.4</scale>
+			<Icon>
+				<href>ressources/tipi.png</href>
+			</Icon>
+		</IconStyle>
+	</Style>
+	<Style id="sh_city1">
+		<IconStyle>
+			<scale>2.12727</scale>
+			<Icon>
+				<href>ressources/city.png</href>
+			</Icon>
+		</IconStyle>
+	</Style>
+	<Style id="s_ylw-pushpin_hl2">
+		<IconStyle>
+			<scale>1.3</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+			</Icon>
+			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+	</Style>
+	<Style id="sh_pickaxe">
+		<IconStyle>
+			<scale>2.12727</scale>
+			<Icon>
+				<href>D:/Documents/jdr/le_temps_des_cerises/ltdc/maps/earth/ressources/pickaxe.png</href>
+			</Icon>
+		</IconStyle>
+	</Style>
+	<Style id="sn_man1">
+		<IconStyle>
+			<scale>1.2</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/shapes/man.png</href>
+			</Icon>
+		</IconStyle>
+	</Style>
+	<Style id="sh_homegardenbusiness">
+		<IconStyle>
+			<scale>1.4</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/shapes/homegardenbusiness.png</href>
+			</Icon>
+			<hotSpot x="0.5" y="0" xunits="fraction" yunits="fraction"/>
+		</IconStyle>
+	</Style>
+	<Style id="sn_pjs">
+		<IconStyle>
+			<scale>1.8</scale>
+			<Icon>
+				<href>ressources/pjs.png</href>
+			</Icon>
+		</IconStyle>
+	</Style>
+	<Style id="sn_tipi">
+		<IconStyle>
+			<scale>1.2</scale>
+			<Icon>
+				<href>ressources/tipi.png</href>
+			</Icon>
+		</IconStyle>
+	</Style>
+	<StyleMap id="msn_tipi0">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#sn_tipi</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#sh_tipi0</styleUrl>
+		</Pair>
+	</StyleMap>
+	<Style id="s_ylw-pushpin">
+		<IconStyle>
+			<scale>1.1</scale>
+			<Icon>
+				<href>D:/Documents/jdr/le_temps_des_cerises/ltdc/maps/earth/ressources/castle.png</href>
+			</Icon>
+			<hotSpot x="0.5" y="0.5" xunits="fraction" yunits="fraction"/>
+		</IconStyle>
+	</Style>
+	<StyleMap id="msn_ylw-pushpin20">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#sn_ylw-pushpin3</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#sh_ylw-pushpin20</styleUrl>
+		</Pair>
+	</StyleMap>
+	<Style id="sn_city1">
+		<IconStyle>
+			<scale>1.2</scale>
+			<Icon>
+				<href>ressources/city.png</href>
+			</Icon>
+		</IconStyle>
+	</Style>
+	<StyleMap id="msn_city">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#sn_city0</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#sh_city</styleUrl>
+		</Pair>
+	</StyleMap>
+	<Style id="sh_ylw-pushpin2">
+		<IconStyle>
+			<scale>1.3</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+			</Icon>
+			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+		<LineStyle>
+			<width>2</width>
+		</LineStyle>
+	</Style>
+	<Style id="sh_volcan">
+		<IconStyle>
+			<scale>2.56667</scale>
+			<Icon>
+				<href>ressources/volcan.png</href>
+			</Icon>
+		</IconStyle>
+	</Style>
+	<Style id="sn_ylw-pushpin4">
+		<IconStyle>
+			<scale>1.1</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+			</Icon>
+			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+		<LineStyle>
+			<width>2</width>
+		</LineStyle>
+	</Style>
+	<Style id="sh_ylw-pushpin1">
+		<IconStyle>
+			<scale>1.3</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+			</Icon>
+			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+		<LineStyle>
+			<color>ffff5500</color>
+			<width>2</width>
+		</LineStyle>
+	</Style>
+	<Style id="sh_city">
+		<IconStyle>
+			<scale>2.12727</scale>
+			<Icon>
+				<href>ressources/city.png</href>
+			</Icon>
+		</IconStyle>
+		<BalloonStyle>
+		</BalloonStyle>
+	</Style>
+	<StyleMap id="m_ylw-pushpin00">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#s_ylw-pushpin1</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#s_ylw-pushpin_hl00</styleUrl>
+		</Pair>
+	</StyleMap>
+	<Style id="sn_pickaxe">
+		<IconStyle>
+			<scale>1.8</scale>
+			<Icon>
+				<href>D:/Documents/jdr/le_temps_des_cerises/ltdc/maps/earth/ressources/pickaxe.png</href>
+			</Icon>
+		</IconStyle>
+	</Style>
+	<StyleMap id="msn_dragon_eau">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#sn_dragon_eau</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#sh_dragon_eau</styleUrl>
+		</Pair>
+	</StyleMap>
+	<StyleMap id="msn_ylw-pushpin">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#sn_ylw-pushpin40</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#sh_ylw-pushpin40</styleUrl>
+		</Pair>
+	</StyleMap>
+	<Style id="s_ylw-pushpin00">
+		<IconStyle>
+			<scale>1.1</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+			</Icon>
+			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+	</Style>
+	<Style id="sh_dragon_terre">
+		<IconStyle>
+			<scale>2.12727</scale>
+			<Icon>
+				<href>ressources/dragon_terre.png</href>
+			</Icon>
+		</IconStyle>
+		<BalloonStyle>
+		</BalloonStyle>
+	</Style>
+	<Style id="sh_coliseum">
+		<IconStyle>
+			<scale>1.75</scale>
 			<Icon>
 				<href>ressources/coliseum.png</href>
 			</Icon>
 			<hotSpot x="0.5" y="0.5" xunits="fraction" yunits="fraction"/>
+		</IconStyle>
+	</Style>
+	<StyleMap id="msn_city00">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#sn_city1</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#sh_city00</styleUrl>
+		</Pair>
+	</StyleMap>
+	<Style id="sh_dragon_eau">
+		<IconStyle>
+			<scale>2.12727</scale>
+			<Icon>
+				<href>ressources/dragon_eau.png</href>
+			</Icon>
+		</IconStyle>
+	</Style>
+	<StyleMap id="msn_volcan">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#sn_volcan</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#sh_volcan</styleUrl>
+		</Pair>
+	</StyleMap>
+	<Style id="s_ylw-pushpin_hl0">
+		<IconStyle>
+			<scale>1.3</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+			</Icon>
+			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+	</Style>
+	<Style id="sn_ylw-pushpin00">
+		<IconStyle>
+			<scale>1.1</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+			</Icon>
+			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+		<PolyStyle>
+			<color>b3828282</color>
+			<outline>0</outline>
+		</PolyStyle>
+	</Style>
+	<StyleMap id="msn_coliseum">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#sn_coliseum</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#sh_coliseum0</styleUrl>
+		</Pair>
+	</StyleMap>
+	<Style id="sn_man0">
+		<IconStyle>
+			<scale>1.2</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/shapes/man.png</href>
+			</Icon>
+		</IconStyle>
+	</Style>
+	<StyleMap id="msn_city2">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#sn_city5</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#sh_city10</styleUrl>
+		</Pair>
+	</StyleMap>
+	<Style id="sh_city10">
+		<IconStyle>
+			<scale>2.12727</scale>
+			<Icon>
+				<href>ressources/city.png</href>
+			</Icon>
+		</IconStyle>
+	</Style>
+	<StyleMap id="msn_city0">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#sn_city2</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#sh_city100</styleUrl>
+		</Pair>
+	</StyleMap>
+	<Style id="s_ylw-pushpin0">
+		<IconStyle>
+			<scale>1.1</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+			</Icon>
+			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+	</Style>
+	<StyleMap id="msn_man1">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#sn_man</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#sh_man00</styleUrl>
+		</Pair>
+	</StyleMap>
+	<StyleMap id="msn_dragon_air">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#sn_dragon_air</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#sh_dragon_air</styleUrl>
+		</Pair>
+	</StyleMap>
+	<Style id="sn_city">
+		<IconStyle>
+			<scale>1.8</scale>
+			<Icon>
+				<href>ressources/city.png</href>
+			</Icon>
 		</IconStyle>
 	</Style>
 	<StyleMap id="msn_ylw-pushpin3">
@@ -591,22 +542,58 @@
 			</Icon>
 		</IconStyle>
 	</Style>
-	<Style id="sn_forest">
+	<Style id="s_ylw-pushpin_hl">
+		<IconStyle>
+			<scale>1.3</scale>
+			<Icon>
+				<href>D:/Documents/jdr/le_temps_des_cerises/ltdc/maps/earth/ressources/city.png</href>
+			</Icon>
+			<hotSpot x="0.5" y="0.5" xunits="fraction" yunits="fraction"/>
+		</IconStyle>
+	</Style>
+	<Style id="sn_ylw-pushpin1">
 		<IconStyle>
 			<scale>1.1</scale>
 			<Icon>
-				<href>D:/Documents/jdr/le_temps_des_cerises/ltdc/maps/earth/ressources/forest.png</href>
+				<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
 			</Icon>
+			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
 		</IconStyle>
+		<LineStyle>
+			<color>ffff5500</color>
+			<width>2</width>
+		</LineStyle>
 	</Style>
-	<Style id="sn_tipi0">
+	<Style id="sn_dragon_feu">
 		<IconStyle>
-			<scale>1.2</scale>
+			<scale>1.8</scale>
 			<Icon>
-				<href>ressources/tipi.png</href>
+				<href>ressources/dragon_feu.png</href>
 			</Icon>
 		</IconStyle>
 	</Style>
+	<Style id="sh_ylw-pushpin4">
+		<IconStyle>
+			<scale>1.3</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+			</Icon>
+			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+		<LineStyle>
+			<width>2</width>
+		</LineStyle>
+	</Style>
+	<StyleMap id="m_ylw-pushpin">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#s_ylw-pushpin2</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#s_ylw-pushpin_hl2</styleUrl>
+		</Pair>
+	</StyleMap>
 	<Style id="sh_ylw-pushpin0">
 		<IconStyle>
 			<scale>1.3</scale>
@@ -620,26 +607,23 @@
 			<width>2</width>
 		</LineStyle>
 	</Style>
-	<StyleMap id="msn_pickaxe">
-		<Pair>
-			<key>normal</key>
-			<styleUrl>#sn_pickaxe</styleUrl>
-		</Pair>
-		<Pair>
-			<key>highlight</key>
-			<styleUrl>#sh_pickaxe</styleUrl>
-		</Pair>
-	</StyleMap>
-	<StyleMap id="msn_man10">
-		<Pair>
-			<key>normal</key>
-			<styleUrl>#sn_man0</styleUrl>
-		</Pair>
-		<Pair>
-			<key>highlight</key>
-			<styleUrl>#sh_man0</styleUrl>
-		</Pair>
-	</StyleMap>
+	<Style id="sh_Wolf">
+		<IconStyle>
+			<scale>1.4</scale>
+			<Icon>
+				<href>ressources/Wolf.png</href>
+			</Icon>
+		</IconStyle>
+	</Style>
+	<Style id="s_ylw-pushpin_hl1">
+		<IconStyle>
+			<scale>1.3</scale>
+			<Icon>
+				<href>D:/Documents/jdr/le_temps_des_cerises/ltdc/maps/earth/ressources/castle.png</href>
+			</Icon>
+			<hotSpot x="0.5" y="0.5" xunits="fraction" yunits="fraction"/>
+		</IconStyle>
+	</Style>
 	<Style id="sn_ylw-pushpin2">
 		<IconStyle>
 			<scale>1.1</scale>
@@ -653,21 +637,252 @@
 			<width>2</width>
 		</LineStyle>
 	</Style>
-	<StyleMap id="msn_ylw-pushpin4">
+	<StyleMap id="msn_city1">
 		<Pair>
 			<key>normal</key>
-			<styleUrl>#sn_ylw-pushpin</styleUrl>
+			<styleUrl>#sn_city3</styleUrl>
 		</Pair>
 		<Pair>
 			<key>highlight</key>
-			<styleUrl>#sh_ylw-pushpin</styleUrl>
+			<styleUrl>#sh_city2</styleUrl>
 		</Pair>
 	</StyleMap>
-	<Style id="sh_pickaxe">
+	<Style id="sh_lake">
+		<IconStyle>
+			<scale>1.3</scale>
+			<Icon>
+				<href>D:/Documents/jdr/le_temps_des_cerises/ltdc/maps/earth/ressources/lake.png</href>
+			</Icon>
+		</IconStyle>
+	</Style>
+	<Style id="sn_tipi0">
+		<IconStyle>
+			<scale>1.2</scale>
+			<Icon>
+				<href>ressources/tipi.png</href>
+			</Icon>
+		</IconStyle>
+	</Style>
+	<Style id="sh_man">
+		<IconStyle>
+			<scale>1.4</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/shapes/man.png</href>
+			</Icon>
+		</IconStyle>
+	</Style>
+	<StyleMap id="msn_homegardenbusiness">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#sn_homegardenbusiness</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#sh_homegardenbusiness</styleUrl>
+		</Pair>
+	</StyleMap>
+	<Style id="sn_ylw-pushpin">
+		<IconStyle>
+			<scale>1.1</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+			</Icon>
+			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+		<LineStyle>
+			<width>2</width>
+		</LineStyle>
+	</Style>
+	<Style id="s_ylw-pushpin_hl00">
+		<IconStyle>
+			<scale>1.3</scale>
+			<Icon>
+				<href>ressources/city.png</href>
+			</Icon>
+			<hotSpot x="0.5" y="0.5" xunits="fraction" yunits="fraction"/>
+		</IconStyle>
+	</Style>
+	<Style id="sn_city0">
+		<IconStyle>
+			<scale>1.8</scale>
+			<Icon>
+				<href>ressources/city.png</href>
+			</Icon>
+		</IconStyle>
+		<BalloonStyle>
+		</BalloonStyle>
+	</Style>
+	<Style id="sn_volcan">
+		<IconStyle>
+			<scale>2.2</scale>
+			<Icon>
+				<href>ressources/volcan.png</href>
+			</Icon>
+		</IconStyle>
+	</Style>
+	<Style id="sn_forest">
+		<IconStyle>
+			<scale>1.1</scale>
+			<Icon>
+				<href>D:/Documents/jdr/le_temps_des_cerises/ltdc/maps/earth/ressources/forest.png</href>
+			</Icon>
+		</IconStyle>
+	</Style>
+	<StyleMap id="msn_ylw-pushpin30">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#sn_ylw-pushpin01</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#sh_ylw-pushpin3</styleUrl>
+		</Pair>
+	</StyleMap>
+	<Style id="sn_man">
+		<IconStyle>
+			<scale>1.2</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/shapes/man.png</href>
+			</Icon>
+		</IconStyle>
+	</Style>
+	<StyleMap id="msn_man">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#sn_man1</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#sh_man</styleUrl>
+		</Pair>
+	</StyleMap>
+	<StyleMap id="msn_dragon_terre">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#sn_dragon_terre</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#sh_dragon_terre</styleUrl>
+		</Pair>
+	</StyleMap>
+	<Style id="sh_city0">
+		<IconStyle>
+			<scale>2.33333</scale>
+			<Icon>
+				<href>ressources/city.png</href>
+			</Icon>
+		</IconStyle>
+	</Style>
+	<StyleMap id="msn_lake">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#sn_lake</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#sh_lake</styleUrl>
+		</Pair>
+	</StyleMap>
+	<Style id="sn_ylw-pushpin01">
+		<IconStyle>
+			<scale>1.1</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+			</Icon>
+			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+		<PolyStyle>
+			<color>b3828282</color>
+			<outline>0</outline>
+		</PolyStyle>
+	</Style>
+	<StyleMap id="msn_ylw-pushpin0">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#sn_ylw-pushpin0</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#sh_ylw-pushpin2</styleUrl>
+		</Pair>
+	</StyleMap>
+	<Style id="sh_city3">
 		<IconStyle>
 			<scale>2.12727</scale>
 			<Icon>
-				<href>D:/Documents/jdr/le_temps_des_cerises/ltdc/maps/earth/ressources/pickaxe.png</href>
+				<href>D:/Documents/jdr/le_temps_des_cerises/ltdc/maps/earth/ressources/city.png</href>
+			</Icon>
+		</IconStyle>
+	</Style>
+	<StyleMap id="msn_pickaxe">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#sn_pickaxe</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#sh_pickaxe</styleUrl>
+		</Pair>
+	</StyleMap>
+	<Style id="s_ylw-pushpin_hl10">
+		<IconStyle>
+			<scale>1.3</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+			</Icon>
+			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+	</Style>
+	<Style id="sh_city00">
+		<IconStyle>
+			<scale>1.4</scale>
+			<Icon>
+				<href>ressources/city.png</href>
+			</Icon>
+		</IconStyle>
+	</Style>
+	<Style id="sh_coliseum0">
+		<IconStyle>
+			<scale>1.75</scale>
+			<Icon>
+				<href>ressources/coliseum.png</href>
+			</Icon>
+		</IconStyle>
+	</Style>
+	<StyleMap id="msn_tipi">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#sn_tipi0</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#sh_tipi</styleUrl>
+		</Pair>
+	</StyleMap>
+	<Style id="sh_city100">
+		<IconStyle>
+			<scale>2.33333</scale>
+			<Icon>
+				<href>ressources/city.png</href>
+			</Icon>
+		</IconStyle>
+	</Style>
+	<StyleMap id="msn_city10">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#sn_city4</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#sh_city3</styleUrl>
+		</Pair>
+	</StyleMap>
+	<Style id="sn_city00">
+		<IconStyle>
+			<scale>2</scale>
+			<Icon>
+				<href>ressources/city.png</href>
 			</Icon>
 		</IconStyle>
 	</Style>
@@ -679,7 +894,17 @@
 			</Icon>
 		</IconStyle>
 	</Style>
-	<Style id="sn_ylw-pushpin4">
+	<StyleMap id="msn_ylw-pushpin2">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#sn_ylw-pushpin4</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#sh_ylw-pushpin4</styleUrl>
+		</Pair>
+	</StyleMap>
+	<Style id="sn_ylw-pushpin0">
 		<IconStyle>
 			<scale>1.1</scale>
 			<Icon>
@@ -687,11 +912,18 @@
 			</Icon>
 			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
 		</IconStyle>
-		<BalloonStyle>
-		</BalloonStyle>
 		<LineStyle>
 			<width>2</width>
 		</LineStyle>
+	</Style>
+	<Style id="s_ylw-pushpin1">
+		<IconStyle>
+			<scale>1.1</scale>
+			<Icon>
+				<href>ressources/city.png</href>
+			</Icon>
+			<hotSpot x="0.5" y="0.5" xunits="fraction" yunits="fraction"/>
+		</IconStyle>
 	</Style>
 	<Style id="sh_man0">
 		<IconStyle>
@@ -701,7 +933,17 @@
 			</Icon>
 		</IconStyle>
 	</Style>
-	<Style id="sh_ylw-pushpin30">
+	<StyleMap id="msn_pjs">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#sn_pjs</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#sh_pjs</styleUrl>
+		</Pair>
+	</StyleMap>
+	<Style id="sh_ylw-pushpin3">
 		<IconStyle>
 			<scale>1.3</scale>
 			<Icon>
@@ -714,14 +956,74 @@
 			<outline>0</outline>
 		</PolyStyle>
 	</Style>
-	<StyleMap id="msn_man1">
+	<StyleMap id="msn_coliseum0">
 		<Pair>
 			<key>normal</key>
-			<styleUrl>#sn_man</styleUrl>
+			<styleUrl>#sn_coliseum0</styleUrl>
 		</Pair>
 		<Pair>
 			<key>highlight</key>
-			<styleUrl>#sh_man00</styleUrl>
+			<styleUrl>#sh_coliseum</styleUrl>
+		</Pair>
+	</StyleMap>
+	<Style id="sn_ylw-pushpin3">
+		<IconStyle>
+			<scale>1.1</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+			</Icon>
+			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+		<LineStyle>
+			<color>ffff5500</color>
+			<width>2</width>
+		</LineStyle>
+	</Style>
+	<StyleMap id="msn_ylw-pushpin1">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#sn_ylw-pushpin2</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#sh_ylw-pushpin0</styleUrl>
+		</Pair>
+	</StyleMap>
+	<Style id="sn_city2">
+		<IconStyle>
+			<scale>2</scale>
+			<Icon>
+				<href>ressources/city.png</href>
+			</Icon>
+		</IconStyle>
+	</Style>
+	<Style id="sn_coliseum0">
+		<IconStyle>
+			<scale>1.5</scale>
+			<Icon>
+				<href>ressources/coliseum.png</href>
+			</Icon>
+			<hotSpot x="0.5" y="0.5" xunits="fraction" yunits="fraction"/>
+		</IconStyle>
+	</Style>
+	<StyleMap id="m_ylw-pushpin1">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#s_ylw-pushpin0</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#s_ylw-pushpin_hl10</styleUrl>
+		</Pair>
+	</StyleMap>
+	<StyleMap id="msn_Wolf">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#sn_Wolf</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#sh_Wolf</styleUrl>
 		</Pair>
 	</StyleMap>
 	<Style id="sh_ylw-pushpin">
@@ -736,199 +1038,208 @@
 			<width>2</width>
 		</LineStyle>
 	</Style>
-	<Style id="s_ylw-pushpin0">
+	<StyleMap id="msn_man10">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#sn_man0</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#sh_man0</styleUrl>
+		</Pair>
+	</StyleMap>
+	<Style id="sh_forest">
 		<IconStyle>
-			<scale>1.1</scale>
+			<scale>1.3</scale>
 			<Icon>
-				<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+				<href>D:/Documents/jdr/le_temps_des_cerises/ltdc/maps/earth/ressources/forest.png</href>
 			</Icon>
-			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
 		</IconStyle>
 	</Style>
-	<Style id="sh_city0">
+	<Style id="sn_dragon_terre">
 		<IconStyle>
-			<scale>1.4</scale>
+			<scale>1.8</scale>
+			<Icon>
+				<href>ressources/dragon_terre.png</href>
+			</Icon>
+		</IconStyle>
+		<BalloonStyle>
+		</BalloonStyle>
+	</Style>
+	<Style id="sn_city5">
+		<IconStyle>
+			<scale>1.8</scale>
 			<Icon>
 				<href>ressources/city.png</href>
 			</Icon>
 		</IconStyle>
 	</Style>
-	<Style id="sh_ylw-pushpin1">
-		<IconStyle>
-			<scale>1.3</scale>
-			<Icon>
-				<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
-			</Icon>
-			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
-		</IconStyle>
-		<LineStyle>
-			<color>ffff5500</color>
-			<width>2</width>
-		</LineStyle>
-	</Style>
-	<StyleMap id="msn_coliseum">
+	<StyleMap id="m_ylw-pushpin2">
 		<Pair>
 			<key>normal</key>
-			<styleUrl>#sn_coliseum</styleUrl>
+			<styleUrl>#s_ylw-pushpin</styleUrl>
 		</Pair>
 		<Pair>
 			<key>highlight</key>
-			<styleUrl>#sh_coliseum</styleUrl>
+			<styleUrl>#s_ylw-pushpin_hl1</styleUrl>
 		</Pair>
 	</StyleMap>
-	<Style id="sh_ylw-pushpin20">
+	<Style id="sn_coliseum">
 		<IconStyle>
-			<scale>1.3</scale>
+			<scale>1.5</scale>
 			<Icon>
-				<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
-			</Icon>
-			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
-		</IconStyle>
-		<LineStyle>
-			<color>ffff5500</color>
-			<width>2</width>
-		</LineStyle>
-	</Style>
-	<StyleMap id="msn_ylw-pushpin30">
-		<Pair>
-			<key>normal</key>
-			<styleUrl>#sn_ylw-pushpin01</styleUrl>
-		</Pair>
-		<Pair>
-			<key>highlight</key>
-			<styleUrl>#sh_ylw-pushpin3</styleUrl>
-		</Pair>
-	</StyleMap>
-	<Style id="sn_dragon_feu">
-		<IconStyle>
-			<scale>1.8</scale>
-			<Icon>
-				<href>ressources/dragon_feu.png</href>
+				<href>ressources/coliseum.png</href>
 			</Icon>
 		</IconStyle>
 	</Style>
-	<StyleMap id="msn_lake">
-		<Pair>
-			<key>normal</key>
-			<styleUrl>#sn_lake</styleUrl>
-		</Pair>
-		<Pair>
-			<key>highlight</key>
-			<styleUrl>#sh_lake</styleUrl>
-		</Pair>
-	</StyleMap>
-	<StyleMap id="msn_Wolf">
-		<Pair>
-			<key>normal</key>
-			<styleUrl>#sn_Wolf</styleUrl>
-		</Pair>
-		<Pair>
-			<key>highlight</key>
-			<styleUrl>#sh_Wolf</styleUrl>
-		</Pair>
-	</StyleMap>
-	<Style id="sh_dragon_eau">
+	<Style id="sn_homegardenbusiness">
+		<IconStyle>
+			<scale>1.2</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/shapes/homegardenbusiness.png</href>
+			</Icon>
+			<hotSpot x="0.5" y="0" xunits="fraction" yunits="fraction"/>
+		</IconStyle>
+	</Style>
+	<Style id="sh_dragon_air">
 		<IconStyle>
 			<scale>2.12727</scale>
+			<Icon>
+				<href>ressources/dragon_air.png</href>
+			</Icon>
+		</IconStyle>
+	</Style>
+	<Style id="sh_ylw-pushpin40">
+		<IconStyle>
+			<scale>1.3</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+			</Icon>
+			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+		<LineStyle>
+			<width>2</width>
+		</LineStyle>
+	</Style>
+	<StyleMap id="m_ylw-pushpin10">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#s_ylw-pushpin00</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#s_ylw-pushpin_hl0</styleUrl>
+		</Pair>
+	</StyleMap>
+	<StyleMap id="msn_city20">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#sn_city</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#sh_city1</styleUrl>
+		</Pair>
+	</StyleMap>
+	<Style id="sh_pjs">
+		<IconStyle>
+			<scale>2.12727</scale>
+			<Icon>
+				<href>ressources/pjs.png</href>
+			</Icon>
+		</IconStyle>
+	</Style>
+	<StyleMap id="msn_city100">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#sn_city00</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#sh_city0</styleUrl>
+		</Pair>
+	</StyleMap>
+	<Style id="sn_dragon_eau">
+		<IconStyle>
+			<scale>1.8</scale>
 			<Icon>
 				<href>ressources/dragon_eau.png</href>
 			</Icon>
 		</IconStyle>
 	</Style>
-	<Style id="sh_city3">
+	<Style id="sh_city2">
 		<IconStyle>
 			<scale>2.12727</scale>
-			<Icon>
-				<href>D:/Documents/jdr/le_temps_des_cerises/ltdc/maps/earth/ressources/city.png</href>
-			</Icon>
-		</IconStyle>
-		<BalloonStyle>
-		</BalloonStyle>
-		<ListStyle>
-		</ListStyle>
-	</Style>
-	<StyleMap id="msn_dragon_feu">
-		<Pair>
-			<key>normal</key>
-			<styleUrl>#sn_dragon_feu</styleUrl>
-		</Pair>
-		<Pair>
-			<key>highlight</key>
-			<styleUrl>#sh_dragon_feu</styleUrl>
-		</Pair>
-	</StyleMap>
-	<Style id="sn_city">
-		<IconStyle>
-			<scale>1.8</scale>
 			<Icon>
 				<href>ressources/city.png</href>
 			</Icon>
 		</IconStyle>
 	</Style>
-	<Style id="sn_city4">
-		<IconStyle>
-			<scale>1.8</scale>
+	<Folder>
+		<name>Hirtland</name>
+		<open>1</open>
+		<GroundOverlay>
+			<name>Hirtland</name>
 			<Icon>
-				<href>D:/Documents/jdr/le_temps_des_cerises/ltdc/maps/earth/ressources/city.png</href>
+				<href>D:/Documents/jdr/le_temps_des_cerises/ltdc/maps/earth/ressources/Hirtland.png</href>
+				<viewBoundScale>0.75</viewBoundScale>
 			</Icon>
-		</IconStyle>
-		<BalloonStyle>
-		</BalloonStyle>
-		<ListStyle>
-		</ListStyle>
-	</Style>
-	<Style id="sh_tipi">
-		<IconStyle>
-			<scale>1.4</scale>
-			<Icon>
-				<href>ressources/tipi.png</href>
-			</Icon>
-		</IconStyle>
-	</Style>
-	<StyleMap id="msn_dragon_terre">
-		<Pair>
-			<key>normal</key>
-			<styleUrl>#sn_dragon_terre</styleUrl>
-		</Pair>
-		<Pair>
-			<key>highlight</key>
-			<styleUrl>#sh_dragon_terre</styleUrl>
-		</Pair>
-	</StyleMap>
-	<Style id="sn_volcan">
-		<IconStyle>
-			<scale>2.2</scale>
-			<Icon>
-				<href>ressources/volcan.png</href>
-			</Icon>
-		</IconStyle>
-	</Style>
-	<StyleMap id="msn_city10">
-		<Pair>
-			<key>normal</key>
-			<styleUrl>#sn_city0</styleUrl>
-		</Pair>
-		<Pair>
-			<key>highlight</key>
-			<styleUrl>#sh_city</styleUrl>
-		</Pair>
-	</StyleMap>
-	<Style id="sh_ylw-pushpin4">
-		<IconStyle>
-			<scale>1.3</scale>
-			<Icon>
-				<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
-			</Icon>
-			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
-		</IconStyle>
-		<BalloonStyle>
-		</BalloonStyle>
-		<LineStyle>
-			<width>2</width>
-		</LineStyle>
-	</Style>
+			<LatLonBox>
+				<north>59.52957572782492</north>
+				<south>48.56705237090223</south>
+				<east>0.437715241338521</east>
+				<west>-12.08718074111721</west>
+			</LatLonBox>
+		</GroundOverlay>
+		<Folder>
+			<name>Chateaux</name>
+		</Folder>
+		<Placemark>
+			<name>Castle Von Krauwn</name>
+			<LookAt>
+				<longitude>-2.309749516732358</longitude>
+				<latitude>53.39195046857895</latitude>
+				<altitude>0</altitude>
+				<heading>-6.141528116994065</heading>
+				<tilt>5.859559162753373</tilt>
+				<range>56023.03683114939</range>
+				<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+			</LookAt>
+			<styleUrl>#m_ylw-pushpin2</styleUrl>
+			<Point>
+				<gx:drawOrder>1</gx:drawOrder>
+				<coordinates>-2.386992804097916,53.36684002814713,0</coordinates>
+			</Point>
+		</Placemark>
+	</Folder>
 	<Folder>
 		<name>Cité antique</name>
+		<open>1</open>
+		<Placemark>
+			<name>Aurbium</name>
+			<open>1</open>
+			<LookAt>
+				<gx:TimeStamp><when>2020-05-06T17:06:02.528606414Z</when>
+</gx:TimeStamp>
+				<gx:ViewerOptions>
+					<gx:option enabled="0" name="historicalimagery"></gx:option>
+					<gx:option name="sunlight"></gx:option>
+					<gx:option enabled="0" name="streetview"></gx:option>
+				</gx:ViewerOptions>
+				<longitude>-7.816758393236507</longitude>
+				<latitude>41.31383745202545</latitude>
+				<altitude>0</altitude>
+				<heading>-6.161771608998464</heading>
+				<tilt>14.92683605204251</tilt>
+				<range>10345.25593319868</range>
+				<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+			</LookAt>
+			<styleUrl>#msn_coliseum</styleUrl>
+			<Point>
+				<gx:drawOrder>1</gx:drawOrder>
+				<coordinates>-7.780100381271405,41.30660234326055,0</coordinates>
+			</Point>
+		</Placemark>
 		<Placemark>
 			<name>Arga</name>
 			<LookAt>
@@ -943,16 +1254,29 @@
 				<latitude>36.02558190795887</latitude>
 				<altitude>0</altitude>
 				<heading>-2.163541926541417</heading>
-				<tilt>0.5131726672635985</tilt>
+				<tilt>0.5131726672635984</tilt>
 				<range>44971.74366055118</range>
 				<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
 			</LookAt>
-			<styleUrl>#msn_coliseum</styleUrl>
+			<styleUrl>#msn_coliseum0</styleUrl>
 			<Point>
 				<gx:drawOrder>1</gx:drawOrder>
 				<coordinates>-1.965774346997217,36.08551291320327,0</coordinates>
 			</Point>
 		</Placemark>
+		<GroundOverlay>
+			<name>Aurbium</name>
+			<Icon>
+				<href>D:/Documents/jdr/le_temps_des_cerises/ltdc/maps/earth/ressources/aurbium-complet.png</href>
+				<viewBoundScale>0.75</viewBoundScale>
+			</Icon>
+			<LatLonBox>
+				<north>41.4090900703834</north>
+				<south>41.20929480004936</south>
+				<east>-7.712162551115094</east>
+				<west>-7.961315996219065</west>
+			</LatLonBox>
+		</GroundOverlay>
 	</Folder>
 	<Folder>
 		<name>Matayaque</name>
@@ -967,7 +1291,7 @@
 				<range>1579782.514154894</range>
 				<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
 			</LookAt>
-			<styleUrl>#m_ylw-pushpin0</styleUrl>
+			<styleUrl>#m_ylw-pushpin00</styleUrl>
 			<Point>
 				<gx:drawOrder>1</gx:drawOrder>
 				<coordinates>-153.9412637559267,47.02753319022413,0</coordinates>
@@ -1007,7 +1331,7 @@
 				<range>2570532.018671052</range>
 				<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
 			</LookAt>
-			<styleUrl>#msn_city10</styleUrl>
+			<styleUrl>#msn_city100</styleUrl>
 			<Point>
 				<gx:drawOrder>1</gx:drawOrder>
 				<coordinates>38.70060475196011,44.29883756170131,0</coordinates>
@@ -1024,7 +1348,7 @@
 				<range>3706657.044094466</range>
 				<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
 			</LookAt>
-			<styleUrl>#msn_city10</styleUrl>
+			<styleUrl>#msn_city100</styleUrl>
 			<Point>
 				<gx:drawOrder>1</gx:drawOrder>
 				<coordinates>13.93191282974046,55.57069439775441,0</coordinates>
@@ -1081,7 +1405,7 @@
 					<LineString>
 						<tessellate>1</tessellate>
 						<coordinates>
-							100.3513407284906,70.20604882319724,0 99.77800484138976,70.1102468342887,0 99.21212199435574,70.0128717417162,0 98.75199590955484,69.85317720378725,0 98.2590523703869,69.64560359859924,0 97.81762177938283,69.48414170024624,0 97.38437045648526,69.32185071688143,0 97.27020912689507,69.18054049068168,0 97.01115545788146,68.85077077569542,0 96.96570918826825,68.60254936945067,0 97.25772280063501,68.42288537556709,0 97.5461766029493,68.24252026073559,0 97.79502591894625,68.01445141343459,0 97.78170967562784,67.81296141166392,0 97.89761382556975,67.59777094511324,0 97.88511180688278,67.39603329293959,0 97.93092087649049,67.08627085729262,0 98.04491653862989,66.87021120024944,0 98.15784714084199,66.65376073190944,0 98.30339285193303,66.48400654103031,0 98.25879686572331,66.23399238579988,0 98.12764689349706,66.04519485877903,0 98.03095138335056,65.90342299716835,0 97.99227969316783,65.65253762758483,0 97.83696989831164,65.41550476401405,0 97.74554928357604,65.27305226271878,0 97.62566302662344,65.08283164225827,0 97.4500211664494,64.79686273347066,0 97.33563874130513,64.60576992762988,0 97.11314957399867,64.2224441567663,0 96.97820074711433,63.98204854386059,0 96.87244109891749,63.78925413092931,0 96.57116163541289,63.67201822847629,0 95.96376391539124,63.64246896736206,0 95.49450164986887,63.64586382925563,0 94.98097286048778,63.5503996520604,0 94.67091911529977,63.38022818847685,0 94.49597614916085,63.2460056731523,0 94.06331899343654,63.03705740973003,0 93.65732545759101,62.87543540681139,0 93.36415104994389,62.70125932236079,0 93.07481799546736,62.52612528044656,0 92.6827969453883,62.36067818891089,0 92.22320550857913,62.30320615551506,0 91.67627267263083,62.30335157169038,0 91.20630538226183,62.19235221313404,0 90.75486335236694,62.12925058918392,0 90.39727374111622,62.00599172965157,0 90.02977986254281,61.83150496913267,0 89.87419718962197,61.63931010295963,0 89.81137967963844,61.38786946253649,0 89.64761658599569,61.14361125645026,0 89.19290647336331,60.97269583698552,0 88.8552716963698,60.84307789831624,0 88.52050138797108,60.71222985409845,0 88.48022490821354,60.50785933305859,0 88.24085330020265,60.31695814181008,0 87.81436630316505,60.18993445991738,0 87.30859396080832,60.17037519077557,0 86.81172697887014,60.19994840040054,0 86.3010914100701,60.12402716416439,0 85.79936219612527,60.09725812274997,0 85.39781859139301,60.06378963373138,0 85.09605569484236,60.02475023598568,0 84.60717240594626,60.09567663868565,0 84.22850663747254,60.31562405417996,0 83.84600350923058,60.53327467142995,0 83.44981829023578,60.59518786572586,0 83.0553205722394,60.70671731378496,0 82.6543815821428,60.71440237852134,0 82.25676916894588,60.82277083895987,0 81.95907294297558,60.97936354845552,0 81.76130127829235,61.18464338985273,0 81.66161969480319,61.28689715903445,0 
+							100.3513407284906,70.20604882319724,0 99.77800484138976,70.1102468342887,0 99.21212199435574,70.0128717417162,0 98.75199590955484,69.85317720378725,0 98.2590523703869,69.64560359859924,0 97.81762177938283,69.48414170024624,0 97.38437045648526,69.32185071688143,0 97.27020912689507,69.18054049068168,0 97.01115545788146,68.85077077569542,0 96.96570918826825,68.60254936945067,0 97.25772280063501,68.42288537556709,0 97.5461766029493,68.24252026073559,0 97.79502591894625,68.01445141343459,0 97.78170967562784,67.81296141166392,0 97.89761382556975,67.59777094511324,0 97.88511180688278,67.39603329293959,0 97.93092087649049,67.08627085729262,0 98.04491653862989,66.87021120024944,0 98.15784714084199,66.65376073190944,0 98.30339285193303,66.48400654103031,0 98.25879686572331,66.23399238579988,0 98.12764689349706,66.04519485877903,0 98.03095138335055,65.90342299716835,0 97.99227969316783,65.65253762758483,0 97.83696989831164,65.41550476401405,0 97.74554928357604,65.27305226271878,0 97.62566302662344,65.08283164225827,0 97.4500211664494,64.79686273347066,0 97.33563874130513,64.60576992762988,0 97.11314957399867,64.2224441567663,0 96.97820074711433,63.98204854386059,0 96.87244109891749,63.78925413092931,0 96.57116163541289,63.67201822847629,0 95.96376391539124,63.64246896736206,0 95.49450164986887,63.64586382925563,0 94.98097286048778,63.5503996520604,0 94.67091911529977,63.38022818847685,0 94.49597614916085,63.2460056731523,0 94.06331899343654,63.03705740973002,0 93.65732545759101,62.87543540681139,0 93.36415104994389,62.70125932236079,0 93.07481799546736,62.52612528044656,0 92.6827969453883,62.36067818891089,0 92.22320550857913,62.30320615551506,0 91.67627267263083,62.30335157169038,0 91.20630538226183,62.19235221313404,0 90.75486335236694,62.12925058918392,0 90.39727374111622,62.00599172965157,0 90.02977986254281,61.83150496913267,0 89.87419718962197,61.63931010295963,0 89.81137967963843,61.38786946253649,0 89.64761658599569,61.14361125645026,0 89.19290647336331,60.97269583698552,0 88.8552716963698,60.84307789831624,0 88.52050138797108,60.71222985409845,0 88.48022490821354,60.50785933305859,0 88.24085330020264,60.31695814181008,0 87.81436630316504,60.18993445991738,0 87.30859396080832,60.17037519077557,0 86.81172697887014,60.19994840040054,0 86.3010914100701,60.12402716416439,0 85.79936219612527,60.09725812274997,0 85.397818591393,60.06378963373138,0 85.09605569484236,60.02475023598568,0 84.60717240594626,60.09567663868565,0 84.22850663747253,60.31562405417996,0 83.84600350923058,60.53327467142995,0 83.44981829023578,60.59518786572586,0 83.0553205722394,60.70671731378496,0 82.6543815821428,60.71440237852134,0 82.25676916894588,60.82277083895987,0 81.95907294297558,60.97936354845552,0 81.76130127829235,61.18464338985273,0 81.66161969480319,61.28689715903445,0 
 						</coordinates>
 					</LineString>
 				</Placemark>
@@ -1092,18 +1416,18 @@
 						<tessellate>1</tessellate>
 						<altitudeMode>relativeToGround</altitudeMode>
 						<coordinates>
-							71.98852550904081,62.42269575150962,0 72.34241951729592,62.78312251091323,0 72.66292289029708,62.97325661886735,0 72.98553111692263,63.11460348253312,0 73.20479729511666,63.25634298472033,0 73.64030621683335,63.39492876689103,0 74.07620802688791,63.48422834249539,0 74.09604997669024,63.72377328546702,0 74.11224771449376,63.91536960515872,0 74.01898503706539,64.10872772885158,0 73.92065328283988,64.25411412116695,0 73.60613478967208,64.49823834015665,0 73.16857607992854,64.64698883378631,0 72.83883467254222,64.79364514677941,0 72.50696410624786,64.98752357140569,0 72.16941370199025,65.13275927260399,0 72.05797321025524,65.32490605816082,0 71.9453135725783,65.56504811942864,0 71.94663106983484,65.70907724484445,0 71.94841802647429,65.90121181671573,0 71.95116539907652,66.18964653057293,0 72.19255203728763,66.38158540135214,0 72.55682207625782,66.52458024153447,0 73.1591156293434,66.52039420885711,0 73.40678119962679,66.61443008267806,0 74.14202026319781,66.70175611583569,0 74.63340284713668,66.74212769581746,0 75.12666349650719,66.78106149882405,0 75.62977776191143,66.86672987474196,0 76.13687620918869,66.95094261119269,0 76.64799136873583,67.03368461858206,0 76.91585692115342,67.1226992226287,0 77.45825368209306,67.29964262217661,0 77.87099922310982,67.43138802206771,0 78.16283516574215,67.5670227477036,0 78.44391854668348,67.65402431570603,0 79.17347983912353,67.91818236122147,0 79.81397092945632,67.8899993189783,0 80.34482356028448,67.91401002419059,0 80.85743139125154,67.88822418854369,0 81.13424055072512,67.92295665020846,0 82.05440079969704,67.92090144964648,0 82.7444048417174,67.97828348285985,0 83.93558924565015,68.19907325563445,0 84.45576869550953,68.16277611611642,0 85.10505270807735,68.11521826916781,0 85.68628740202395,68.17105857009217,0 86.27193972984613,68.22507483922587,0 86.40241400586973,68.21441004391481,0 86.89654132184346,68.32496742878176,0 87.99869378293138,68.48305221942759,0 88.81672935629067,68.61252076053543,0 88.93743842434672,68.75525636387462,0 89.95434742055464,68.91535680974229,0 90.67618385142244,69.20707654199693,0 91.95288476013803,69.7053949086979,0 92.35452416636123,69.92789832349695,0 92.56944848702577,70.11795385869961,0 92.9018150065818,70.40340230950726,0 93.53909833871542,70.38838005451304,0 94.83923626319617,70.80843066354348,0 96.42177848550679,70.56172756773229,0 97.63988460326024,70.37849344629298,0 98.0010037418367,70.13534266230022,0 97.59716600654176,69.92823577387021,0 98.14343314752955,69.76118443847177,0 98.29743531272163,69.67331007738164,0 
+							71.98852550904081,62.42269575150962,0 72.34241951729592,62.78312251091323,0 72.66292289029708,62.97325661886735,0 72.98553111692263,63.11460348253312,0 73.20479729511666,63.25634298472033,0 73.64030621683335,63.39492876689103,0 74.07620802688791,63.48422834249539,0 74.09604997669024,63.72377328546702,0 74.11224771449376,63.91536960515872,0 74.01898503706539,64.10872772885158,0 73.92065328283988,64.25411412116695,0 73.60613478967208,64.49823834015665,0 73.16857607992854,64.64698883378631,0 72.83883467254222,64.79364514677941,0 72.50696410624786,64.98752357140569,0 72.16941370199025,65.13275927260399,0 72.05797321025524,65.32490605816082,0 71.9453135725783,65.56504811942864,0 71.94663106983484,65.70907724484445,0 71.94841802647429,65.90121181671573,0 71.95116539907652,66.18964653057293,0 72.19255203728763,66.38158540135214,0 72.55682207625782,66.52458024153447,0 73.1591156293434,66.52039420885711,0 73.40678119962679,66.61443008267806,0 74.14202026319781,66.70175611583569,0 74.63340284713668,66.74212769581746,0 75.12666349650719,66.78106149882404,0 75.62977776191143,66.86672987474196,0 76.13687620918869,66.95094261119269,0 76.64799136873583,67.03368461858206,0 76.91585692115342,67.1226992226287,0 77.45825368209306,67.29964262217661,0 77.87099922310982,67.43138802206771,0 78.16283516574215,67.5670227477036,0 78.44391854668348,67.65402431570602,0 79.17347983912353,67.91818236122147,0 79.81397092945632,67.8899993189783,0 80.34482356028448,67.91401002419059,0 80.85743139125154,67.88822418854369,0 81.13424055072512,67.92295665020846,0 82.05440079969704,67.92090144964648,0 82.7444048417174,67.97828348285985,0 83.93558924565015,68.19907325563445,0 84.45576869550953,68.16277611611642,0 85.10505270807735,68.11521826916781,0 85.68628740202395,68.17105857009217,0 86.27193972984612,68.22507483922587,0 86.40241400586973,68.21441004391481,0 86.89654132184346,68.32496742878176,0 87.99869378293138,68.48305221942759,0 88.81672935629067,68.61252076053543,0 88.93743842434672,68.75525636387462,0 89.95434742055464,68.91535680974229,0 90.67618385142244,69.20707654199693,0 91.95288476013803,69.7053949086979,0 92.35452416636123,69.92789832349695,0 92.56944848702577,70.11795385869961,0 92.9018150065818,70.40340230950726,0 93.53909833871542,70.38838005451304,0 94.83923626319617,70.80843066354348,0 96.42177848550679,70.56172756773229,0 97.63988460326024,70.37849344629298,0 98.0010037418367,70.13534266230022,0 97.59716600654176,69.92823577387021,0 98.14343314752955,69.76118443847177,0 98.29743531272163,69.67331007738164,0 
 						</coordinates>
 					</LineString>
 				</Placemark>
 				<Placemark>
 					<name>Rivière - Ievseri</name>
-					<styleUrl>#msn_ylw-pushpin2</styleUrl>
+					<styleUrl>#msn_ylw-pushpin20</styleUrl>
 					<LineString>
 						<tessellate>1</tessellate>
 						<altitudeMode>relativeToGround</altitudeMode>
 						<coordinates>
-							65.52233048459229,64.47869833150497,1 65.4766283772764,64.67220491348655,1 65.42994579094906,64.86571173835749,1 65.38225668569491,65.05923215660744,1 65.3211885382908,65.30117226518274,1 65.25845013188214,65.54318070105016,1 65.19398348386984,65.78528375367432,1 65.38191426863111,65.98889257866951,1 65.70619255946033,66.14842004241581,1 65.77808226914272,66.34699893167472,1 65.85078357871524,66.54564462331649,1 65.92432391064961,66.74437194975734,1 66.1360185620361,66.89876791680226,1 66.32617999267546,67.15033673591708,1 66.40453507644261,67.34925198073657,1 66.61211056292056,67.55211771235976,1 66.55216228151441,67.79641031143461,1 66.63362936778928,67.99586226332038,1 66.84812335832308,68.19909215366184,1 66.94490900886868,68.3497697299117,1 67.03105820414041,68.54969041231988,1 67.55646216526203,68.61159819968653,1 67.51332133532479,68.80856257681724,1 67.45780640414422,69.05520945235078,1 67.41207566121761,69.2528997153169,1 67.77369371609031,69.50927540271738,1 68.01242836901774,69.71321031356257,1 68.27570098622273,69.81763409599743,1 68.25562861256471,69.91719734126981,1 68.61020554698379,70.32330807019241,1 69.02234544035906,70.47943177740704,1 69.60325597403899,70.53595993574295,1 70.19258716037348,70.54063426692456,1 70.33470820549006,70.59173143164455,1 71.21470356122705,70.69539514357332,1 72.40155061170653,70.84457353974862,1 73.00059704514921,70.89146108062714,1 73.74837328671663,70.88468400665879,1 74.49525481710576,70.8752220396362,1 74.94291229347434,70.86825854837228,1 
+							65.52233048459229,64.47869833150497,1 65.4766283772764,64.67220491348655,1 65.42994579094906,64.86571173835749,1 65.38225668569491,65.05923215660744,1 65.3211885382908,65.30117226518274,1 65.25845013188214,65.54318070105016,1 65.19398348386984,65.78528375367432,1 65.38191426863111,65.98889257866951,1 65.70619255946033,66.14842004241581,1 65.77808226914271,66.34699893167472,1 65.85078357871524,66.54564462331649,1 65.9243239106496,66.74437194975734,1 66.1360185620361,66.89876791680226,1 66.32617999267546,67.15033673591708,1 66.40453507644261,67.34925198073657,1 66.61211056292056,67.55211771235976,1 66.55216228151441,67.79641031143461,1 66.63362936778928,67.99586226332038,1 66.84812335832308,68.19909215366184,1 66.94490900886868,68.3497697299117,1 67.03105820414041,68.54969041231988,1 67.55646216526203,68.61159819968653,1 67.51332133532479,68.80856257681724,1 67.45780640414422,69.05520945235078,1 67.41207566121761,69.2528997153169,1 67.77369371609031,69.50927540271738,1 68.01242836901774,69.71321031356257,1 68.27570098622273,69.81763409599743,1 68.25562861256471,69.91719734126981,1 68.61020554698379,70.32330807019241,1 69.02234544035906,70.47943177740704,1 69.60325597403899,70.53595993574295,1 70.19258716037348,70.54063426692456,1 70.33470820549006,70.59173143164455,1 71.21470356122705,70.69539514357332,1 72.40155061170653,70.84457353974862,1 73.00059704514921,70.89146108062714,1 73.74837328671663,70.88468400665879,1 74.49525481710576,70.8752220396362,1 74.94291229347434,70.86825854837228,1 
 						</coordinates>
 					</LineString>
 				</Placemark>
@@ -1112,7 +1436,7 @@
 					<Camera>
 						<longitude>94.33338412406253</longitude>
 						<latitude>68.61710642445155</latitude>
-						<altitude>542007.8763363391</altitude>
+						<altitude>542007.876336339</altitude>
 						<heading>30.4458385950538</heading>
 						<tilt>1.623278012871963</tilt>
 						<roll>5.661127061037625</roll>
@@ -1132,7 +1456,7 @@
 						<outerBoundaryIs>
 							<LinearRing>
 								<coordinates>
-									72.72577802582474,68.96661583940954,0 75.3442379243193,69.01814739321156,0 76.18910077271718,69.04570772485282,0 77.70570257118142,69.09188000130108,0 78.32104392802467,69.23607008590338,0 79.31081314134787,69.27165772203544,0 81.6050055359938,69.68548653993663,0 84.36850042890487,69.8179503779341,0 84.9222329181178,69.91973547552684,0 87.9465950923223,70.73388606005486,0 89.16693283946299,71.01136498620943,0 89.84893978391044,71.34419570221722,0 89.87329947332651,71.69026731221022,0 88.94216032166189,72.02813389311424,0 88.49740057961614,72.19047539428939,0 86.28789351227849,72.57201959793436,0 84.6572536553478,72.6278206423117,0 80.83526692627963,72.66751648966897,0 78.2074634238702,72.39399286447227,0 74.76111916412478,71.62257477107123,0 73.3884117468982,71.06132488455179,0 72.86140889164118,70.92745830865923,0 72.70943583846757,70.71018868110556,0 71.55578207404187,70.23280321773797,0 71.35081280802295,69.72159241387195,0 71.67972676566525,69.04842069688247,0 72.05133910792154,68.92154352593347,0 72.72577802582474,68.96661583940954,0 
+									72.72577802582474,68.96661583940954,0 75.3442379243193,69.01814739321156,0 76.18910077271718,69.04570772485282,0 77.70570257118142,69.09188000130108,0 78.32104392802466,69.23607008590338,0 79.31081314134786,69.27165772203544,0 81.6050055359938,69.68548653993663,0 84.36850042890487,69.8179503779341,0 84.9222329181178,69.91973547552683,0 87.9465950923223,70.73388606005486,0 89.16693283946299,71.01136498620943,0 89.84893978391044,71.34419570221722,0 89.87329947332651,71.69026731221022,0 88.94216032166189,72.02813389311424,0 88.49740057961614,72.19047539428939,0 86.28789351227849,72.57201959793436,0 84.6572536553478,72.6278206423117,0 80.83526692627963,72.66751648966897,0 78.20746342387019,72.39399286447227,0 74.76111916412478,71.62257477107123,0 73.3884117468982,71.06132488455179,0 72.86140889164118,70.92745830865923,0 72.70943583846757,70.71018868110556,0 71.55578207404187,70.23280321773797,0 71.35081280802295,69.72159241387195,0 71.67972676566525,69.04842069688247,0 72.05133910792154,68.92154352593347,0 72.72577802582474,68.96661583940954,0 
 								</coordinates>
 							</LinearRing>
 						</outerBoundaryIs>
@@ -1146,7 +1470,7 @@
 						<outerBoundaryIs>
 							<LinearRing>
 								<coordinates>
-									76.75905321667584,61.55562482825353,0 77.10570893465889,60.96324867300945,0 77.26725259817465,60.66594920890992,0 78.21155557314401,60.10428234812123,0 79.99411806972194,59.35566828699088,0 83.43926130515224,58.29484961403693,0 84.92218719835317,57.88794981415805,0 85.42252139461917,57.72516980200788,0 86.19130035582276,57.54602138309425,0 86.66376765243452,57.48642094129147,0 87.48609977403721,57.39497237804009,0 90.18459521290529,57.17750143668598,0 92.18332422505776,57.22568380752863,0 93.43720219256498,57.44901566050417,0 93.76011277549856,57.5463564564793,0 94.21162552861595,57.96432024098455,0 94.64582291407973,58.61678950084616,0 96.49398963487806,59.89100211410521,0 98.39253642648474,61.35054088566303,0 98.96582779665016,63.89610184254388,0 100.3696486910523,64.75127340523011,0 100.3486863596563,64.98609854889642,0 100.1462073480395,65.16931548693681,0 100.2726462966381,65.43685271879342,0 100.6764523757455,65.82584883219013,0 100.6869162262641,66.03450705004508,0 100.1598684496143,66.31296078291673,0 99.97538710786141,66.4594022639014,0 100.1076208697505,66.59812078431658,0 100.3487531833428,66.72364373864797,0 100.4904534728715,67.16797984137801,0 101.0229327962764,67.57391096863162,0 102.4846673046392,68.49423892067433,0 102.9779902518317,68.82378703853719,0 104.3621852750509,69.59387731531251,0 106.6663947539747,70.51442406493412,0 106.8579589087454,70.6113854962274,0 107.0943096252019,70.74002719614151,0 107.3790193547585,70.98711056512876,0 107.2394899325505,71.31662932000278,0 106.7726876169351,71.62467962764583,0 105.8457081251987,71.79410775486417,0 104.1254802685676,72.03631361479734,0 102.9242546206392,72.16749034483715,0 101.884826768972,72.2368442408625,0 101.0089593165031,72.23695159045195,0 100.0856505997681,72.16998253199749,0 99.41243044691294,72.07140500765442,0 96.96801897475186,71.54492214810263,0 96.56454808520782,71.41437708350988,0 96.10224643572127,71.13929068505873,0 95.76942048480193,70.85398399264992,0 93.52431198048463,68.98327230486294,0 90.20140520365735,67.85047997300025,0 88.04659487631737,67.13696007426854,0 85.2964167390095,66.47263869645659,0 81.68788928415796,65.3740625115007,0 78.86912736128366,64.17178582692635,0 77.25458464242058,62.95958967395496,0 76.71317572526415,62.58156510974083,0 76.57906607911365,62.21146166817555,0 76.75905321667584,61.55562482825353,0 
+									76.75905321667584,61.55562482825353,0 77.10570893465889,60.96324867300945,0 77.26725259817465,60.66594920890992,0 78.21155557314401,60.10428234812123,0 79.99411806972194,59.35566828699088,0 83.43926130515224,58.29484961403693,0 84.92218719835317,57.88794981415805,0 85.42252139461917,57.72516980200788,0 86.19130035582276,57.54602138309425,0 86.66376765243452,57.48642094129147,0 87.48609977403721,57.39497237804009,0 90.18459521290529,57.17750143668598,0 92.18332422505776,57.22568380752863,0 93.43720219256498,57.44901566050417,0 93.76011277549856,57.5463564564793,0 94.21162552861595,57.96432024098455,0 94.64582291407973,58.61678950084616,0 96.49398963487806,59.89100211410521,0 98.39253642648474,61.35054088566303,0 98.96582779665016,63.89610184254388,0 100.3696486910523,64.75127340523011,0 100.3486863596563,64.98609854889642,0 100.1462073480395,65.16931548693681,0 100.2726462966381,65.43685271879342,0 100.6764523757455,65.82584883219013,0 100.6869162262641,66.03450705004508,0 100.1598684496143,66.31296078291673,0 99.97538710786141,66.4594022639014,0 100.1076208697505,66.59812078431658,0 100.3487531833428,66.72364373864797,0 100.4904534728715,67.16797984137801,0 101.0229327962764,67.57391096863162,0 102.4846673046392,68.49423892067433,0 102.9779902518317,68.82378703853719,0 104.3621852750509,69.59387731531251,0 106.6663947539747,70.51442406493412,0 106.8579589087454,70.6113854962274,0 107.0943096252019,70.74002719614151,0 107.3790193547585,70.98711056512876,0 107.2394899325505,71.31662932000278,0 106.7726876169351,71.62467962764583,0 105.8457081251987,71.79410775486417,0 104.1254802685676,72.03631361479734,0 102.9242546206392,72.16749034483715,0 101.884826768972,72.2368442408625,0 101.0089593165031,72.23695159045195,0 100.0856505997681,72.16998253199749,0 99.41243044691294,72.07140500765442,0 96.96801897475186,71.54492214810263,0 96.56454808520782,71.41437708350988,0 96.10224643572127,71.13929068505873,0 95.76942048480193,70.85398399264992,0 93.52431198048463,68.98327230486294,0 90.20140520365734,67.85047997300025,0 88.04659487631737,67.13696007426854,0 85.2964167390095,66.47263869645658,0 81.68788928415796,65.3740625115007,0 78.86912736128366,64.17178582692635,0 77.25458464242058,62.95958967395496,0 76.71317572526415,62.58156510974083,0 76.57906607911364,62.21146166817555,0 76.75905321667584,61.55562482825353,0 
 								</coordinates>
 							</LinearRing>
 						</outerBoundaryIs>
@@ -1155,7 +1479,7 @@
 				<Placemark>
 					<name>Reinward</name>
 					<LookAt>
-						<longitude>91.51718864051613</longitude>
+						<longitude>91.51718864051612</longitude>
 						<latitude>68.45500858284187</latitude>
 						<altitude>0</altitude>
 						<heading>11.19107337985617</heading>
@@ -1172,7 +1496,7 @@
 				<Placemark>
 					<name>lac de la vallée</name>
 					<LookAt>
-						<longitude>91.51718864051613</longitude>
+						<longitude>91.51718864051612</longitude>
 						<latitude>68.45500858284186</latitude>
 						<altitude>0</altitude>
 						<heading>11.19107337985618</heading>
@@ -1203,7 +1527,7 @@
 					<styleUrl>#msn_tipi</styleUrl>
 					<Point>
 						<gx:drawOrder>1</gx:drawOrder>
-						<coordinates>72.44462918930225,62.55540979323119,0</coordinates>
+						<coordinates>72.44462918930225,62.55540979323118,0</coordinates>
 					</Point>
 				</Placemark>
 				<Placemark>
@@ -1365,7 +1689,7 @@
 				</Placemark>
 				<Placemark>
 					<LookAt>
-						<longitude>93.22025269253597</longitude>
+						<longitude>93.22025269253596</longitude>
 						<latitude>70.16222051988272</latitude>
 						<altitude>0</altitude>
 						<heading>-14.18070914922821</heading>
@@ -1435,7 +1759,7 @@
 						<longitude>71.71353190295869</longitude>
 						<latitude>64.31865243663366</latitude>
 						<altitude>0</altitude>
-						<heading>-9.551205708434938e-012</heading>
+						<heading>-9.551205708434938e-12</heading>
 						<tilt>0.1879626340000914</tilt>
 						<range>3602881.100042866</range>
 						<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
@@ -1486,8 +1810,64 @@
 		<name>PJ</name>
 		<open>1</open>
 		<Placemark>
-			<name>8.4 Krysarya - Krasnyevka</name>
+			<name>9.4</name>
+			<visibility>0</visibility>
+			<styleUrl>#m_ylw-pushpin1</styleUrl>
+			<LineString>
+				<tessellate>1</tessellate>
+				<coordinates>
+					-7.809602946241644,41.38496159091326,0 -9.905487139078767,40.65835097683565,0 -7.852773934871711,41.38479169188835,0 -9.603216080013953,47.51683083377237,0 -4.434002309566979,47.45439391418704,0 -3.39753199444417,42.75819511515854,0 1.689688293668774,41.08388428407017,0 
+				</coordinates>
+			</LineString>
+		</Placemark>
+		<Placemark>
+			<name>9.3 Villa Mirabilis - Campement</name>
+			<visibility>0</visibility>
+			<styleUrl>#m_ylw-pushpin1</styleUrl>
+			<LineString>
+				<tessellate>1</tessellate>
+				<coordinates>
+					-8.697280248929125,42.05340211177821,0 -8.611295299204297,41.93579368252189,0 -8.322166595416954,41.82545858008515,0 -7.802501170310855,41.37735451318866,0 
+				</coordinates>
+			</LineString>
+		</Placemark>
+		<Placemark>
+			<name>9.2 Campement - Villa Mirabilis</name>
+			<visibility>0</visibility>
 			<styleUrl>#msn_ylw-pushpin</styleUrl>
+			<LineString>
+				<tessellate>1</tessellate>
+				<coordinates>
+					-7.799274504573956,41.38241779349136,0 -8.080772723787243,41.63800301095201,0 -8.330866807557666,41.83051194663936,0 -8.606465376558374,41.94499904110336,0 -8.696270419034819,42.04920279922924,0 
+				</coordinates>
+			</LineString>
+		</Placemark>
+		<Placemark>
+			<name>9.1 Wieden - Campement fouille</name>
+			<visibility>0</visibility>
+			<styleUrl>#msn_ylw-pushpin</styleUrl>
+			<LineString>
+				<tessellate>1</tessellate>
+				<coordinates>
+					-4.020842261759584,47.54737150952384,0 -4.224056350668386,46.42070830581667,0 -4.311163299761808,44.65353226179319,0 -4.301073013791332,43.42672542935967,0 -4.699710163360226,42.09006253826749,0 -6.130133303604736,41.43588323769544,0 -7.798452569811794,41.38677833958592,0 
+				</coordinates>
+			</LineString>
+		</Placemark>
+		<Placemark>
+			<name>9 Krasnyevka - Wieden</name>
+			<visibility>0</visibility>
+			<styleUrl>#msn_ylw-pushpin</styleUrl>
+			<LineString>
+				<tessellate>1</tessellate>
+				<coordinates>
+					14.1050598936449,54.94240688220943,0 5.145122576469527,56.77845944331901,0 -4.844178092628893,55.34472398117377,0 -6.277519468064718,53.77879234801895,0 -4.023152643548777,47.54878888092672,0 
+				</coordinates>
+			</LineString>
+		</Placemark>
+		<Placemark>
+			<name>8.4 Krysarya - Krasnyevka</name>
+			<visibility>0</visibility>
+			<styleUrl>#msn_ylw-pushpin2</styleUrl>
 			<LineString>
 				<tessellate>1</tessellate>
 				<coordinates>
@@ -1497,26 +1877,29 @@
 		</Placemark>
 		<Placemark>
 			<name>8.3 Ils déscendent de la montagne</name>
-			<styleUrl>#m_ylw-pushpin</styleUrl>
+			<visibility>0</visibility>
+			<styleUrl>#m_ylw-pushpin10</styleUrl>
 			<LineString>
 				<tessellate>1</tessellate>
 				<coordinates>
-					98.21364915949953,69.5861335043132,0 96.30531703299911,69.71303485665789,0 95.06861516685193,70.54498166977614,0 91.19101740249741,69.52658149797846,0 90.59119598525078,68.63621338891807,0 89.31302731234388,68.84370514567635,0 88.09812149065519,68.27688438831028,0 84.74578289135957,67.84312453341369,0 79.07078003509196,67.74252360121045,0 77.61627614630719,67.21678115299027,0 78.12066033735397,66.48357498044696,0 78.15383782878634,66.14643544634127,0 79.85882054104587,65.47614829070861,0 79.82638290571317,64.76615311916613,0 79.78750575978296,64.38967783085066,0 79.08925835526685,64.34901962573544,0 78.82954641901124,63.99903031308316,0 78.02873591746167,63.69447945217213,0 75.57181699290723,63.65441994832859,0 75.33116133290491,62.90376052988805,0 74.50265901360777,62.03378351794015,0 73.43213091978193,61.45714321812426,0 72.24270587004411,62.19832631432392,0 
+					98.21364915949952,69.5861335043132,0 96.30531703299911,69.71303485665788,0 95.06861516685193,70.54498166977613,0 91.19101740249741,69.52658149797846,0 90.59119598525078,68.63621338891807,0 89.31302731234388,68.84370514567635,0 88.09812149065519,68.27688438831028,0 84.74578289135957,67.84312453341369,0 79.07078003509196,67.74252360121045,0 77.61627614630719,67.21678115299027,0 78.12066033735397,66.48357498044696,0 78.15383782878634,66.14643544634127,0 79.85882054104587,65.47614829070861,0 79.82638290571317,64.76615311916613,0 79.78750575978296,64.38967783085066,0 79.08925835526685,64.34901962573544,0 78.82954641901124,63.99903031308316,0 78.02873591746167,63.69447945217213,0 75.57181699290723,63.65441994832859,0 75.33116133290491,62.90376052988805,0 74.50265901360777,62.03378351794015,0 73.43213091978193,61.45714321812426,0 72.24270587004411,62.19832631432392,0 
 				</coordinates>
 			</LineString>
 		</Placemark>
 		<Placemark>
 			<name>8.2 Voyage vers le grand nord</name>
+			<visibility>0</visibility>
 			<styleUrl>#msn_ylw-pushpin4</styleUrl>
 			<LineString>
 				<tessellate>1</tessellate>
 				<coordinates>
-					72.36378634518584,62.31995103845643,0 72.9242816206507,62.13878933225981,0 72.96322503203744,61.94913229564308,0 73.1906348163445,61.72857140493883,0 73.41764050784661,61.59067202552699,0 73.69004256105053,61.34281694110532,0 74.25780204856747,61.7989910114384,0 74.41080686332764,62.1781122585969,0 74.84231486049652,62.3827553265339,0 75.12803179509294,63.01029909676917,0 75.72273959712611,63.40200737047877,0 75.60358662596651,63.67266919041534,0 77.00650188599703,63.78831003407246,0 78.04472975456055,63.73738878831398,0 78.83984371142076,63.97872242036446,0 79.02426738614486,64.30599197886419,0 79.84602212694348,64.4353200804738,0 80.26228988487358,64.91778498486036,0 79.97470178243459,65.637322409517,0 78.50397966793796,65.94100688936135,0 78.33703145474044,66.50938999034636,0 77.75736670702099,66.9246445026608,0 77.29590755835099,67.1473274026478,0 77.90624877389811,67.46041022710409,0 78.8600766412798,67.74841492757179,0 79.59307553566583,67.91637414998606,0 82.32551415737905,67.96386057428016,0 85.93846780175736,67.99822121385914,0 87.89413449968191,68.2717376536872,0 89.25503176403858,68.96294150608443,0 90.77069252964915,68.67898663845884,0 91.38807757625224,69.37790913338181,0 91.61734604887047,69.71533152269294,0 94.14465812480599,70.20778070462859,0 95.33417067783324,70.46802760722612,0 96.62638612813643,69.7376757903692,0 98.64005592786471,69.68525773962733,0 
+					72.36378634518584,62.31995103845643,0 72.9242816206507,62.13878933225981,0 72.96322503203744,61.94913229564308,0 73.1906348163445,61.72857140493883,0 73.41764050784661,61.59067202552698,0 73.69004256105053,61.34281694110532,0 74.25780204856747,61.7989910114384,0 74.41080686332764,62.1781122585969,0 74.84231486049651,62.3827553265339,0 75.12803179509294,63.01029909676917,0 75.72273959712611,63.40200737047877,0 75.60358662596651,63.67266919041534,0 77.00650188599703,63.78831003407246,0 78.04472975456055,63.73738878831398,0 78.83984371142076,63.97872242036446,0 79.02426738614486,64.30599197886418,0 79.84602212694348,64.4353200804738,0 80.26228988487358,64.91778498486036,0 79.97470178243459,65.637322409517,0 78.50397966793795,65.94100688936135,0 78.33703145474044,66.50938999034636,0 77.75736670702099,66.9246445026608,0 77.29590755835099,67.1473274026478,0 77.90624877389811,67.46041022710409,0 78.8600766412798,67.74841492757179,0 79.59307553566583,67.91637414998605,0 82.32551415737905,67.96386057428016,0 85.93846780175735,67.99822121385914,0 87.89413449968191,68.2717376536872,0 89.25503176403858,68.96294150608443,0 90.77069252964915,68.67898663845884,0 91.38807757625224,69.37790913338181,0 91.61734604887047,69.71533152269294,0 94.14465812480599,70.20778070462859,0 95.33417067783324,70.46802760722612,0 96.62638612813643,69.7376757903692,0 98.64005592786471,69.68525773962733,0 
 				</coordinates>
 			</LineString>
 		</Placemark>
 		<Placemark>
 			<name>8.1 Trajet sur le Stragonor</name>
+			<visibility>0</visibility>
 			<description>8/2/4/4663 au 5/5/5/4663</description>
 			<styleUrl>#msn_ylw-pushpin0</styleUrl>
 			<LineString>
@@ -1528,52 +1911,72 @@
 		</Placemark>
 		<Placemark>
 			<name>PJs</name>
+			<visibility>0</visibility>
 			<LookAt>
-				<longitude>32.67354436886065</longitude>
-				<latitude>57.6968337164274</latitude>
+				<longitude>2.341363095225635</longitude>
+				<latitude>41.78050116537504</latitude>
 				<altitude>0</altitude>
-				<heading>-26.04852692662728</heading>
-				<tilt>0.08160604984551986</tilt>
-				<range>2173582.662393672</range>
+				<heading>8.2923950658233</heading>
+				<tilt>0.02035379264846064</tilt>
+				<range>2370928.846431498</range>
 				<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
 			</LookAt>
 			<styleUrl>#msn_pjs</styleUrl>
 			<Point>
 				<gx:drawOrder>1</gx:drawOrder>
-				<coordinates>13.85921784261385,55.31559045156185,0</coordinates>
+				<coordinates>5.163571872765154,41.50842945760434,0</coordinates>
 			</Point>
 		</Placemark>
 		<Placemark>
-			<name>Krasnyevka - Wieden</name>
-			<styleUrl>#msn_ylw-pushpin</styleUrl>
+			<name>Villa Mirabilis</name>
+			<visibility>0</visibility>
+			<LookAt>
+				<longitude>-8.437320576158955</longitude>
+				<latitude>41.09230713573555</latitude>
+				<altitude>0</altitude>
+				<heading>-4.202426135626923</heading>
+				<tilt>0</tilt>
+				<range>348026.442917731</range>
+				<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+			</LookAt>
+			<styleUrl>#msn_homegardenbusiness</styleUrl>
+			<Point>
+				<gx:drawOrder>1</gx:drawOrder>
+				<coordinates>-8.715290345006807,42.00381878405936,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>11.3 Chateau Von Kraun - Kreichlund</name>
+			<styleUrl>#m_ylw-pushpin</styleUrl>
 			<LineString>
 				<tessellate>1</tessellate>
 				<coordinates>
-					14.1050598936449,54.94240688220943,0 5.145122576469527,56.77845944331901,0 -4.844178092628893,55.34472398117377,0 -6.277519468064718,53.77879234801895,0 -4.023152643548777,47.54878888092672,0 
+					-2.386464089731628,53.36820993620427,0 -3.78237460607078,54.18493652393166,0 
 				</coordinates>
 			</LineString>
 		</Placemark>
 	</Folder>
 	<Folder>
 		<name>Empire du milieu</name>
+		<open>1</open>
 		<Folder>
 			<name>dragons</name>
 			<open>1</open>
 			<Placemark>
 				<name>Amerai</name>
-				<LookAt>
-					<longitude>16.79843047634634</longitude>
-					<latitude>40.17557237364854</latitude>
-					<altitude>0</altitude>
-					<heading>-10.93599991508228</heading>
-					<tilt>0.1866856525075499</tilt>
-					<range>2257663.925132472</range>
+				<Camera>
+					<longitude>13.03886343675578</longitude>
+					<latitude>36.23602079552016</latitude>
+					<altitude>2415126.881364393</altitude>
+					<heading>11.7344211830183</heading>
+					<tilt>0.5420262438641495</tilt>
+					<roll>0.5307394992084051</roll>
 					<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
-				</LookAt>
+				</Camera>
 				<styleUrl>#msn_dragon_eau</styleUrl>
 				<Point>
 					<gx:drawOrder>1</gx:drawOrder>
-					<coordinates>20.07487411380613,43.34425755335659,0</coordinates>
+					<coordinates>17.02848899227556,42.69097347409695,0</coordinates>
 				</Point>
 			</Placemark>
 			<Placemark>
@@ -1613,18 +2016,18 @@
 			<Placemark>
 				<name>Azaria</name>
 				<LookAt>
-					<longitude>15.14438520062271</longitude>
-					<latitude>38.25467932611426</latitude>
+					<longitude>16.0777102501025</longitude>
+					<latitude>38.92695526876651</latitude>
 					<altitude>0</altitude>
-					<heading>-11.74561943547113</heading>
-					<tilt>0.2253180435167655</tilt>
-					<range>1149234.968837891</range>
+					<heading>-0.09828634309020329</heading>
+					<tilt>0</tilt>
+					<range>2664008.44930071</range>
 					<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
 				</LookAt>
 				<styleUrl>#msn_dragon_terre</styleUrl>
 				<Point>
 					<gx:drawOrder>1</gx:drawOrder>
-					<coordinates>10.72280464819853,38.94459028285838,0</coordinates>
+					<coordinates>24.70882559769321,37.22483276604767,0</coordinates>
 				</Point>
 			</Placemark>
 		</Folder>
@@ -1634,18 +2037,18 @@
 			<Placemark>
 				<name>Varshad</name>
 				<LookAt>
-					<longitude>13.35211261927025</longitude>
-					<latitude>36.3739053732277</latitude>
+					<longitude>16.0777102501025</longitude>
+					<latitude>38.92695526876651</latitude>
 					<altitude>0</altitude>
-					<heading>-12.6882575154823</heading>
-					<tilt>0.4229121819447104</tilt>
-					<range>1418214.865561771</range>
+					<heading>-0.09828634309020329</heading>
+					<tilt>0</tilt>
+					<range>2664008.44930071</range>
 					<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
 				</LookAt>
-				<styleUrl>#msn_city</styleUrl>
+				<styleUrl>#msn_city2</styleUrl>
 				<Point>
 					<gx:drawOrder>1</gx:drawOrder>
-					<coordinates>11.20032868671678,38.43018359607341,0</coordinates>
+					<coordinates>25.31847891821069,36.62012327418497,0</coordinates>
 				</Point>
 			</Placemark>
 			<Placemark>
@@ -1659,7 +2062,7 @@
 					<range>596217.98082355</range>
 					<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
 				</LookAt>
-				<styleUrl>#msn_city</styleUrl>
+				<styleUrl>#msn_city1</styleUrl>
 				<Point>
 					<gx:drawOrder>1</gx:drawOrder>
 					<coordinates>15.15056032479853,48.58446171986035,0</coordinates>
@@ -1668,18 +2071,18 @@
 			<Placemark>
 				<name>Ershagad</name>
 				<LookAt>
-					<longitude>15.47939047500078</longitude>
-					<latitude>36.32423654884533</latitude>
+					<longitude>16.0777102501025</longitude>
+					<latitude>38.92695526876651</latitude>
 					<altitude>0</altitude>
-					<heading>-11.447772119378</heading>
-					<tilt>0.3078152696300157</tilt>
-					<range>1203658.394283001</range>
+					<heading>-0.09828634309020329</heading>
+					<tilt>0</tilt>
+					<range>2664008.44930071</range>
 					<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
 				</LookAt>
-				<styleUrl>#msn_city2</styleUrl>
+				<styleUrl>#msn_city</styleUrl>
 				<Point>
 					<gx:drawOrder>1</gx:drawOrder>
-					<coordinates>14.85556122894791,38.22017619752731,0</coordinates>
+					<coordinates>15.3357615153526,38.25903029836296,0</coordinates>
 				</Point>
 			</Placemark>
 			<Placemark>
@@ -1693,7 +2096,7 @@
 					<range>1230744.723380024</range>
 					<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
 				</LookAt>
-				<styleUrl>#msn_city2</styleUrl>
+				<styleUrl>#msn_city20</styleUrl>
 				<Point>
 					<gx:drawOrder>1</gx:drawOrder>
 					<coordinates>23.2707302222437,42.6577965429473,0</coordinates>
@@ -1714,12 +2117,29 @@
 				<range>2204371.836790516</range>
 				<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
 			</LookAt>
-			<styleUrl>#msn_city1</styleUrl>
+			<styleUrl>#msn_city10</styleUrl>
 			<Point>
 				<gx:drawOrder>1</gx:drawOrder>
 				<coordinates>-4.108537685419023,47.51800318147605,0</coordinates>
 			</Point>
 		</Placemark>
 	</Folder>
+	<Placemark>
+		<name>Beaune</name>
+		<LookAt>
+			<longitude>-9.865040189391443</longitude>
+			<latitude>40.70810068005409</latitude>
+			<altitude>0</altitude>
+			<heading>-2.042918927860501</heading>
+			<tilt>6.127587042722518</tilt>
+			<range>103040.2366782261</range>
+			<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+		</LookAt>
+		<styleUrl>#m_ylw-pushpin0</styleUrl>
+		<Point>
+			<gx:drawOrder>1</gx:drawOrder>
+			<coordinates>-10.09455093975499,40.5624860916413,0</coordinates>
+		</Point>
+	</Placemark>
 </Document>
 </kml>
