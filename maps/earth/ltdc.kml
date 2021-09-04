@@ -3,234 +3,44 @@
 <Document>
 	<name>Temps des cerises</name>
 	<open>1</open>
-	<Style id="sh_tipi0">
-		<IconStyle>
-			<scale>1.4</scale>
-			<Icon>
-				<href>ressources/tipi.png</href>
-			</Icon>
-		</IconStyle>
-	</Style>
-	<StyleMap id="m_ylw-pushpin0">
+	<StyleMap id="msn_Wolf">
 		<Pair>
 			<key>normal</key>
-			<styleUrl>#s_ylw-pushpin3</styleUrl>
+			<styleUrl>#sn_Wolf</styleUrl>
 		</Pair>
 		<Pair>
 			<key>highlight</key>
-			<styleUrl>#s_ylw-pushpin_hl</styleUrl>
+			<styleUrl>#sh_Wolf</styleUrl>
 		</Pair>
 	</StyleMap>
-	<Style id="sn_lake">
-		<IconStyle>
-			<scale>1.1</scale>
-			<Icon>
-				<href>D:/Documents/jdr/le_temps_des_cerises/ltdc/maps/earth/ressources/lake.png</href>
-			</Icon>
-		</IconStyle>
-	</Style>
-	<StyleMap id="msn_forest">
+	<StyleMap id="msn_ylw-pushpin20">
 		<Pair>
 			<key>normal</key>
-			<styleUrl>#sn_forest</styleUrl>
+			<styleUrl>#sn_ylw-pushpin3</styleUrl>
 		</Pair>
 		<Pair>
 			<key>highlight</key>
-			<styleUrl>#sh_forest</styleUrl>
+			<styleUrl>#sh_ylw-pushpin20</styleUrl>
 		</Pair>
 	</StyleMap>
-	<Style id="s_ylw-pushpin3">
-		<IconStyle>
-			<scale>1.1</scale>
-			<Icon>
-				<href>D:/Documents/jdr/le_temps_des_cerises/ltdc/maps/earth/ressources/city.png</href>
-			</Icon>
-			<hotSpot x="0.5" y="0.5" xunits="fraction" yunits="fraction"/>
-		</IconStyle>
-	</Style>
-	<Style id="sn_ylw-pushpin40">
-		<IconStyle>
-			<scale>1.1</scale>
-			<Icon>
-				<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
-			</Icon>
-			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
-		</IconStyle>
-		<LineStyle>
-			<width>2</width>
-		</LineStyle>
-	</Style>
-	<StyleMap id="msn_dragon_feu">
+	<StyleMap id="msn_city10">
 		<Pair>
 			<key>normal</key>
-			<styleUrl>#sn_dragon_feu</styleUrl>
+			<styleUrl>#sn_city4</styleUrl>
 		</Pair>
 		<Pair>
 			<key>highlight</key>
-			<styleUrl>#sh_dragon_feu</styleUrl>
+			<styleUrl>#sh_city3</styleUrl>
 		</Pair>
 	</StyleMap>
-	<Style id="sh_ylw-pushpin30">
-		<IconStyle>
-			<scale>1.3</scale>
-			<Icon>
-				<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
-			</Icon>
-			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
-		</IconStyle>
-		<PolyStyle>
-			<color>b3828282</color>
-			<outline>0</outline>
-		</PolyStyle>
-	</Style>
-	<Style id="sh_dragon_feu">
-		<IconStyle>
-			<scale>2.12727</scale>
-			<Icon>
-				<href>ressources/dragon_feu.png</href>
-			</Icon>
-		</IconStyle>
-	</Style>
-	<Style id="sn_city3">
-		<IconStyle>
-			<scale>1.8</scale>
-			<Icon>
-				<href>ressources/city.png</href>
-			</Icon>
-		</IconStyle>
-	</Style>
-	<StyleMap id="msn_ylw-pushpin00">
+	<StyleMap id="msn_man10">
 		<Pair>
 			<key>normal</key>
-			<styleUrl>#sn_ylw-pushpin1</styleUrl>
+			<styleUrl>#sn_man0</styleUrl>
 		</Pair>
 		<Pair>
 			<key>highlight</key>
-			<styleUrl>#sh_ylw-pushpin1</styleUrl>
-		</Pair>
-	</StyleMap>
-	<Style id="sh_ylw-pushpin20">
-		<IconStyle>
-			<scale>1.3</scale>
-			<Icon>
-				<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
-			</Icon>
-			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
-		</IconStyle>
-		<LineStyle>
-			<color>ffff5500</color>
-			<width>2</width>
-		</LineStyle>
-	</Style>
-	<StyleMap id="msn_ylw-pushpin4">
-		<Pair>
-			<key>normal</key>
-			<styleUrl>#sn_ylw-pushpin</styleUrl>
-		</Pair>
-		<Pair>
-			<key>highlight</key>
-			<styleUrl>#sh_ylw-pushpin</styleUrl>
-		</Pair>
-	</StyleMap>
-	<Style id="s_ylw-pushpin2">
-		<IconStyle>
-			<scale>1.1</scale>
-			<Icon>
-				<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
-			</Icon>
-			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
-		</IconStyle>
-	</Style>
-	<Style id="sn_Wolf">
-		<IconStyle>
-			<scale>1.2</scale>
-			<Icon>
-				<href>ressources/Wolf.png</href>
-			</Icon>
-		</IconStyle>
-	</Style>
-	<Style id="sn_city4">
-		<IconStyle>
-			<scale>1.8</scale>
-			<Icon>
-				<href>D:/Documents/jdr/le_temps_des_cerises/ltdc/maps/earth/ressources/city.png</href>
-			</Icon>
-		</IconStyle>
-	</Style>
-	<Style id="sh_tipi">
-		<IconStyle>
-			<scale>1.4</scale>
-			<Icon>
-				<href>ressources/tipi.png</href>
-			</Icon>
-		</IconStyle>
-	</Style>
-	<Style id="sh_city1">
-		<IconStyle>
-			<scale>2.12727</scale>
-			<Icon>
-				<href>ressources/city.png</href>
-			</Icon>
-		</IconStyle>
-	</Style>
-	<Style id="s_ylw-pushpin_hl2">
-		<IconStyle>
-			<scale>1.3</scale>
-			<Icon>
-				<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
-			</Icon>
-			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
-		</IconStyle>
-	</Style>
-	<Style id="sh_pickaxe">
-		<IconStyle>
-			<scale>2.12727</scale>
-			<Icon>
-				<href>D:/Documents/jdr/le_temps_des_cerises/ltdc/maps/earth/ressources/pickaxe.png</href>
-			</Icon>
-		</IconStyle>
-	</Style>
-	<Style id="sn_man1">
-		<IconStyle>
-			<scale>1.2</scale>
-			<Icon>
-				<href>http://maps.google.com/mapfiles/kml/shapes/man.png</href>
-			</Icon>
-		</IconStyle>
-	</Style>
-	<Style id="sh_homegardenbusiness">
-		<IconStyle>
-			<scale>1.4</scale>
-			<Icon>
-				<href>http://maps.google.com/mapfiles/kml/shapes/homegardenbusiness.png</href>
-			</Icon>
-			<hotSpot x="0.5" y="0" xunits="fraction" yunits="fraction"/>
-		</IconStyle>
-	</Style>
-	<Style id="sn_pjs">
-		<IconStyle>
-			<scale>1.8</scale>
-			<Icon>
-				<href>ressources/pjs.png</href>
-			</Icon>
-		</IconStyle>
-	</Style>
-	<Style id="sn_tipi">
-		<IconStyle>
-			<scale>1.2</scale>
-			<Icon>
-				<href>ressources/tipi.png</href>
-			</Icon>
-		</IconStyle>
-	</Style>
-	<StyleMap id="msn_tipi0">
-		<Pair>
-			<key>normal</key>
-			<styleUrl>#sn_tipi</styleUrl>
-		</Pair>
-		<Pair>
-			<key>highlight</key>
-			<styleUrl>#sh_tipi0</styleUrl>
+			<styleUrl>#sh_man0</styleUrl>
 		</Pair>
 	</StyleMap>
 	<Style id="s_ylw-pushpin">
@@ -242,34 +52,48 @@
 			<hotSpot x="0.5" y="0.5" xunits="fraction" yunits="fraction"/>
 		</IconStyle>
 	</Style>
-	<StyleMap id="msn_ylw-pushpin20">
-		<Pair>
-			<key>normal</key>
-			<styleUrl>#sn_ylw-pushpin3</styleUrl>
-		</Pair>
-		<Pair>
-			<key>highlight</key>
-			<styleUrl>#sh_ylw-pushpin20</styleUrl>
-		</Pair>
-	</StyleMap>
-	<Style id="sn_city1">
+	<Style id="sh_dragon_air">
 		<IconStyle>
-			<scale>1.2</scale>
+			<scale>2.12727</scale>
 			<Icon>
-				<href>ressources/city.png</href>
+				<href>ressources/dragon_air.png</href>
 			</Icon>
 		</IconStyle>
 	</Style>
-	<StyleMap id="msn_city">
+	<Style id="sn_man">
+		<IconStyle>
+			<scale>1.2</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/shapes/man.png</href>
+			</Icon>
+		</IconStyle>
+	</Style>
+	<StyleMap id="m_ylw-pushpin2">
 		<Pair>
 			<key>normal</key>
-			<styleUrl>#sn_city0</styleUrl>
+			<styleUrl>#s_ylw-pushpin</styleUrl>
 		</Pair>
 		<Pair>
 			<key>highlight</key>
-			<styleUrl>#sh_city</styleUrl>
+			<styleUrl>#s_ylw-pushpin_hl1</styleUrl>
 		</Pair>
 	</StyleMap>
+	<Style id="sh_dragon_feu">
+		<IconStyle>
+			<scale>2.12727</scale>
+			<Icon>
+				<href>ressources/dragon_feu.png</href>
+			</Icon>
+		</IconStyle>
+	</Style>
+	<Style id="sh_dragon_terre">
+		<IconStyle>
+			<scale>2.12727</scale>
+			<Icon>
+				<href>ressources/dragon_terre.png</href>
+			</Icon>
+		</IconStyle>
+	</Style>
 	<Style id="sh_ylw-pushpin2">
 		<IconStyle>
 			<scale>1.3</scale>
@@ -282,14 +106,60 @@
 			<width>2</width>
 		</LineStyle>
 	</Style>
-	<Style id="sh_volcan">
+	<StyleMap id="m_ylw-pushpin0">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#s_ylw-pushpin3</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#s_ylw-pushpin_hl</styleUrl>
+		</Pair>
+	</StyleMap>
+	<Style id="sh_tipi0">
 		<IconStyle>
-			<scale>2.56667</scale>
+			<scale>1.4</scale>
 			<Icon>
-				<href>ressources/volcan.png</href>
+				<href>ressources/tipi.png</href>
 			</Icon>
 		</IconStyle>
 	</Style>
+	<Style id="sh_man0">
+		<IconStyle>
+			<scale>1.4</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/shapes/man.png</href>
+			</Icon>
+		</IconStyle>
+	</Style>
+	<StyleMap id="m_ylw-pushpin00">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#s_ylw-pushpin1</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#s_ylw-pushpin_hl00</styleUrl>
+		</Pair>
+	</StyleMap>
+	<Style id="sn_tipi">
+		<IconStyle>
+			<scale>1.2</scale>
+			<Icon>
+				<href>ressources/tipi.png</href>
+			</Icon>
+		</IconStyle>
+	</Style>
+	<StyleMap id="msn_castle">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#sn_castle</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#sh_castle</styleUrl>
+		</Pair>
+	</StyleMap>
 	<Style id="sn_ylw-pushpin4">
 		<IconStyle>
 			<scale>1.1</scale>
@@ -302,123 +172,18 @@
 			<width>2</width>
 		</LineStyle>
 	</Style>
-	<Style id="sh_ylw-pushpin1">
+	<Style id="sh_castle">
 		<IconStyle>
-			<scale>1.3</scale>
+			<scale>1.4</scale>
 			<Icon>
-				<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
-			</Icon>
-			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
-		</IconStyle>
-		<LineStyle>
-			<color>ffff5500</color>
-			<width>2</width>
-		</LineStyle>
-	</Style>
-	<Style id="sh_city">
-		<IconStyle>
-			<scale>2.12727</scale>
-			<Icon>
-				<href>ressources/city.png</href>
+				<href>D:/Documents/jdr/le_temps_des_cerises/ltdc/maps/earth/ressources/castle.png</href>
 			</Icon>
 		</IconStyle>
 		<BalloonStyle>
 		</BalloonStyle>
+		<ListStyle>
+		</ListStyle>
 	</Style>
-	<StyleMap id="m_ylw-pushpin00">
-		<Pair>
-			<key>normal</key>
-			<styleUrl>#s_ylw-pushpin1</styleUrl>
-		</Pair>
-		<Pair>
-			<key>highlight</key>
-			<styleUrl>#s_ylw-pushpin_hl00</styleUrl>
-		</Pair>
-	</StyleMap>
-	<Style id="sn_pickaxe">
-		<IconStyle>
-			<scale>1.8</scale>
-			<Icon>
-				<href>D:/Documents/jdr/le_temps_des_cerises/ltdc/maps/earth/ressources/pickaxe.png</href>
-			</Icon>
-		</IconStyle>
-	</Style>
-	<StyleMap id="msn_dragon_eau">
-		<Pair>
-			<key>normal</key>
-			<styleUrl>#sn_dragon_eau</styleUrl>
-		</Pair>
-		<Pair>
-			<key>highlight</key>
-			<styleUrl>#sh_dragon_eau</styleUrl>
-		</Pair>
-	</StyleMap>
-	<StyleMap id="msn_ylw-pushpin">
-		<Pair>
-			<key>normal</key>
-			<styleUrl>#sn_ylw-pushpin40</styleUrl>
-		</Pair>
-		<Pair>
-			<key>highlight</key>
-			<styleUrl>#sh_ylw-pushpin40</styleUrl>
-		</Pair>
-	</StyleMap>
-	<Style id="s_ylw-pushpin00">
-		<IconStyle>
-			<scale>1.1</scale>
-			<Icon>
-				<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
-			</Icon>
-			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
-		</IconStyle>
-	</Style>
-	<Style id="sh_dragon_terre">
-		<IconStyle>
-			<scale>2.12727</scale>
-			<Icon>
-				<href>ressources/dragon_terre.png</href>
-			</Icon>
-		</IconStyle>
-		<BalloonStyle>
-		</BalloonStyle>
-	</Style>
-	<Style id="sh_coliseum">
-		<IconStyle>
-			<scale>1.75</scale>
-			<Icon>
-				<href>ressources/coliseum.png</href>
-			</Icon>
-			<hotSpot x="0.5" y="0.5" xunits="fraction" yunits="fraction"/>
-		</IconStyle>
-	</Style>
-	<StyleMap id="msn_city00">
-		<Pair>
-			<key>normal</key>
-			<styleUrl>#sn_city1</styleUrl>
-		</Pair>
-		<Pair>
-			<key>highlight</key>
-			<styleUrl>#sh_city00</styleUrl>
-		</Pair>
-	</StyleMap>
-	<Style id="sh_dragon_eau">
-		<IconStyle>
-			<scale>2.12727</scale>
-			<Icon>
-				<href>ressources/dragon_eau.png</href>
-			</Icon>
-		</IconStyle>
-	</Style>
-	<StyleMap id="msn_volcan">
-		<Pair>
-			<key>normal</key>
-			<styleUrl>#sn_volcan</styleUrl>
-		</Pair>
-		<Pair>
-			<key>highlight</key>
-			<styleUrl>#sh_volcan</styleUrl>
-		</Pair>
-	</StyleMap>
 	<Style id="s_ylw-pushpin_hl0">
 		<IconStyle>
 			<scale>1.3</scale>
@@ -428,151 +193,7 @@
 			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
 		</IconStyle>
 	</Style>
-	<Style id="sn_ylw-pushpin00">
-		<IconStyle>
-			<scale>1.1</scale>
-			<Icon>
-				<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
-			</Icon>
-			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
-		</IconStyle>
-		<PolyStyle>
-			<color>b3828282</color>
-			<outline>0</outline>
-		</PolyStyle>
-	</Style>
-	<StyleMap id="msn_coliseum">
-		<Pair>
-			<key>normal</key>
-			<styleUrl>#sn_coliseum</styleUrl>
-		</Pair>
-		<Pair>
-			<key>highlight</key>
-			<styleUrl>#sh_coliseum0</styleUrl>
-		</Pair>
-	</StyleMap>
-	<Style id="sn_man0">
-		<IconStyle>
-			<scale>1.2</scale>
-			<Icon>
-				<href>http://maps.google.com/mapfiles/kml/shapes/man.png</href>
-			</Icon>
-		</IconStyle>
-	</Style>
-	<StyleMap id="msn_city2">
-		<Pair>
-			<key>normal</key>
-			<styleUrl>#sn_city5</styleUrl>
-		</Pair>
-		<Pair>
-			<key>highlight</key>
-			<styleUrl>#sh_city10</styleUrl>
-		</Pair>
-	</StyleMap>
-	<Style id="sh_city10">
-		<IconStyle>
-			<scale>2.12727</scale>
-			<Icon>
-				<href>ressources/city.png</href>
-			</Icon>
-		</IconStyle>
-	</Style>
-	<StyleMap id="msn_city0">
-		<Pair>
-			<key>normal</key>
-			<styleUrl>#sn_city2</styleUrl>
-		</Pair>
-		<Pair>
-			<key>highlight</key>
-			<styleUrl>#sh_city100</styleUrl>
-		</Pair>
-	</StyleMap>
-	<Style id="s_ylw-pushpin0">
-		<IconStyle>
-			<scale>1.1</scale>
-			<Icon>
-				<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
-			</Icon>
-			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
-		</IconStyle>
-	</Style>
-	<StyleMap id="msn_man1">
-		<Pair>
-			<key>normal</key>
-			<styleUrl>#sn_man</styleUrl>
-		</Pair>
-		<Pair>
-			<key>highlight</key>
-			<styleUrl>#sh_man00</styleUrl>
-		</Pair>
-	</StyleMap>
-	<StyleMap id="msn_dragon_air">
-		<Pair>
-			<key>normal</key>
-			<styleUrl>#sn_dragon_air</styleUrl>
-		</Pair>
-		<Pair>
-			<key>highlight</key>
-			<styleUrl>#sh_dragon_air</styleUrl>
-		</Pair>
-	</StyleMap>
-	<Style id="sn_city">
-		<IconStyle>
-			<scale>1.8</scale>
-			<Icon>
-				<href>ressources/city.png</href>
-			</Icon>
-		</IconStyle>
-	</Style>
-	<StyleMap id="msn_ylw-pushpin3">
-		<Pair>
-			<key>normal</key>
-			<styleUrl>#sn_ylw-pushpin00</styleUrl>
-		</Pair>
-		<Pair>
-			<key>highlight</key>
-			<styleUrl>#sh_ylw-pushpin30</styleUrl>
-		</Pair>
-	</StyleMap>
-	<Style id="sn_dragon_air">
-		<IconStyle>
-			<scale>1.8</scale>
-			<Icon>
-				<href>ressources/dragon_air.png</href>
-			</Icon>
-		</IconStyle>
-	</Style>
-	<Style id="s_ylw-pushpin_hl">
-		<IconStyle>
-			<scale>1.3</scale>
-			<Icon>
-				<href>D:/Documents/jdr/le_temps_des_cerises/ltdc/maps/earth/ressources/city.png</href>
-			</Icon>
-			<hotSpot x="0.5" y="0.5" xunits="fraction" yunits="fraction"/>
-		</IconStyle>
-	</Style>
-	<Style id="sn_ylw-pushpin1">
-		<IconStyle>
-			<scale>1.1</scale>
-			<Icon>
-				<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
-			</Icon>
-			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
-		</IconStyle>
-		<LineStyle>
-			<color>ffff5500</color>
-			<width>2</width>
-		</LineStyle>
-	</Style>
-	<Style id="sn_dragon_feu">
-		<IconStyle>
-			<scale>1.8</scale>
-			<Icon>
-				<href>ressources/dragon_feu.png</href>
-			</Icon>
-		</IconStyle>
-	</Style>
-	<Style id="sh_ylw-pushpin4">
+	<Style id="sh_ylw-pushpin">
 		<IconStyle>
 			<scale>1.3</scale>
 			<Icon>
@@ -583,93 +204,6 @@
 		<LineStyle>
 			<width>2</width>
 		</LineStyle>
-	</Style>
-	<StyleMap id="m_ylw-pushpin">
-		<Pair>
-			<key>normal</key>
-			<styleUrl>#s_ylw-pushpin2</styleUrl>
-		</Pair>
-		<Pair>
-			<key>highlight</key>
-			<styleUrl>#s_ylw-pushpin_hl2</styleUrl>
-		</Pair>
-	</StyleMap>
-	<Style id="sh_ylw-pushpin0">
-		<IconStyle>
-			<scale>1.3</scale>
-			<Icon>
-				<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
-			</Icon>
-			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
-		</IconStyle>
-		<LineStyle>
-			<color>ff565656</color>
-			<width>2</width>
-		</LineStyle>
-	</Style>
-	<Style id="sh_Wolf">
-		<IconStyle>
-			<scale>1.4</scale>
-			<Icon>
-				<href>ressources/Wolf.png</href>
-			</Icon>
-		</IconStyle>
-	</Style>
-	<Style id="s_ylw-pushpin_hl1">
-		<IconStyle>
-			<scale>1.3</scale>
-			<Icon>
-				<href>D:/Documents/jdr/le_temps_des_cerises/ltdc/maps/earth/ressources/castle.png</href>
-			</Icon>
-			<hotSpot x="0.5" y="0.5" xunits="fraction" yunits="fraction"/>
-		</IconStyle>
-	</Style>
-	<Style id="sn_ylw-pushpin2">
-		<IconStyle>
-			<scale>1.1</scale>
-			<Icon>
-				<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
-			</Icon>
-			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
-		</IconStyle>
-		<LineStyle>
-			<color>ff565656</color>
-			<width>2</width>
-		</LineStyle>
-	</Style>
-	<StyleMap id="msn_city1">
-		<Pair>
-			<key>normal</key>
-			<styleUrl>#sn_city3</styleUrl>
-		</Pair>
-		<Pair>
-			<key>highlight</key>
-			<styleUrl>#sh_city2</styleUrl>
-		</Pair>
-	</StyleMap>
-	<Style id="sh_lake">
-		<IconStyle>
-			<scale>1.3</scale>
-			<Icon>
-				<href>D:/Documents/jdr/le_temps_des_cerises/ltdc/maps/earth/ressources/lake.png</href>
-			</Icon>
-		</IconStyle>
-	</Style>
-	<Style id="sn_tipi0">
-		<IconStyle>
-			<scale>1.2</scale>
-			<Icon>
-				<href>ressources/tipi.png</href>
-			</Icon>
-		</IconStyle>
-	</Style>
-	<Style id="sh_man">
-		<IconStyle>
-			<scale>1.4</scale>
-			<Icon>
-				<href>http://maps.google.com/mapfiles/kml/shapes/man.png</href>
-			</Icon>
-		</IconStyle>
 	</Style>
 	<StyleMap id="msn_homegardenbusiness">
 		<Pair>
@@ -693,52 +227,15 @@
 			<width>2</width>
 		</LineStyle>
 	</Style>
-	<Style id="s_ylw-pushpin_hl00">
+	<Style id="sh_dragon_eau">
 		<IconStyle>
-			<scale>1.3</scale>
+			<scale>2.12727</scale>
 			<Icon>
-				<href>ressources/city.png</href>
-			</Icon>
-			<hotSpot x="0.5" y="0.5" xunits="fraction" yunits="fraction"/>
-		</IconStyle>
-	</Style>
-	<Style id="sn_city0">
-		<IconStyle>
-			<scale>1.8</scale>
-			<Icon>
-				<href>ressources/city.png</href>
-			</Icon>
-		</IconStyle>
-		<BalloonStyle>
-		</BalloonStyle>
-	</Style>
-	<Style id="sn_volcan">
-		<IconStyle>
-			<scale>2.2</scale>
-			<Icon>
-				<href>ressources/volcan.png</href>
+				<href>ressources/dragon_eau.png</href>
 			</Icon>
 		</IconStyle>
 	</Style>
-	<Style id="sn_forest">
-		<IconStyle>
-			<scale>1.1</scale>
-			<Icon>
-				<href>D:/Documents/jdr/le_temps_des_cerises/ltdc/maps/earth/ressources/forest.png</href>
-			</Icon>
-		</IconStyle>
-	</Style>
-	<StyleMap id="msn_ylw-pushpin30">
-		<Pair>
-			<key>normal</key>
-			<styleUrl>#sn_ylw-pushpin01</styleUrl>
-		</Pair>
-		<Pair>
-			<key>highlight</key>
-			<styleUrl>#sh_ylw-pushpin3</styleUrl>
-		</Pair>
-	</StyleMap>
-	<Style id="sn_man">
+	<Style id="sn_man0">
 		<IconStyle>
 			<scale>1.2</scale>
 			<Icon>
@@ -746,45 +243,33 @@
 			</Icon>
 		</IconStyle>
 	</Style>
-	<StyleMap id="msn_man">
-		<Pair>
-			<key>normal</key>
-			<styleUrl>#sn_man1</styleUrl>
-		</Pair>
-		<Pair>
-			<key>highlight</key>
-			<styleUrl>#sh_man</styleUrl>
-		</Pair>
-	</StyleMap>
-	<StyleMap id="msn_dragon_terre">
-		<Pair>
-			<key>normal</key>
-			<styleUrl>#sn_dragon_terre</styleUrl>
-		</Pair>
-		<Pair>
-			<key>highlight</key>
-			<styleUrl>#sh_dragon_terre</styleUrl>
-		</Pair>
-	</StyleMap>
-	<Style id="sh_city0">
+	<Style id="sn_city5">
 		<IconStyle>
-			<scale>2.33333</scale>
+			<scale>1.8</scale>
 			<Icon>
 				<href>ressources/city.png</href>
 			</Icon>
 		</IconStyle>
 	</Style>
-	<StyleMap id="msn_lake">
+	<StyleMap id="msn_coliseum">
 		<Pair>
 			<key>normal</key>
-			<styleUrl>#sn_lake</styleUrl>
+			<styleUrl>#sn_coliseum</styleUrl>
 		</Pair>
 		<Pair>
 			<key>highlight</key>
-			<styleUrl>#sh_lake</styleUrl>
+			<styleUrl>#sh_coliseum0</styleUrl>
 		</Pair>
 	</StyleMap>
-	<Style id="sn_ylw-pushpin01">
+	<Style id="sn_city00">
+		<IconStyle>
+			<scale>2</scale>
+			<Icon>
+				<href>ressources/city.png</href>
+			</Icon>
+		</IconStyle>
+	</Style>
+	<Style id="sn_ylw-pushpin2">
 		<IconStyle>
 			<scale>1.1</scale>
 			<Icon>
@@ -792,62 +277,18 @@
 			</Icon>
 			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
 		</IconStyle>
-		<PolyStyle>
-			<color>b3828282</color>
-			<outline>0</outline>
-		</PolyStyle>
+		<LineStyle>
+			<color>ff565656</color>
+			<width>2</width>
+		</LineStyle>
 	</Style>
-	<StyleMap id="msn_ylw-pushpin0">
-		<Pair>
-			<key>normal</key>
-			<styleUrl>#sn_ylw-pushpin0</styleUrl>
-		</Pair>
-		<Pair>
-			<key>highlight</key>
-			<styleUrl>#sh_ylw-pushpin2</styleUrl>
-		</Pair>
-	</StyleMap>
-	<Style id="sh_city3">
+	<Style id="sn_homegardenbusiness">
 		<IconStyle>
-			<scale>2.12727</scale>
+			<scale>1.2</scale>
 			<Icon>
-				<href>D:/Documents/jdr/le_temps_des_cerises/ltdc/maps/earth/ressources/city.png</href>
+				<href>http://maps.google.com/mapfiles/kml/shapes/homegardenbusiness.png</href>
 			</Icon>
-		</IconStyle>
-	</Style>
-	<StyleMap id="msn_pickaxe">
-		<Pair>
-			<key>normal</key>
-			<styleUrl>#sn_pickaxe</styleUrl>
-		</Pair>
-		<Pair>
-			<key>highlight</key>
-			<styleUrl>#sh_pickaxe</styleUrl>
-		</Pair>
-	</StyleMap>
-	<Style id="s_ylw-pushpin_hl10">
-		<IconStyle>
-			<scale>1.3</scale>
-			<Icon>
-				<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
-			</Icon>
-			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
-		</IconStyle>
-	</Style>
-	<Style id="sh_city00">
-		<IconStyle>
-			<scale>1.4</scale>
-			<Icon>
-				<href>ressources/city.png</href>
-			</Icon>
-		</IconStyle>
-	</Style>
-	<Style id="sh_coliseum0">
-		<IconStyle>
-			<scale>1.75</scale>
-			<Icon>
-				<href>ressources/coliseum.png</href>
-			</Icon>
+			<hotSpot x="0.5" y="0" xunits="fraction" yunits="fraction"/>
 		</IconStyle>
 	</Style>
 	<StyleMap id="msn_tipi">
@@ -860,7 +301,15 @@
 			<styleUrl>#sh_tipi</styleUrl>
 		</Pair>
 	</StyleMap>
-	<Style id="sh_city100">
+	<Style id="sh_forest">
+		<IconStyle>
+			<scale>1.3</scale>
+			<Icon>
+				<href>D:/Documents/jdr/le_temps_des_cerises/ltdc/maps/earth/ressources/forest.png</href>
+			</Icon>
+		</IconStyle>
+	</Style>
+	<Style id="sh_city0">
 		<IconStyle>
 			<scale>2.33333</scale>
 			<Icon>
@@ -868,82 +317,7 @@
 			</Icon>
 		</IconStyle>
 	</Style>
-	<StyleMap id="msn_city10">
-		<Pair>
-			<key>normal</key>
-			<styleUrl>#sn_city4</styleUrl>
-		</Pair>
-		<Pair>
-			<key>highlight</key>
-			<styleUrl>#sh_city3</styleUrl>
-		</Pair>
-	</StyleMap>
-	<Style id="sn_city00">
-		<IconStyle>
-			<scale>2</scale>
-			<Icon>
-				<href>ressources/city.png</href>
-			</Icon>
-		</IconStyle>
-	</Style>
-	<Style id="sh_man00">
-		<IconStyle>
-			<scale>1.4</scale>
-			<Icon>
-				<href>http://maps.google.com/mapfiles/kml/shapes/man.png</href>
-			</Icon>
-		</IconStyle>
-	</Style>
-	<StyleMap id="msn_ylw-pushpin2">
-		<Pair>
-			<key>normal</key>
-			<styleUrl>#sn_ylw-pushpin4</styleUrl>
-		</Pair>
-		<Pair>
-			<key>highlight</key>
-			<styleUrl>#sh_ylw-pushpin4</styleUrl>
-		</Pair>
-	</StyleMap>
-	<Style id="sn_ylw-pushpin0">
-		<IconStyle>
-			<scale>1.1</scale>
-			<Icon>
-				<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
-			</Icon>
-			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
-		</IconStyle>
-		<LineStyle>
-			<width>2</width>
-		</LineStyle>
-	</Style>
-	<Style id="s_ylw-pushpin1">
-		<IconStyle>
-			<scale>1.1</scale>
-			<Icon>
-				<href>ressources/city.png</href>
-			</Icon>
-			<hotSpot x="0.5" y="0.5" xunits="fraction" yunits="fraction"/>
-		</IconStyle>
-	</Style>
-	<Style id="sh_man0">
-		<IconStyle>
-			<scale>1.4</scale>
-			<Icon>
-				<href>http://maps.google.com/mapfiles/kml/shapes/man.png</href>
-			</Icon>
-		</IconStyle>
-	</Style>
-	<StyleMap id="msn_pjs">
-		<Pair>
-			<key>normal</key>
-			<styleUrl>#sn_pjs</styleUrl>
-		</Pair>
-		<Pair>
-			<key>highlight</key>
-			<styleUrl>#sh_pjs</styleUrl>
-		</Pair>
-	</StyleMap>
-	<Style id="sh_ylw-pushpin3">
+	<Style id="sh_ylw-pushpin30">
 		<IconStyle>
 			<scale>1.3</scale>
 			<Icon>
@@ -956,14 +330,97 @@
 			<outline>0</outline>
 		</PolyStyle>
 	</Style>
-	<StyleMap id="msn_coliseum0">
+	<Style id="sh_city3">
+		<IconStyle>
+			<scale>2.12727</scale>
+			<Icon>
+				<href>D:/Documents/jdr/le_temps_des_cerises/ltdc/maps/earth/ressources/city.png</href>
+			</Icon>
+		</IconStyle>
+	</Style>
+	<Style id="sh_lake">
+		<IconStyle>
+			<scale>1.3</scale>
+			<Icon>
+				<href>D:/Documents/jdr/le_temps_des_cerises/ltdc/maps/earth/ressources/lake.png</href>
+			</Icon>
+		</IconStyle>
+	</Style>
+	<Style id="sn_dragon_air">
+		<IconStyle>
+			<scale>1.8</scale>
+			<Icon>
+				<href>ressources/dragon_air.png</href>
+			</Icon>
+		</IconStyle>
+	</Style>
+	<Style id="sn_ylw-pushpin00">
+		<IconStyle>
+			<scale>1.1</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+			</Icon>
+			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+		<PolyStyle>
+			<color>b3828282</color>
+			<outline>0</outline>
+		</PolyStyle>
+	</Style>
+	<StyleMap id="msn_man">
 		<Pair>
 			<key>normal</key>
-			<styleUrl>#sn_coliseum0</styleUrl>
+			<styleUrl>#sn_man1</styleUrl>
 		</Pair>
 		<Pair>
 			<key>highlight</key>
-			<styleUrl>#sh_coliseum</styleUrl>
+			<styleUrl>#sh_man</styleUrl>
+		</Pair>
+	</StyleMap>
+	<Style id="sn_tipi0">
+		<IconStyle>
+			<scale>1.2</scale>
+			<Icon>
+				<href>ressources/tipi.png</href>
+			</Icon>
+		</IconStyle>
+	</Style>
+	<StyleMap id="msn_city100">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#sn_city00</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#sh_city0</styleUrl>
+		</Pair>
+	</StyleMap>
+	<StyleMap id="msn_forest">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#sn_forest</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#sh_forest</styleUrl>
+		</Pair>
+	</StyleMap>
+	<Style id="sh_man">
+		<IconStyle>
+			<scale>1.4</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/shapes/man.png</href>
+			</Icon>
+		</IconStyle>
+	</Style>
+	<StyleMap id="msn_volcan">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#sn_volcan</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#sh_volcan</styleUrl>
 		</Pair>
 	</StyleMap>
 	<Style id="sn_ylw-pushpin3">
@@ -979,16 +436,67 @@
 			<width>2</width>
 		</LineStyle>
 	</Style>
-	<StyleMap id="msn_ylw-pushpin1">
+	<Style id="sh_ylw-pushpin3">
+		<IconStyle>
+			<scale>1.3</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+			</Icon>
+			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+		<PolyStyle>
+			<color>b3828282</color>
+			<outline>0</outline>
+		</PolyStyle>
+	</Style>
+	<StyleMap id="msn_ylw-pushpin2">
 		<Pair>
 			<key>normal</key>
-			<styleUrl>#sn_ylw-pushpin2</styleUrl>
+			<styleUrl>#sn_ylw-pushpin4</styleUrl>
 		</Pair>
 		<Pair>
 			<key>highlight</key>
-			<styleUrl>#sh_ylw-pushpin0</styleUrl>
+			<styleUrl>#sh_ylw-pushpin4</styleUrl>
 		</Pair>
 	</StyleMap>
+	<Style id="s_ylw-pushpin1">
+		<IconStyle>
+			<scale>1.1</scale>
+			<Icon>
+				<href>ressources/city.png</href>
+			</Icon>
+			<hotSpot x="0.5" y="0.5" xunits="fraction" yunits="fraction"/>
+		</IconStyle>
+	</Style>
+	<Style id="sh_city">
+		<IconStyle>
+			<scale>2.12727</scale>
+			<Icon>
+				<href>ressources/city.png</href>
+			</Icon>
+		</IconStyle>
+		<BalloonStyle>
+		</BalloonStyle>
+	</Style>
+	<StyleMap id="msn_city2">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#sn_city5</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#sh_city10</styleUrl>
+		</Pair>
+	</StyleMap>
+	<Style id="s_ylw-pushpin_hl">
+		<IconStyle>
+			<scale>1.3</scale>
+			<Icon>
+				<href>D:/Documents/jdr/le_temps_des_cerises/ltdc/maps/earth/ressources/city.png</href>
+			</Icon>
+			<hotSpot x="0.5" y="0.5" xunits="fraction" yunits="fraction"/>
+		</IconStyle>
+	</Style>
 	<Style id="sn_city2">
 		<IconStyle>
 			<scale>2</scale>
@@ -997,6 +505,24 @@
 			</Icon>
 		</IconStyle>
 	</Style>
+	<Style id="sn_coliseum">
+		<IconStyle>
+			<scale>1.5</scale>
+			<Icon>
+				<href>ressources/coliseum.png</href>
+			</Icon>
+		</IconStyle>
+	</Style>
+	<StyleMap id="msn_city20">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#sn_city</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#sh_city1</styleUrl>
+		</Pair>
+	</StyleMap>
 	<Style id="sn_coliseum0">
 		<IconStyle>
 			<scale>1.5</scale>
@@ -1006,29 +532,29 @@
 			<hotSpot x="0.5" y="0.5" xunits="fraction" yunits="fraction"/>
 		</IconStyle>
 	</Style>
-	<StyleMap id="m_ylw-pushpin1">
+	<StyleMap id="msn_city00">
 		<Pair>
 			<key>normal</key>
-			<styleUrl>#s_ylw-pushpin0</styleUrl>
+			<styleUrl>#sn_city1</styleUrl>
 		</Pair>
 		<Pair>
 			<key>highlight</key>
-			<styleUrl>#s_ylw-pushpin_hl10</styleUrl>
+			<styleUrl>#sh_city00</styleUrl>
 		</Pair>
 	</StyleMap>
-	<StyleMap id="msn_Wolf">
+	<StyleMap id="msn_ylw-pushpin4">
 		<Pair>
 			<key>normal</key>
-			<styleUrl>#sn_Wolf</styleUrl>
+			<styleUrl>#sn_ylw-pushpin</styleUrl>
 		</Pair>
 		<Pair>
 			<key>highlight</key>
-			<styleUrl>#sh_Wolf</styleUrl>
+			<styleUrl>#sh_ylw-pushpin</styleUrl>
 		</Pair>
 	</StyleMap>
-	<Style id="sh_ylw-pushpin">
+	<Style id="sn_ylw-pushpin0">
 		<IconStyle>
-			<scale>1.3</scale>
+			<scale>1.1</scale>
 			<Icon>
 				<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
 			</Icon>
@@ -1038,74 +564,38 @@
 			<width>2</width>
 		</LineStyle>
 	</Style>
-	<StyleMap id="msn_man10">
+	<StyleMap id="msn_pjs">
 		<Pair>
 			<key>normal</key>
-			<styleUrl>#sn_man0</styleUrl>
+			<styleUrl>#sn_pjs</styleUrl>
 		</Pair>
 		<Pair>
 			<key>highlight</key>
-			<styleUrl>#sh_man0</styleUrl>
+			<styleUrl>#sh_pjs</styleUrl>
 		</Pair>
 	</StyleMap>
-	<Style id="sh_forest">
+	<Style id="sh_city100">
 		<IconStyle>
-			<scale>1.3</scale>
-			<Icon>
-				<href>D:/Documents/jdr/le_temps_des_cerises/ltdc/maps/earth/ressources/forest.png</href>
-			</Icon>
-		</IconStyle>
-	</Style>
-	<Style id="sn_dragon_terre">
-		<IconStyle>
-			<scale>1.8</scale>
-			<Icon>
-				<href>ressources/dragon_terre.png</href>
-			</Icon>
-		</IconStyle>
-		<BalloonStyle>
-		</BalloonStyle>
-	</Style>
-	<Style id="sn_city5">
-		<IconStyle>
-			<scale>1.8</scale>
+			<scale>2.33333</scale>
 			<Icon>
 				<href>ressources/city.png</href>
 			</Icon>
 		</IconStyle>
 	</Style>
-	<StyleMap id="m_ylw-pushpin2">
-		<Pair>
-			<key>normal</key>
-			<styleUrl>#s_ylw-pushpin</styleUrl>
-		</Pair>
-		<Pair>
-			<key>highlight</key>
-			<styleUrl>#s_ylw-pushpin_hl1</styleUrl>
-		</Pair>
-	</StyleMap>
-	<Style id="sn_coliseum">
+	<Style id="s_ylw-pushpin_hl10">
 		<IconStyle>
-			<scale>1.5</scale>
+			<scale>1.3</scale>
 			<Icon>
-				<href>ressources/coliseum.png</href>
+				<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
 			</Icon>
+			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
 		</IconStyle>
 	</Style>
-	<Style id="sn_homegardenbusiness">
-		<IconStyle>
-			<scale>1.2</scale>
-			<Icon>
-				<href>http://maps.google.com/mapfiles/kml/shapes/homegardenbusiness.png</href>
-			</Icon>
-			<hotSpot x="0.5" y="0" xunits="fraction" yunits="fraction"/>
-		</IconStyle>
-	</Style>
-	<Style id="sh_dragon_air">
+	<Style id="sh_pjs">
 		<IconStyle>
 			<scale>2.12727</scale>
 			<Icon>
-				<href>ressources/dragon_air.png</href>
+				<href>ressources/pjs.png</href>
 			</Icon>
 		</IconStyle>
 	</Style>
@@ -1121,6 +611,14 @@
 			<width>2</width>
 		</LineStyle>
 	</Style>
+	<Style id="sn_forest">
+		<IconStyle>
+			<scale>1.1</scale>
+			<Icon>
+				<href>D:/Documents/jdr/le_temps_des_cerises/ltdc/maps/earth/ressources/forest.png</href>
+			</Icon>
+		</IconStyle>
+	</Style>
 	<StyleMap id="m_ylw-pushpin10">
 		<Pair>
 			<key>normal</key>
@@ -1131,42 +629,145 @@
 			<styleUrl>#s_ylw-pushpin_hl0</styleUrl>
 		</Pair>
 	</StyleMap>
-	<StyleMap id="msn_city20">
+	<Style id="s_ylw-pushpin_hl2">
+		<IconStyle>
+			<scale>1.3</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+			</Icon>
+			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+	</Style>
+	<StyleMap id="msn_city1">
 		<Pair>
 			<key>normal</key>
-			<styleUrl>#sn_city</styleUrl>
+			<styleUrl>#sn_city3</styleUrl>
 		</Pair>
 		<Pair>
 			<key>highlight</key>
-			<styleUrl>#sh_city1</styleUrl>
+			<styleUrl>#sh_city2</styleUrl>
 		</Pair>
 	</StyleMap>
-	<Style id="sh_pjs">
+	<Style id="sh_ylw-pushpin1">
+		<IconStyle>
+			<scale>1.3</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+			</Icon>
+			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+		<LineStyle>
+			<color>ffff5500</color>
+			<width>2</width>
+		</LineStyle>
+	</Style>
+	<Style id="s_ylw-pushpin_hl1">
+		<IconStyle>
+			<scale>1.3</scale>
+			<Icon>
+				<href>D:/Documents/jdr/le_temps_des_cerises/ltdc/maps/earth/ressources/castle.png</href>
+			</Icon>
+			<hotSpot x="0.5" y="0.5" xunits="fraction" yunits="fraction"/>
+		</IconStyle>
+	</Style>
+	<Style id="s_ylw-pushpin0">
+		<IconStyle>
+			<scale>1.2</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/shapes/ranger_station.png</href>
+			</Icon>
+			<hotSpot x="0.5" y="0" xunits="fraction" yunits="fraction"/>
+		</IconStyle>
+		<ListStyle>
+		</ListStyle>
+	</Style>
+	<Style id="sh_city00">
+		<IconStyle>
+			<scale>1.4</scale>
+			<Icon>
+				<href>ressources/city.png</href>
+			</Icon>
+		</IconStyle>
+	</Style>
+	<StyleMap id="m_ylw-pushpin">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#s_ylw-pushpin0</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#s_ylw-pushpin_hl3</styleUrl>
+		</Pair>
+	</StyleMap>
+	<Style id="sh_city1">
 		<IconStyle>
 			<scale>2.12727</scale>
 			<Icon>
-				<href>ressources/pjs.png</href>
+				<href>ressources/city.png</href>
 			</Icon>
 		</IconStyle>
 	</Style>
-	<StyleMap id="msn_city100">
+	<StyleMap id="msn_ylw-pushpin0">
 		<Pair>
 			<key>normal</key>
-			<styleUrl>#sn_city00</styleUrl>
+			<styleUrl>#sn_ylw-pushpin0</styleUrl>
 		</Pair>
 		<Pair>
 			<key>highlight</key>
-			<styleUrl>#sh_city0</styleUrl>
+			<styleUrl>#sh_ylw-pushpin2</styleUrl>
 		</Pair>
 	</StyleMap>
-	<Style id="sn_dragon_eau">
+	<Style id="sn_ylw-pushpin1">
 		<IconStyle>
-			<scale>1.8</scale>
+			<scale>1.1</scale>
 			<Icon>
-				<href>ressources/dragon_eau.png</href>
+				<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+			</Icon>
+			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+		<LineStyle>
+			<color>ffff5500</color>
+			<width>2</width>
+		</LineStyle>
+	</Style>
+	<StyleMap id="msn_tipi0">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#sn_tipi</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#sh_tipi0</styleUrl>
+		</Pair>
+	</StyleMap>
+	<StyleMap id="msn_dragon_feu">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#sn_dragon_feu</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#sh_dragon_feu</styleUrl>
+		</Pair>
+	</StyleMap>
+	<Style id="sh_city10">
+		<IconStyle>
+			<scale>2.12727</scale>
+			<Icon>
+				<href>ressources/city.png</href>
 			</Icon>
 		</IconStyle>
 	</Style>
+	<StyleMap id="msn_ylw-pushpin">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#sn_ylw-pushpin40</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#sh_ylw-pushpin40</styleUrl>
+		</Pair>
+	</StyleMap>
 	<Style id="sh_city2">
 		<IconStyle>
 			<scale>2.12727</scale>
@@ -1175,46 +776,469 @@
 			</Icon>
 		</IconStyle>
 	</Style>
-	<Folder>
-		<name>Hirtland</name>
-		<open>1</open>
-		<GroundOverlay>
-			<name>Hirtland</name>
+	<Style id="s_ylw-pushpin_hl3">
+		<IconStyle>
+			<scale>1.4</scale>
 			<Icon>
-				<href>D:/Documents/jdr/le_temps_des_cerises/ltdc/maps/earth/ressources/Hirtland.png</href>
-				<viewBoundScale>0.75</viewBoundScale>
+				<href>http://maps.google.com/mapfiles/kml/shapes/ranger_station.png</href>
 			</Icon>
-			<LatLonBox>
-				<north>59.52957572782492</north>
-				<south>48.56705237090223</south>
-				<east>0.437715241338521</east>
-				<west>-12.08718074111721</west>
-			</LatLonBox>
-		</GroundOverlay>
-		<Folder>
-			<name>Chateaux</name>
-		</Folder>
-		<Placemark>
-			<name>Castle Von Krauwn</name>
-			<LookAt>
-				<longitude>-2.309749516732358</longitude>
-				<latitude>53.39195046857895</latitude>
-				<altitude>0</altitude>
-				<heading>-6.141528116994065</heading>
-				<tilt>5.859559162753373</tilt>
-				<range>56023.03683114939</range>
-				<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
-			</LookAt>
-			<styleUrl>#m_ylw-pushpin2</styleUrl>
-			<Point>
-				<gx:drawOrder>1</gx:drawOrder>
-				<coordinates>-2.386992804097916,53.36684002814713,0</coordinates>
-			</Point>
-		</Placemark>
-	</Folder>
+			<hotSpot x="0.5" y="0" xunits="fraction" yunits="fraction"/>
+		</IconStyle>
+		<ListStyle>
+		</ListStyle>
+	</Style>
+	<Style id="sn_city3">
+		<IconStyle>
+			<scale>1.8</scale>
+			<Icon>
+				<href>ressources/city.png</href>
+			</Icon>
+		</IconStyle>
+	</Style>
+	<Style id="s_ylw-pushpin00">
+		<IconStyle>
+			<scale>1.1</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+			</Icon>
+			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+	</Style>
+	<StyleMap id="msn_ylw-pushpin30">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#sn_ylw-pushpin01</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#sh_ylw-pushpin3</styleUrl>
+		</Pair>
+	</StyleMap>
+	<Style id="sn_ylw-pushpin40">
+		<IconStyle>
+			<scale>1.1</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+			</Icon>
+			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+		<LineStyle>
+			<width>2</width>
+		</LineStyle>
+	</Style>
+	<StyleMap id="msn_city0">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#sn_city2</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#sh_city100</styleUrl>
+		</Pair>
+	</StyleMap>
+	<Style id="sh_ylw-pushpin4">
+		<IconStyle>
+			<scale>1.3</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+			</Icon>
+			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+		<LineStyle>
+			<width>2</width>
+		</LineStyle>
+	</Style>
+	<Style id="sn_dragon_terre">
+		<IconStyle>
+			<scale>1.8</scale>
+			<Icon>
+				<href>ressources/dragon_terre.png</href>
+			</Icon>
+		</IconStyle>
+	</Style>
+	<Style id="sn_castle">
+		<IconStyle>
+			<scale>1.2</scale>
+			<Icon>
+				<href>D:/Documents/jdr/le_temps_des_cerises/ltdc/maps/earth/ressources/castle.png</href>
+			</Icon>
+		</IconStyle>
+		<BalloonStyle>
+		</BalloonStyle>
+		<ListStyle>
+		</ListStyle>
+	</Style>
+	<Style id="sn_dragon_eau">
+		<IconStyle>
+			<scale>1.8</scale>
+			<Icon>
+				<href>ressources/dragon_eau.png</href>
+			</Icon>
+		</IconStyle>
+	</Style>
+	<StyleMap id="msn_dragon_eau">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#sn_dragon_eau</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#sh_dragon_eau</styleUrl>
+		</Pair>
+	</StyleMap>
+	<StyleMap id="msn_man1">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#sn_man</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#sh_man00</styleUrl>
+		</Pair>
+	</StyleMap>
+	<StyleMap id="msn_coliseum0">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#sn_coliseum0</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#sh_coliseum</styleUrl>
+		</Pair>
+	</StyleMap>
+	<Style id="sh_coliseum">
+		<IconStyle>
+			<scale>1.75</scale>
+			<Icon>
+				<href>ressources/coliseum.png</href>
+			</Icon>
+			<hotSpot x="0.5" y="0.5" xunits="fraction" yunits="fraction"/>
+		</IconStyle>
+	</Style>
+	<Style id="sn_lake">
+		<IconStyle>
+			<scale>1.1</scale>
+			<Icon>
+				<href>D:/Documents/jdr/le_temps_des_cerises/ltdc/maps/earth/ressources/lake.png</href>
+			</Icon>
+		</IconStyle>
+	</Style>
+	<Style id="sn_volcan">
+		<IconStyle>
+			<scale>2.2</scale>
+			<Icon>
+				<href>ressources/volcan.png</href>
+			</Icon>
+		</IconStyle>
+	</Style>
+	<StyleMap id="msn_ylw-pushpin1">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#sn_ylw-pushpin2</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#sh_ylw-pushpin0</styleUrl>
+		</Pair>
+	</StyleMap>
+	<StyleMap id="m_ylw-pushpin1">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#s_ylw-pushpin01</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#s_ylw-pushpin_hl10</styleUrl>
+		</Pair>
+	</StyleMap>
+	<Style id="sh_ylw-pushpin20">
+		<IconStyle>
+			<scale>1.3</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+			</Icon>
+			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+		<LineStyle>
+			<color>ffff5500</color>
+			<width>2</width>
+		</LineStyle>
+	</Style>
+	<Style id="sn_city">
+		<IconStyle>
+			<scale>1.8</scale>
+			<Icon>
+				<href>ressources/city.png</href>
+			</Icon>
+		</IconStyle>
+	</Style>
+	<Style id="s_ylw-pushpin_hl00">
+		<IconStyle>
+			<scale>1.3</scale>
+			<Icon>
+				<href>ressources/city.png</href>
+			</Icon>
+			<hotSpot x="0.5" y="0.5" xunits="fraction" yunits="fraction"/>
+		</IconStyle>
+	</Style>
+	<StyleMap id="msn_city">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#sn_city0</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#sh_city</styleUrl>
+		</Pair>
+	</StyleMap>
+	<StyleMap id="msn_pickaxe">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#sn_pickaxe</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#sh_pickaxe</styleUrl>
+		</Pair>
+	</StyleMap>
+	<Style id="sh_homegardenbusiness">
+		<IconStyle>
+			<scale>1.4</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/shapes/homegardenbusiness.png</href>
+			</Icon>
+			<hotSpot x="0.5" y="0" xunits="fraction" yunits="fraction"/>
+		</IconStyle>
+	</Style>
+	<Style id="sh_ylw-pushpin0">
+		<IconStyle>
+			<scale>1.3</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+			</Icon>
+			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+		<LineStyle>
+			<color>ff565656</color>
+			<width>2</width>
+		</LineStyle>
+	</Style>
+	<Style id="s_ylw-pushpin01">
+		<IconStyle>
+			<scale>1.1</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+			</Icon>
+			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+	</Style>
+	<StyleMap id="m_ylw-pushpin3">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#s_ylw-pushpin2</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#s_ylw-pushpin_hl2</styleUrl>
+		</Pair>
+	</StyleMap>
+	<Style id="sn_dragon_feu">
+		<IconStyle>
+			<scale>1.8</scale>
+			<Icon>
+				<href>ressources/dragon_feu.png</href>
+			</Icon>
+		</IconStyle>
+	</Style>
+	<Style id="s_ylw-pushpin3">
+		<IconStyle>
+			<scale>1.1</scale>
+			<Icon>
+				<href>D:/Documents/jdr/le_temps_des_cerises/ltdc/maps/earth/ressources/city.png</href>
+			</Icon>
+			<hotSpot x="0.5" y="0.5" xunits="fraction" yunits="fraction"/>
+		</IconStyle>
+	</Style>
+	<Style id="sn_city0">
+		<IconStyle>
+			<scale>1.8</scale>
+			<Icon>
+				<href>ressources/city.png</href>
+			</Icon>
+		</IconStyle>
+		<BalloonStyle>
+		</BalloonStyle>
+	</Style>
+	<Style id="sh_pickaxe">
+		<IconStyle>
+			<scale>2.12727</scale>
+			<Icon>
+				<href>D:/Documents/jdr/le_temps_des_cerises/ltdc/maps/earth/ressources/pickaxe.png</href>
+			</Icon>
+		</IconStyle>
+	</Style>
+	<Style id="sh_man00">
+		<IconStyle>
+			<scale>1.4</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/shapes/man.png</href>
+			</Icon>
+		</IconStyle>
+	</Style>
+	<Style id="sn_pjs">
+		<IconStyle>
+			<scale>1.8</scale>
+			<Icon>
+				<href>ressources/pjs.png</href>
+			</Icon>
+		</IconStyle>
+	</Style>
+	<Style id="sn_man1">
+		<IconStyle>
+			<scale>1.2</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/shapes/man.png</href>
+			</Icon>
+		</IconStyle>
+	</Style>
+	<Style id="sh_volcan">
+		<IconStyle>
+			<scale>2.56667</scale>
+			<Icon>
+				<href>ressources/volcan.png</href>
+			</Icon>
+		</IconStyle>
+	</Style>
+	<StyleMap id="msn_dragon_terre">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#sn_dragon_terre</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#sh_dragon_terre</styleUrl>
+		</Pair>
+	</StyleMap>
+	<StyleMap id="msn_dragon_air">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#sn_dragon_air</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#sh_dragon_air</styleUrl>
+		</Pair>
+	</StyleMap>
+	<Style id="sn_city4">
+		<IconStyle>
+			<scale>1.8</scale>
+			<Icon>
+				<href>D:/Documents/jdr/le_temps_des_cerises/ltdc/maps/earth/ressources/city.png</href>
+			</Icon>
+		</IconStyle>
+	</Style>
+	<Style id="sh_tipi">
+		<IconStyle>
+			<scale>1.4</scale>
+			<Icon>
+				<href>ressources/tipi.png</href>
+			</Icon>
+		</IconStyle>
+	</Style>
+	<Style id="sn_pickaxe">
+		<IconStyle>
+			<scale>1.8</scale>
+			<Icon>
+				<href>D:/Documents/jdr/le_temps_des_cerises/ltdc/maps/earth/ressources/pickaxe.png</href>
+			</Icon>
+		</IconStyle>
+	</Style>
+	<Style id="sn_Wolf">
+		<IconStyle>
+			<scale>1.2</scale>
+			<Icon>
+				<href>ressources/Wolf.png</href>
+			</Icon>
+		</IconStyle>
+	</Style>
+	<Style id="sh_Wolf">
+		<IconStyle>
+			<scale>1.4</scale>
+			<Icon>
+				<href>ressources/Wolf.png</href>
+			</Icon>
+		</IconStyle>
+	</Style>
+	<StyleMap id="msn_ylw-pushpin00">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#sn_ylw-pushpin1</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#sh_ylw-pushpin1</styleUrl>
+		</Pair>
+	</StyleMap>
+	<Style id="sn_city1">
+		<IconStyle>
+			<scale>1.2</scale>
+			<Icon>
+				<href>ressources/city.png</href>
+			</Icon>
+		</IconStyle>
+	</Style>
+	<Style id="sn_ylw-pushpin01">
+		<IconStyle>
+			<scale>1.1</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+			</Icon>
+			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+		<PolyStyle>
+			<color>b3828282</color>
+			<outline>0</outline>
+		</PolyStyle>
+	</Style>
+	<Style id="s_ylw-pushpin2">
+		<IconStyle>
+			<scale>1.1</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+			</Icon>
+			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+	</Style>
+	<StyleMap id="msn_lake">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#sn_lake</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#sh_lake</styleUrl>
+		</Pair>
+	</StyleMap>
+	<Style id="sh_coliseum0">
+		<IconStyle>
+			<scale>1.75</scale>
+			<Icon>
+				<href>ressources/coliseum.png</href>
+			</Icon>
+		</IconStyle>
+	</Style>
+	<StyleMap id="msn_ylw-pushpin3">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#sn_ylw-pushpin00</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#sh_ylw-pushpin30</styleUrl>
+		</Pair>
+	</StyleMap>
 	<Folder>
 		<name>Cité antique</name>
-		<open>1</open>
 		<Placemark>
 			<name>Aurbium</name>
 			<open>1</open>
@@ -1277,6 +1301,62 @@
 				<west>-7.961315996219065</west>
 			</LatLonBox>
 		</GroundOverlay>
+	</Folder>
+	<Folder>
+		<name>Aurbet</name>
+		<Placemark>
+			<name>Beaune</name>
+			<LookAt>
+				<longitude>-9.865040189391443</longitude>
+				<latitude>40.70810068005409</latitude>
+				<altitude>0</altitude>
+				<heading>-2.042918927860501</heading>
+				<tilt>6.127587042722518</tilt>
+				<range>103040.2366782261</range>
+				<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+			</LookAt>
+			<styleUrl>#m_ylw-pushpin0</styleUrl>
+			<Point>
+				<gx:drawOrder>1</gx:drawOrder>
+				<coordinates>-10.09455093975499,40.5624860916413,0</coordinates>
+			</Point>
+		</Placemark>
+	</Folder>
+	<Folder>
+		<name>Hirtland</name>
+		<GroundOverlay>
+			<name>Hirtland</name>
+			<Icon>
+				<href>D:/Documents/jdr/le_temps_des_cerises/ltdc/maps/earth/ressources/Hirtland.png</href>
+				<viewBoundScale>0.75</viewBoundScale>
+			</Icon>
+			<LatLonBox>
+				<north>59.52957572782492</north>
+				<south>48.56705237090223</south>
+				<east>0.437715241338521</east>
+				<west>-12.08718074111721</west>
+			</LatLonBox>
+		</GroundOverlay>
+		<Folder>
+			<name>Chateaux</name>
+		</Folder>
+		<Placemark>
+			<name>Castle Von Krauwn</name>
+			<LookAt>
+				<longitude>-2.309749516732358</longitude>
+				<latitude>53.39195046857895</latitude>
+				<altitude>0</altitude>
+				<heading>-6.141528116994065</heading>
+				<tilt>5.859559162753373</tilt>
+				<range>56023.03683114939</range>
+				<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+			</LookAt>
+			<styleUrl>#m_ylw-pushpin2</styleUrl>
+			<Point>
+				<gx:drawOrder>1</gx:drawOrder>
+				<coordinates>-2.386992804097916,53.36684002814713,0</coordinates>
+			</Point>
+		</Placemark>
 	</Folder>
 	<Folder>
 		<name>Matayaque</name>
@@ -1808,7 +1888,6 @@
 	</GroundOverlay>
 	<Folder>
 		<name>PJ</name>
-		<open>1</open>
 		<Placemark>
 			<name>9.4</name>
 			<visibility>0</visibility>
@@ -1947,7 +2026,7 @@
 		</Placemark>
 		<Placemark>
 			<name>11.3 Chateau Von Kraun - Kreichlund</name>
-			<styleUrl>#m_ylw-pushpin</styleUrl>
+			<styleUrl>#m_ylw-pushpin3</styleUrl>
 			<LineString>
 				<tessellate>1</tessellate>
 				<coordinates>
@@ -2071,18 +2150,18 @@
 			<Placemark>
 				<name>Ershagad</name>
 				<LookAt>
-					<longitude>16.0777102501025</longitude>
-					<latitude>38.92695526876651</latitude>
+					<longitude>18.09751945060056</longitude>
+					<latitude>42.81820149120373</latitude>
 					<altitude>0</altitude>
-					<heading>-0.09828634309020329</heading>
+					<heading>-5.182599955649963</heading>
 					<tilt>0</tilt>
-					<range>2664008.44930071</range>
+					<range>3479027.931118526</range>
 					<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
 				</LookAt>
 				<styleUrl>#msn_city</styleUrl>
 				<Point>
 					<gx:drawOrder>1</gx:drawOrder>
-					<coordinates>15.3357615153526,38.25903029836296,0</coordinates>
+					<coordinates>11.14275644722619,40.2535791261564,0</coordinates>
 				</Point>
 			</Placemark>
 			<Placemark>
@@ -2124,22 +2203,77 @@
 			</Point>
 		</Placemark>
 	</Folder>
-	<Placemark>
-		<name>Beaune</name>
-		<LookAt>
-			<longitude>-9.865040189391443</longitude>
-			<latitude>40.70810068005409</latitude>
-			<altitude>0</altitude>
-			<heading>-2.042918927860501</heading>
-			<tilt>6.127587042722518</tilt>
-			<range>103040.2366782261</range>
-			<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
-		</LookAt>
-		<styleUrl>#m_ylw-pushpin0</styleUrl>
-		<Point>
-			<gx:drawOrder>1</gx:drawOrder>
-			<coordinates>-10.09455093975499,40.5624860916413,0</coordinates>
-		</Point>
-	</Placemark>
+	<Folder>
+		<name>Jahild</name>
+		<open>1</open>
+		<Placemark>
+			<name>Camp de prisoniers</name>
+			<LookAt>
+				<longitude>11.45210997420255</longitude>
+				<latitude>32.42361090220746</latitude>
+				<altitude>0</altitude>
+				<heading>-9.372038383135182</heading>
+				<tilt>0</tilt>
+				<range>2077848.256465448</range>
+				<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+			</LookAt>
+			<styleUrl>#m_ylw-pushpin</styleUrl>
+			<Point>
+				<gx:drawOrder>1</gx:drawOrder>
+				<coordinates>15.58245974988407,34.44595348299381,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Kayabakir</name>
+			<LookAt>
+				<longitude>10.49724016579689</longitude>
+				<latitude>28.22654219446918</latitude>
+				<altitude>0</altitude>
+				<heading>1.468005152163003</heading>
+				<tilt>0</tilt>
+				<range>665745.7512712521</range>
+				<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+			</LookAt>
+			<styleUrl>#msn_city</styleUrl>
+			<Point>
+				<gx:drawOrder>1</gx:drawOrder>
+				<coordinates>10.89298452493351,28.01973498662712,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Kinafa</name>
+			<LookAt>
+				<longitude>4.585682480247717</longitude>
+				<latitude>29.81706153777798</latitude>
+				<altitude>0</altitude>
+				<heading>-1.269716771763112</heading>
+				<tilt>0</tilt>
+				<range>630073.3515825573</range>
+				<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+			</LookAt>
+			<styleUrl>#msn_city</styleUrl>
+			<Point>
+				<gx:drawOrder>1</gx:drawOrder>
+				<coordinates>4.195539313501182,30.10240904430093,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Palais de Saadiniyyah</name>
+			<LookAt>
+				<longitude>10.89956623444459</longitude>
+				<latitude>27.98498220211221</latitude>
+				<altitude>0</altitude>
+				<heading>1.788254785508631</heading>
+				<tilt>0</tilt>
+				<range>316370.0230557824</range>
+				<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+			</LookAt>
+			<styleUrl>#msn_castle</styleUrl>
+			<Point>
+				<gx:drawOrder>1</gx:drawOrder>
+				<coordinates>11.02840240042353,28.15549381122821,0</coordinates>
+			</Point>
+		</Placemark>
+	</Folder>
 </Document>
 </kml>
